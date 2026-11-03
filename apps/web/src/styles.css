@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Cores amostradas de style-reference.png; componentes completos chegam no passo 068. */
+@theme {
+  --color-paper: #fcf5ed;
+  --color-ink: #050505;
+  --color-lime: #c1fb01;
+  --color-orange: #fe6402;
+  --color-electric: #3845fd;
+  --color-lilac: #e389fc;
+  --font-display: 'Arial Black', Impact, system-ui, sans-serif;
+  --font-body: Arial, Helvetica, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-paper);
+  font-synthesis: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-electric);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: var(--color-ink);
+  background: var(--color-lime);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
