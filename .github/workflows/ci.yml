@@ -38,3 +38,7 @@ jobs:
         run: pnpm test
       - name: Build
         run: pnpm build
+      - name: Regenerate typed API client
+        run: pnpm api:generate
+      - name: Check generated client is committed
+        run: git diff --exit-code -- apps/web/src/app/core/api/generated
