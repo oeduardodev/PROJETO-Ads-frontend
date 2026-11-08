@@ -1,0 +1,12 @@
+<main id="conteudo" class="admin-entry" aria-labelledby="callback-title">
+  @if (failed()) {
+    <h1 id="callback-title">Acesso não concluído</h1>
+    <p role="alert">O retorno da identidade institucional não pôde ser validado.</p>
+    <a class="admin-action" routerLink="/admin/login"
+      >Tentar novamente <span aria-hidden="true">↗</span></a
+    >
+  } @else {
+    <h1 id="callback-title">Validando acesso…</h1>
+    <p role="status">Aguarde enquanto concluímos sua sessão.</p>
+  }
+</main>

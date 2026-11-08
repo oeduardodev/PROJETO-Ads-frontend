@@ -1,0 +1,30 @@
+<main id="conteudo" class="admin-entry" aria-labelledby="admin-login-title">
+  <div class="admin-entry__badge">Área de curadoria</div>
+  <h1 id="admin-login-title">Acesso ao painel</h1>
+  <p>
+    Fontes, evidências e decisões são revisadas por pessoas autorizadas. O acesso usa a identidade
+    institucional configurada para a equipe.
+  </p>
+
+  @if (!session.configured) {
+    <div class="admin-note" role="status">
+      O provedor de identidade administrativa ainda não foi configurado. A área de curadoria não
+      está disponível nesta instalação.
+    </div>
+  } @else {
+    @if (session.state() === 'expired') {
+      <p class="admin-note" role="status">Sua sessão expirou. Entre novamente para continuar.</p>
+    }
+    @if (error() || session.state() === 'error') {
+      <p class="admin-note admin-note--error" role="alert">
+        Não foi possível iniciar o acesso. Tente novamente ou avise a administração.
+      </p>
+    }
+    <button type="button" class="admin-action" [disabled]="busy()" (click)="enter()">
+      {{ busy() ? 'Abrindo acesso…' : 'Entrar com identidade institucional' }}
+      <span aria-hidden="true">↗</span>
+    </button>
+  }
+
+  <a class="admin-back" routerLink="/">Voltar ao catálogo público</a>
+</main>

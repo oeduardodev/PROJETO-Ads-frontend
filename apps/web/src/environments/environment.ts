@@ -5,4 +5,5 @@ export const environment: PublicEnvironment = {
   apiBaseUrl: '',
   publicSiteUrl: '',
   catalogEnabled: false,
+  adminOidc: null,
 };

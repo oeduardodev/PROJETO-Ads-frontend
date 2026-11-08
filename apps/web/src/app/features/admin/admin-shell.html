@@ -1,0 +1,30 @@
+<main id="conteudo" class="admin-shell">
+  <div class="admin-shell__topline">
+    <span class="admin-shell__eyebrow">Além do SiSU / Curadoria</span>
+    <span class="admin-shell__session" role="status">Sessão administrativa</span>
+  </div>
+
+  <div class="admin-shell__heading">
+    <div>
+      <p class="admin-shell__kicker">Painel interno</p>
+      <h1>Verificar.<br /><span>Decidir.</span> Publicar.</h1>
+    </div>
+    <p>Consulte a origem de cada informação antes de liberar um processo para o catálogo.</p>
+  </div>
+
+  <div class="admin-shell__layout">
+    <nav class="admin-shell__nav" aria-label="Navegação da curadoria">
+      <a routerLink="/admin/reviews" routerLinkActive="is-active" ariaCurrentWhenActive="page">
+        <span aria-hidden="true">01</span> Revisões
+      </a>
+      <a routerLink="/admin/sources" routerLinkActive="is-active" ariaCurrentWhenActive="page">
+        <span aria-hidden="true">02</span> Fontes
+      </a>
+      <button type="button" [disabled]="signingOut()" (click)="signOut()">Sair da sessão ↗</button>
+    </nav>
+
+    <section class="admin-shell__content" aria-label="Conteúdo da curadoria">
+      <router-outlet />
+    </section>
+  </div>
+</main>
