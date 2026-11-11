@@ -4,6 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 import { describe, expect, it, vi } from 'vitest';
 import { PublicCatalogService } from '../../../core/api/public-catalog.service';
 import { PublicApiError } from '../../../core/http/public-api-error';
+import { PageMetadataService } from '../../../core/seo/page-metadata.service';
 import type { ProcessDetail } from '../../../core/api/generated';
 import { OpportunityDetail } from './opportunity-detail';
 
@@ -92,6 +93,7 @@ describe('public opportunity detail', () => {
         provideRouter([]),
         { provide: ActivatedRoute, useValue: route },
         { provide: PublicCatalogService, useValue: { get } },
+        { provide: PageMetadataService, useValue: { apply: vi.fn() } },
       ],
     }).compileComponents();
     const fixture = TestBed.createComponent(OpportunityDetail);

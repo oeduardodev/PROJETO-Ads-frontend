@@ -1,8 +1,9 @@
 import { Location } from '@angular/common';
 import { Component, inject, signal, type OnDestroy, type OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import type { Subscription } from 'rxjs';
 import { PublicApiError } from '../../../core/http/public-api-error';
+import { PageMetadataService } from '../../../core/seo/page-metadata.service';
 import { PublicCatalogService } from '../../../core/api/public-catalog.service';
 import type { ApplicationWindow, ProcessDetail, Requirement } from '../../../core/api/generated';
 
@@ -18,6 +19,8 @@ export class OpportunityDetail implements OnInit, OnDestroy {
   private readonly api = inject(PublicCatalogService);
   private readonly route = inject(ActivatedRoute);
   private readonly location = inject(Location);
+  private readonly router = inject(Router);
+  private readonly pageMetadata = inject(PageMetadataService);
   private routeSubscription: Subscription | null = null;
   private request: AbortController | null = null;
   private currentId = '';
@@ -51,6 +54,12 @@ export class OpportunityDetail implements OnInit, OnDestroy {
       const process = await this.api.get(id, controller.signal);
       if (controller.signal.aborted || this.currentId !== id) return;
       this.detail.set(process);
+      this.pageMetadata.apply({
+        title: `${process.selectionType} — ${process.institution.acronym} | Além do SiSU`,
+        description: `Informações verificadas sobre ${process.selectionType} em ${process.institution.name}, com prazos, requisitos e fontes oficiais.`,
+        path: this.router.url.split(/[?#]/, 1)[0] || `/oportunidades/${id}`,
+        indexable: true,
+      });
     } catch (error) {
       if (
         controller.signal.aborted ||
@@ -64,6 +73,12 @@ export class OpportunityDetail implements OnInit, OnDestroy {
             ? 'O detalhe está temporariamente indisponível. Tente novamente.'
             : 'Não foi possível carregar os dados verificados deste processo. Tente novamente.',
       );
+      this.pageMetadata.apply({
+        title: 'Detalhes do processo — Além do SiSU',
+        description: 'Detalhes públicos de processos seletivos verificados.',
+        path: this.router.url.split(/[?#]/, 1)[0] || `/oportunidades/${id}`,
+        indexable: false,
+      });
     } finally {
       if (!controller.signal.aborted && this.currentId === id) this.loading.set(false);
     }
