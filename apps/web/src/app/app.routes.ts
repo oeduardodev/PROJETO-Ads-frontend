@@ -37,11 +37,9 @@ export const routes: Routes = [
       {
         path: 'sources',
         loadComponent: () =>
-          import('./features/admin/admin-section').then((module) => module.AdminSection),
-        data: {
-          title: 'Fontes',
-          description: 'A consulta de saúde das fontes está em preparação nesta instalação.',
-        },
+          import('./features/admin/sources/admin-source-dashboard').then(
+            (module) => module.AdminSourceDashboard,
+          ),
       },
     ],
   },

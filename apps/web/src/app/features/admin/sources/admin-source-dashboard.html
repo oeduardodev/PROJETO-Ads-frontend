@@ -1,0 +1,270 @@
+<main class="source-dashboard" aria-labelledby="source-dashboard-title">
+  <header class="source-dashboard__heading">
+    <div>
+      <p class="source-dashboard__stamp">Operação / P0</p>
+      <h2 id="source-dashboard-title">Fontes em<br /><span>observação.</span></h2>
+    </div>
+    <p>Veja a saúde das coletas, execuções recentes e falhas sem depender de logs de servidor.</p>
+  </header>
+
+  @if (message()) {
+    <p class="source-banner source-banner--success" role="status">{{ message() }}</p>
+  }
+  @if (error()) {
+    <div class="source-banner source-banner--error" role="alert">
+      <p>{{ error() }}</p>
+      <button type="button" (click)="load()">Tentar novamente</button>
+    </div>
+  }
+
+  <section class="source-metrics" aria-label="Resumo das fontes">
+    <article>
+      <span>Fontes cadastradas</span><strong>{{ sources().length }}</strong>
+    </article>
+    <article>
+      <span>Ativas</span><strong>{{ activeCount() }}</strong>
+    </article>
+    <article>
+      <span>Saúde degradada ou bloqueada</span><strong>{{ unhealthyCount() }}</strong>
+    </article>
+    <article>
+      <span>Candidatas na fonte selecionada</span>
+      <strong>{{ detail()?.candidateCount ?? '—' }}</strong>
+    </article>
+  </section>
+
+  <div class="source-layout">
+    <aside class="source-list" aria-labelledby="source-list-title">
+      <div class="source-list__heading">
+        <div>
+          <p class="source-eyebrow">Monitoramento</p>
+          <h3 id="source-list-title">Fontes registradas</h3>
+        </div>
+        <button
+          class="source-icon-button"
+          type="button"
+          aria-label="Atualizar fontes"
+          (click)="load()"
+        >
+          ↻
+        </button>
+      </div>
+      @if (loading()) {
+        <p role="status" class="source-state">Carregando fontes…</p>
+      } @else if (sources().length === 0) {
+        <p class="source-state">Nenhuma fonte cadastrada.</p>
+      } @else {
+        <ul class="source-list__items">
+          @for (source of sources(); track source.id) {
+            <li>
+              <button
+                type="button"
+                class="source-card"
+                [class.source-card--selected]="selectedId() === source.id"
+                [attr.aria-current]="selectedId() === source.id ? 'true' : null"
+                (click)="select(source.id)"
+              >
+                <span class="source-card__top">
+                  <strong>{{ source.allowedDomain.host }}</strong>
+                  <span class="source-status" [attr.data-health]="source.health">{{
+                    source.health
+                  }}</span>
+                </span>
+                <span class="source-card__url">{{ source.url }}</span>
+                <span class="source-card__meta">{{ source.kind }} · {{ source.status }}</span>
+                <span class="source-card__meta"
+                  >Última coleta: {{ date(source.lastCheckedAt) }}</span
+                >
+              </button>
+            </li>
+          }
+        </ul>
+      }
+    </aside>
+
+    <section class="source-detail" aria-label="Saúde e execuções da fonte">
+      @if (detailLoading()) {
+        <p role="status" class="source-state">Carregando saúde e histórico…</p>
+      } @else if (!detail()) {
+        <div class="source-empty">
+          <span aria-hidden="true">↗</span>
+          <h3>Escolha uma fonte</h3>
+          <p>As execuções, falhas e itens aguardando revisão aparecerão aqui.</p>
+        </div>
+      } @else {
+        @let source = detail()!;
+        <header class="source-detail__header">
+          <div>
+            <p class="source-eyebrow">{{ source.kind }} · {{ source.allowedDomain.host }}</p>
+            <h3>{{ source.status }} <span>/</span> {{ source.health }}</h3>
+          </div>
+          @if (runEligible(source)) {
+            <button type="button" class="source-run-button" (click)="openRunConfirmation()">
+              Solicitar nova coleta ↗
+            </button>
+          }
+        </header>
+
+        <dl class="source-facts">
+          <div>
+            <dt>Última tentativa</dt>
+            <dd>{{ date(source.lastCheckedAt) }}</dd>
+          </div>
+          <div>
+            <dt>Último sucesso</dt>
+            <dd>{{ date(source.lastSuccessAt) }}</dd>
+          </div>
+          <div>
+            <dt>Candidatas desta fonte</dt>
+            <dd>{{ source.candidateCount }}</dd>
+          </div>
+          <div>
+            <dt>Domínio revisado</dt>
+            <dd>{{ source.allowedDomain.reviewedAt ? 'Sim' : 'Não' }}</dd>
+          </div>
+          <div>
+            <dt>Política permite coleta</dt>
+            <dd>{{ source.allowedDomain.collectionAllowed ? 'Sim' : 'Não' }}</dd>
+          </div>
+          <div>
+            <dt>Retentativa agendada</dt>
+            <dd>{{ source.backoff.active ? 'Sim' : 'Não' }}</dd>
+          </div>
+        </dl>
+
+        @if (source.backoff.active) {
+          <p class="source-backoff" role="status">
+            A fonte tem uma retentativa na fila. Próximo horário não informado pela fila.
+            @if (source.backoff.jobId) {
+              <span>Job {{ source.backoff.jobId }}</span>
+            }
+          </p>
+        }
+
+        <section class="source-queue" aria-labelledby="source-queue-title">
+          <div class="source-section-heading">
+            <span class="source-number">01</span>
+            <div>
+              <p class="source-eyebrow">BullMQ · source.refresh</p>
+              <h4 id="source-queue-title">Fila de execuções</h4>
+            </div>
+          </div>
+          <dl class="source-queue__counts">
+            <div>
+              <dt>Aguardando</dt>
+              <dd>{{ source.sourceRefreshQueue.waiting ?? 0 }}</dd>
+            </div>
+            <div>
+              <dt>Em execução</dt>
+              <dd>{{ source.sourceRefreshQueue.active ?? 0 }}</dd>
+            </div>
+            <div>
+              <dt>Retentativas</dt>
+              <dd>{{ source.sourceRefreshQueue.delayed ?? 0 }}</dd>
+            </div>
+            <div>
+              <dt>Falhas finais</dt>
+              <dd>{{ source.sourceRefreshQueue.failed ?? 0 }}</dd>
+            </div>
+          </dl>
+          <p>
+            Contagens da fila compartilhada entre as fontes, não atribuídas a esta fonte individual.
+          </p>
+        </section>
+
+        <section class="source-runs" aria-labelledby="source-runs-title">
+          <div class="source-section-heading">
+            <span class="source-number source-number--blue">02</span>
+            <div>
+              <p class="source-eyebrow">Histórico persistido</p>
+              <h4 id="source-runs-title">Últimas execuções</h4>
+            </div>
+          </div>
+          @if (source.crawlRuns.length === 0) {
+            <p class="source-state">Ainda não há execuções registradas para esta fonte.</p>
+          } @else {
+            <div class="source-table-wrap">
+              <table class="source-table">
+                <thead>
+                  <tr>
+                    <th>Início</th>
+                    <th>Estado</th>
+                    <th>HTTP</th>
+                    <th>Tentativa</th>
+                    <th>Falha</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (run of source.crawlRuns; track run.id) {
+                    <tr>
+                      <td>{{ date(run.startedAt) }}</td>
+                      <td>
+                        <span class="source-run-state" [attr.data-state]="run.status">{{
+                          run.status
+                        }}</span>
+                      </td>
+                      <td>{{ run.httpStatus ?? '—' }}</td>
+                      <td>{{ run.attempt }}</td>
+                      <td>{{ run.errorCode ?? '—' }}</td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          }
+        </section>
+
+        <footer class="source-official-link">
+          @if (safeHttpsUrl(source.url); as officialUrl) {
+            <a [href]="officialUrl" target="_blank" rel="noopener noreferrer"
+              >Abrir página oficial da fonte ↗</a
+            >
+          } @else {
+            <span>URL de fonte inválida ou indisponível.</span>
+          }
+          <span>Coletas registradas não garantem cobertura completa.</span>
+        </footer>
+
+        @if (runConfirmation()) {
+          <section class="source-confirm" aria-labelledby="source-confirm-title">
+            <div>
+              <p class="source-eyebrow">Ação auditada</p>
+              <h4 id="source-confirm-title">Confirmar solicitação de coleta?</h4>
+              <p>
+                A solicitação será registrada com motivo e enviada à fila. Ela não confirma que a
+                coleta já foi executada.
+              </p>
+            </div>
+            <label for="source-run-reason">Motivo da solicitação</label>
+            <textarea
+              id="source-run-reason"
+              rows="2"
+              [value]="runReason()"
+              (input)="runReason.set($any($event.target).value)"
+            ></textarea>
+            @if (runError()) {
+              <p class="source-inline-error" role="alert">{{ runError() }}</p>
+            }
+            <div class="source-confirm__actions">
+              <button
+                type="button"
+                class="source-cancel-button"
+                (click)="runConfirmation.set(false)"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                class="source-run-button"
+                [disabled]="runBusy() || !runReason().trim()"
+                (click)="run()"
+              >
+                {{ runBusy() ? 'Enviando…' : 'Confirmar coleta' }}
+              </button>
+            </div>
+          </section>
+        }
+      }
+    </section>
+  </div>
+</main>

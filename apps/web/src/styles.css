@@ -52,3 +52,5 @@ select {
     scroll-behavior: auto;
   }
 }
+
+@import './app/features/admin/sources/source-dashboard.css';
