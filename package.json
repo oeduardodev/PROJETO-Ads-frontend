@@ -10,8 +10,8 @@
     "build": "corepack pnpm --filter @alem-do-sisu/web build",
     "test:e2e": "corepack pnpm --filter @alem-do-sisu/web test:e2e",
     "api:generate": "corepack pnpm --filter @alem-do-sisu/web exec openapi-ts -i ../../contracts/public-v1.json -o src/app/core/api/generated && prettier --write \"apps/web/src/app/core/api/generated/**/*.ts\"",
-    "format": "prettier --write \"apps/web/src/**/*.{ts,html,css}\" \"apps/web/e2e/**/*.mjs\" apps/web/angular.json apps/web/package.json package.json eslint.config.mjs",
-    "format:check": "prettier --check \"apps/web/src/**/*.{ts,html,css}\" \"apps/web/e2e/**/*.mjs\" apps/web/angular.json apps/web/package.json package.json eslint.config.mjs"
+    "format": "prettier --write \"apps/web/src/**/*.{ts,html,css}\" \"apps/web/e2e/**/*.{mjs,ts}\" apps/web/playwright.config.ts apps/web/angular.json apps/web/package.json package.json eslint.config.mjs",
+    "format:check": "prettier --check \"apps/web/src/**/*.{ts,html,css}\" \"apps/web/e2e/**/*.{mjs,ts}\" apps/web/playwright.config.ts apps/web/angular.json apps/web/package.json package.json eslint.config.mjs"
   },
   "engines": {
     "node": "^22.22.3 || ^24.15.0 || >=26.0.0"

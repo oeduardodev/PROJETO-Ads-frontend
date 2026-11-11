@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { PageMetadataService } from './core/seo/page-metadata.service';
 
@@ -9,7 +9,20 @@ import { PageMetadataService } from './core/seo/page-metadata.service';
   templateUrl: './app.html',
 })
 export class App {
+  readonly mobileMenuOpen = signal(false);
+  readonly mobileMenuButton = viewChild<ElementRef<HTMLButtonElement>>('mobileMenuButton');
+
   constructor() {
     inject(PageMetadataService);
+  }
+
+  toggleMobileMenu(): void {
+    this.mobileMenuOpen.update((open) => !open);
+  }
+
+  closeMobileMenu(): void {
+    if (!this.mobileMenuOpen()) return;
+    this.mobileMenuOpen.set(false);
+    this.mobileMenuButton()?.nativeElement.focus();
   }
 }

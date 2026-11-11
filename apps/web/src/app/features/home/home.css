@@ -417,7 +417,7 @@
   .hero-art {
     position: absolute;
     top: 9rem;
-    right: -5.5rem;
+    right: 0.75rem;
     z-index: -1;
     width: 15rem;
     min-height: 12rem;
@@ -489,5 +489,16 @@
   .official-note {
     align-items: flex-start;
     font-size: 0.9rem;
+  }
+
+  .explore h2,
+  .about h2 {
+    max-width: 100%;
+    padding-inline: 0.35rem;
+    font-size: clamp(1.25rem, 7vw, 1.55rem);
+  }
+
+  .explore__cta {
+    transform: none;
   }
 }

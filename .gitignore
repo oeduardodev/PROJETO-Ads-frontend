@@ -4,6 +4,8 @@ dist/
 coverage/
 .angular/
 *.tsbuildinfo
+apps/web/test-results/
+apps/web/playwright-report/
 
 .env
 .env.*
