@@ -46,7 +46,9 @@ export const routes: Routes = [
   {
     path: 'oportunidades',
     loadComponent: () =>
-      import('./features/home/opportunities-preview').then((module) => module.OpportunitiesPreview),
+      import('./features/opportunities/list/opportunity-list').then(
+        (module) => module.OpportunityList,
+      ),
     title: 'Explorar oportunidades — Além do SiSU',
   },
   {

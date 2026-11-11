@@ -13,8 +13,8 @@ describe('public home', () => {
     const fixture = TestBed.createComponent(Home);
     fixture.detectChanges();
     const page = fixture.nativeElement as HTMLElement;
-    expect(page.textContent).toContain('O catálogo está sendo preparado');
-    expect(page.textContent).toContain('fonte institucional e revisão humana');
+    expect(page.textContent).toContain('revisão humana');
+    expect(page.textContent).toContain('data da última verificação');
     expect(page.textContent).toContain('Os documentos oficiais prevalecem');
     expect(page.querySelector('a[href="/oportunidades"]')).not.toBeNull();
     expect(page.querySelectorAll('a[href^="http"]').length).toBe(0);

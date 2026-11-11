@@ -1,0 +1,106 @@
+<main id="conteudo" class="opportunities" aria-labelledby="opportunities-title">
+  <header class="opportunities__header">
+    <p class="opportunities__eyebrow">Catálogo verificado</p>
+    <h1 id="opportunities-title">O próximo caminho pode estar aqui.</h1>
+    <p>
+      Processos seletivos de graduação pública fora do fluxo regular do SiSU. Confirme prazos e
+      requisitos no edital oficial antes de tomar uma decisão.
+    </p>
+  </header>
+
+  @if (loading()) {
+    <section
+      class="opportunities__loading"
+      aria-label="Carregando oportunidades"
+      aria-live="polite"
+    >
+      <div class="opportunity-skeleton"></div>
+      <div class="opportunity-skeleton"></div>
+      <div class="opportunity-skeleton"></div>
+    </section>
+  } @else if (error()) {
+    <section class="opportunities__state" role="alert">
+      <h2>Não conseguimos consultar o catálogo.</h2>
+      <p>{{ error() }}</p>
+      <button type="button" class="opportunities__button" (click)="load()">Tentar novamente</button>
+    </section>
+  } @else if (results(); as result) {
+    <p class="opportunities__count" aria-live="polite">
+      {{ result.meta.total }} processo{{ result.meta.total === 1 ? '' : 's' }} revisado{{
+        result.meta.total === 1 ? '' : 's'
+      }}
+    </p>
+    @if (result.data.length === 0) {
+      <section class="opportunities__state">
+        <h2>Nenhum processo verificado nesta busca.</h2>
+        <p>
+          Isso não significa que não existam oportunidades. Consulte também os portais oficiais das
+          instituições; este catálogo só exibe dados revisados.
+        </p>
+      </section>
+    } @else {
+      <section class="opportunities__grid" aria-label="Processos seletivos verificados">
+        @for (item of result.data; track item.id) {
+          <article class="opportunity-card">
+            <div class="opportunity-card__topline">
+              <span>{{ item.institution.acronym }}</span>
+              <span class="opportunity-card__status" [attr.data-status]="item.applicationStatus">
+                {{ statusLabel(item.applicationStatus) }}
+              </span>
+            </div>
+            <h2>{{ item.noticeCode || item.selectionType }}</h2>
+            <p class="opportunity-card__institution">{{ item.institution.name }}</p>
+            <p class="opportunity-card__type">{{ item.selectionType }}</p>
+            <ul class="opportunity-card__facts">
+              <li>
+                <strong>{{ item.offeringCount }}</strong> oferta{{
+                  item.offeringCount === 1 ? '' : 's'
+                }}
+              </li>
+              <li>{{ item.coursePreview.join(' · ') || 'Cursos não detalhados' }}</li>
+              <li>{{ deadline(item.nextDeadlineAt) }}</li>
+            </ul>
+            <p class="opportunity-card__verified">Verificado em {{ deadline(item.verifiedAt) }}</p>
+            <a class="opportunity-card__detail" [routerLink]="['/oportunidades', item.id]">
+              Ver detalhes e requisitos <span aria-hidden="true">→</span>
+            </a>
+            <a
+              class="opportunity-card__official"
+              [href]="item.officialNoticeUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar edital oficial <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        }
+      </section>
+      @if (pageCount() > 1) {
+        <nav class="opportunities__pagination" aria-label="Paginação dos resultados">
+          <button
+            type="button"
+            class="opportunities__button"
+            [disabled]="page() <= 1"
+            (click)="goToPage(page() - 1)"
+          >
+            Anterior
+          </button>
+          <span>Página {{ page() }} de {{ pageCount() }}</span>
+          <button
+            type="button"
+            class="opportunities__button"
+            [disabled]="page() >= pageCount()"
+            (click)="goToPage(page() + 1)"
+          >
+            Próxima
+          </button>
+        </nav>
+      }
+    }
+  }
+
+  <p class="opportunities__note">
+    Editais e portais das instituições são as fontes oficiais. Requisitos ausentes ou conflitantes
+    permanecem sem confirmação.
+  </p>
+</main>
