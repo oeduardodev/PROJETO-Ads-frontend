@@ -8,6 +8,8 @@
     </p>
   </header>
 
+  <app-opportunity-filters [filters]="filters()" (changed)="changeFilters($event)" />
+
   @if (loading()) {
     <section
       class="opportunities__loading"

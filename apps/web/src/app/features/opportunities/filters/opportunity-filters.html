@@ -1,0 +1,92 @@
+<section class="filters" aria-labelledby="filters-title">
+  <div class="filters__heading">
+    <h2 id="filters-title">Encontre seu caminho</h2>
+    <button type="button" class="filters__clear" (click)="clear()">Limpar filtros</button>
+  </div>
+  <div class="filters__grid">
+    <label class="filters__field filters__field--query">
+      <span>Curso, edital ou instituição</span>
+      <input
+        type="search"
+        [value]="qDraft()"
+        (input)="queryInput($event)"
+        placeholder="Ex.: Engenharia"
+      />
+    </label>
+    <label class="filters__field">
+      <span>UF</span>
+      <input
+        [value]="filters().uf"
+        (change)="textChanged('uf', $event)"
+        maxlength="2"
+        placeholder="PB"
+      />
+    </label>
+    <label class="filters__field">
+      <span>Cidade</span>
+      <input
+        [value]="filters().city"
+        (change)="textChanged('city', $event)"
+        maxlength="150"
+        placeholder="João Pessoa"
+      />
+    </label>
+    <label class="filters__field">
+      <span>Curso ou grau</span>
+      <input
+        [value]="filters().degree"
+        (change)="textChanged('degree', $event)"
+        maxlength="32"
+        placeholder="Bacharelado"
+      />
+    </label>
+    <label class="filters__field">
+      <span>Modalidade</span>
+      <input
+        [value]="filters().modality"
+        (change)="textChanged('modality', $event)"
+        maxlength="64"
+        placeholder="Presencial"
+      />
+    </label>
+    <label class="filters__field">
+      <span>Tipo de seleção</span>
+      <input
+        [value]="filters().type"
+        (change)="textChanged('type', $event)"
+        maxlength="64"
+        placeholder="VESTIBULAR_PROPRIO"
+      />
+    </label>
+    <label class="filters__field">
+      <span>Uso da nota do ENEM</span>
+      <select [value]="filters().requiresEnem" (change)="selectChanged('requiresEnem', $event)">
+        <option value="">Qualquer situação</option>
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+        <option value="unknown">Não informado</option>
+      </select>
+    </label>
+    <label class="filters__field">
+      <span>Inscrições abertas</span>
+      <select
+        [value]="filters().openOnly ? 'true' : ''"
+        (change)="selectChanged('openOnly', $event)"
+      >
+        <option value="">Qualquer período</option>
+        <option value="true">Somente abertas</option>
+      </select>
+    </label>
+    <label class="filters__field">
+      <span>Ordenar por</span>
+      <select [value]="filters().sort" (change)="selectChanged('sort', $event)">
+        <option value="recent">Mais recentes</option>
+        <option value="deadline">Prazo confirmado mais próximo</option>
+        <option value="course">Nome do curso</option>
+      </select>
+    </label>
+  </div>
+  <p class="filters__hint">
+    Filtros e página ficam registrados na URL para compartilhar ou retomar depois.
+  </p>
+</section>

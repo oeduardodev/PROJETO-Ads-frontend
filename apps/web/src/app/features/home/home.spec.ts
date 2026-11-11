@@ -17,6 +17,7 @@ describe('public home', () => {
     expect(page.textContent).toContain('data da última verificação');
     expect(page.textContent).toContain('Os documentos oficiais prevalecem');
     expect(page.querySelector('a[href="/oportunidades"]')).not.toBeNull();
+    expect(page.querySelector('a[href="/oportunidades?type=SEM_ENEM"]')).not.toBeNull();
     expect(page.querySelectorAll('a[href^="http"]').length).toBe(0);
   });
 
