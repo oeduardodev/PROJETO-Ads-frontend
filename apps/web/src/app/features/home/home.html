@@ -1,4 +1,4 @@
-<main id="conteudo">
+<main id="conteudo" class="home-page">
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero__title-wrap">
       <p class="hero__eyebrow">Outras portas para a graduação</p>
@@ -8,43 +8,93 @@
       Encontre processos seletivos de instituições públicas e gratuitas que não usam o fluxo regular
       do SiSU.
     </p>
-    <div class="hero__burst" aria-hidden="true">
-      <span>↗</span>
+    <div class="hero-art" aria-hidden="true">
+      <span class="hero-art__burst"></span>
+      <svg viewBox="0 0 300 240" role="presentation">
+        <path d="M57 83 197 37 231 140 90 184Z" class="hero-art__horn" />
+        <path d="m57 83 66 25-33 76Z" class="hero-art__bell" />
+        <path d="m105 175 37 17-18 35-37-17Z" class="hero-art__handle" />
+        <path d="m222 147 24 7 21 47-25 8Z" class="hero-art__grip" />
+        <path d="m218 51 16-28m20 58 34-9m-26 53 32 11" class="hero-art__sound" />
+        <path d="M126 102 189 82m-51 43 61-20m-51 43 53-18" class="hero-art__dots" />
+      </svg>
+      <span class="hero-art__note">A fonte oficial<br />fala mais alto!</span>
+    </div>
+
+    <form class="quick-search" role="search" (submit)="submitSearch($event)">
+      <label class="visually-hidden" for="quick-search-input"
+        >Buscar curso, instituição ou cidade</label
+      >
+      <span class="quick-search__icon" aria-hidden="true">⌕</span>
+      <input
+        id="quick-search-input"
+        type="search"
+        [value]="searchTerm()"
+        (input)="searchTerm.set($any($event.target).value)"
+        placeholder="Busque por curso, instituição ou cidade…"
+      />
+      <button type="submit">Buscar <span aria-hidden="true">→</span></button>
+    </form>
+
+    <div class="hero__types" aria-labelledby="types-title">
+      <p id="types-title">Ou explore por tipo de processo:</p>
+      <div class="type-grid">
+        <a
+          class="type-tile type-tile--lime"
+          routerLink="/oportunidades"
+          [queryParams]="{ selection_type: 'SEM_ENEM' }"
+        >
+          <span aria-hidden="true">▤</span> Sem ENEM <span aria-hidden="true">↗</span>
+        </a>
+        <a
+          class="type-tile type-tile--orange"
+          routerLink="/oportunidades"
+          [queryParams]="{ selection_type: 'VAGAS_REMANESCENTES' }"
+        >
+          <span aria-hidden="true">◎</span> Vagas remanescentes <span aria-hidden="true">↗</span>
+        </a>
+        <a
+          class="type-tile type-tile--blue"
+          routerLink="/oportunidades"
+          [queryParams]="{ selection_type: 'VESTIBULAR_PROPRIO' }"
+        >
+          <span aria-hidden="true">◇</span> Vestibular próprio <span aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <section class="explore" id="explorar" aria-labelledby="explore-title">
     <div class="explore__heading">
-      <h2 id="explore-title">Explore outras formas de entrar</h2>
+      <h2 id="explore-title">Outras formas de entrar</h2>
       <p>
-        O catálogo de oportunidades está em preparação. Nenhum edital é apresentado como vigente sem
-        fonte oficial e revisão humana.
+        O catálogo está sendo preparado. Só exibiremos processos com fonte institucional e revisão
+        humana.
       </p>
     </div>
-    <div class="type-grid" aria-label="Exemplos de tipos de seleção pesquisados">
-      <div class="type-tile type-tile--lime">Sem ENEM <span aria-hidden="true">↗</span></div>
-      <div class="type-tile type-tile--orange">
-        Vagas remanescentes <span aria-hidden="true">↗</span>
-      </div>
-      <div class="type-tile type-tile--blue">
-        Vestibular próprio <span aria-hidden="true">↗</span>
-      </div>
-    </div>
+    <a class="explore__cta" routerLink="/oportunidades">
+      Explorar oportunidades <span aria-hidden="true">→</span>
+    </a>
+    <p class="official-note">
+      <span aria-hidden="true">✳</span>
+      Confira sempre o edital e faça a inscrição no portal oficial da instituição. Os documentos
+      oficiais prevalecem.
+    </p>
   </section>
 
   <section class="about" id="como-funciona" aria-labelledby="about-title">
     <h2 id="about-title">Como funciona</h2>
     <p>
-      Pesquisamos fontes institucionais, conferimos os editais e mostramos a origem de cada
-      informação. A inscrição acontece sempre no portal oficial da instituição.
+      Reunimos informações de fontes institucionais, conferimos os editais e mostramos de onde cada
+      dado veio. A confirmação final acontece sempre no portal oficial.
     </p>
   </section>
 
   <section class="about about--last" id="sobre" aria-labelledby="about-project-title">
     <h2 id="about-project-title">Sobre o projeto</h2>
     <p>
-      Além do SiSU reúne caminhos de acesso à graduação pública gratuita. Informações ausentes ou
-      conflitantes ficam em revisão.
+      Além do SiSU destaca caminhos de acesso à graduação pública gratuita. Dados ausentes ou
+      conflitantes permanecem em revisão.
     </p>
   </section>
 </main>

@@ -41,6 +41,11 @@ test('development server serves the Portuguese shell without API', async () => {
     assert.equal(response.status, 200);
     const html = await response.text();
     assert.match(html, /lang="pt-BR"/);
+    for (const path of ['/oportunidades', '/oportunidades?q=Engenharia']) {
+      const routeResponse = await fetch(`http://127.0.0.1:${port}${path}`);
+      assert.equal(routeResponse.status, 200, `${path} should use the public app shell`);
+      assert.match(await routeResponse.text(), /<app-root/);
+    }
     assert.match(html, /Além do SiSU/);
   } finally {
     child.kill();

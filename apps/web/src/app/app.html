@@ -4,20 +4,22 @@
   <a class="brand" routerLink="/" aria-label="Além do SiSU — início">
     <span>Além do</span>
     <strong>SiSU</strong>
+    <span class="brand__spark" aria-hidden="true">✳</span>
   </a>
 
   <nav class="site-nav" aria-label="Navegação principal">
-    <a href="#explorar">Explorar vagas</a>
-    <a href="#como-funciona">Como funciona</a>
-    <a href="#sobre">Sobre</a>
+    <a routerLink="/oportunidades">Explorar vagas</a>
+    <a routerLink="/" fragment="como-funciona">Como funciona</a>
+    <a routerLink="/" fragment="sobre">Sobre</a>
   </nav>
 
-  <span class="site-header__status">Catálogo em preparação</span>
+  <a class="site-header__cta" routerLink="/oportunidades">Explorar ↗</a>
 </header>
 
 <router-outlet />
 
 <footer class="site-footer">
-  <strong>Além do SiSU.</strong>
-  <span>Inscrições sempre nos portais oficiais das instituições.</span>
+  <a class="site-footer__brand" routerLink="/">Além do SiSU.</a>
+  <span>O edital e o portal oficial da instituição prevalecem sempre.</span>
+  <a routerLink="/oportunidades">Explorar oportunidades ↗</a>
 </footer>

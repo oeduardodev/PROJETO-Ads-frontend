@@ -30,6 +30,7 @@
 }
 
 .brand {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
@@ -46,6 +47,14 @@
   letter-spacing: -0.07em;
   line-height: 0.82;
   text-decoration: none;
+}
+
+.brand__spark {
+  position: absolute;
+  top: -0.8rem;
+  right: -1rem;
+  color: var(--color-ink);
+  font-size: 1.55rem;
 }
 
 .brand strong {
@@ -72,6 +81,23 @@
   border-color: var(--color-lime);
 }
 
+.site-header__cta {
+  flex: 0 0 auto;
+  padding: 0.65rem 0.9rem;
+  transform: skew(-5deg);
+  border: 3px solid var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
+  background: var(--color-ink);
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.site-header__cta:hover {
+  transform: translate(-2px, -2px) skew(-5deg);
+  box-shadow: 6px 6px 0 var(--color-ink);
+}
+
 .site-header__status {
   flex: 0 0 auto;
   padding: 0.55rem 0.8rem;
@@ -94,6 +120,19 @@
   font-size: 0.95rem;
 }
 
+.site-footer__brand {
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 950;
+  text-decoration: none;
+}
+
+.site-footer > a:last-child {
+  color: var(--color-ink);
+  font-weight: 850;
+}
+
 @media (max-width: 48rem) {
   .site-header {
     align-items: flex-start;
@@ -110,11 +149,16 @@
   .site-header__status {
     align-self: center;
   }
+
+  .site-header__cta {
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 30rem) {
-  .site-header__status {
-    font-size: 0.68rem;
+  .site-header__cta {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.8rem;
   }
 
   .site-nav {

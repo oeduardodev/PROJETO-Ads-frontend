@@ -44,6 +44,12 @@ export const routes: Routes = [
     ],
   },
   {
+    path: 'oportunidades',
+    loadComponent: () =>
+      import('./features/home/opportunities-preview').then((module) => module.OpportunitiesPreview),
+    title: 'Explorar oportunidades — Além do SiSU',
+  },
+  {
     path: '',
     loadComponent: () => import('./features/home/home').then((module) => module.Home),
     title: 'Além do SiSU — outras formas de entrar na universidade pública',

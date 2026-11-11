@@ -3,6 +3,7 @@
 @import './app/features/admin/reviews/review-workspace.css';
 @import './app/features/admin/sources/source-dashboard.css';
 @import './app/shared/ui/ui.css';
+@import './app/features/home/home.css';
 
 /* Cores amostradas de style-reference.png; componentes completos chegam no passo 068. */
 @theme {

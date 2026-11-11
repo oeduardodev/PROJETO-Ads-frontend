@@ -1,15 +1,54 @@
 import { TestBed } from '@angular/core/testing';
-import { describe, expect, it } from 'vitest';
+import { provideRouter, Router } from '@angular/router';
+import { describe, expect, it, vi } from 'vitest';
 import { Home } from './home';
+import { OpportunitiesPreview } from './opportunities-preview';
 
 describe('public home', () => {
-  it('keeps the unreviewed catalog clearly unavailable', async () => {
-    await TestBed.configureTestingModule({ imports: [Home] }).compileComponents();
+  it('clearly distinguishes catalog preparation from verified opportunities', async () => {
+    await TestBed.configureTestingModule({
+      imports: [Home],
+      providers: [provideRouter([])],
+    }).compileComponents();
     const fixture = TestBed.createComponent(Home);
     fixture.detectChanges();
     const page = fixture.nativeElement as HTMLElement;
-    expect(page.textContent).toContain('O catálogo de oportunidades está em preparação');
-    expect(page.textContent).toContain('fonte oficial e revisão humana');
+    expect(page.textContent).toContain('O catálogo está sendo preparado');
+    expect(page.textContent).toContain('fonte institucional e revisão humana');
+    expect(page.textContent).toContain('Os documentos oficiais prevalecem');
+    expect(page.querySelector('a[href="/oportunidades"]')).not.toBeNull();
+    expect(page.querySelectorAll('a[href^="http"]').length).toBe(0);
+  });
+
+  it('sends quick search text to opportunities without claiming current openings', async () => {
+    await TestBed.configureTestingModule({
+      imports: [Home],
+      providers: [provideRouter([])],
+    }).compileComponents();
+    const fixture = TestBed.createComponent(Home);
+    const router = TestBed.inject(Router);
+    const navigate = vi.spyOn(router, 'navigate').mockResolvedValue(true);
+    fixture.detectChanges();
+    const input = fixture.nativeElement.querySelector('#quick-search-input') as HTMLInputElement;
+    input.value = '  Engenharia  ';
+    input.dispatchEvent(new Event('input'));
+    const form = fixture.nativeElement.querySelector('form') as HTMLFormElement;
+    form.dispatchEvent(new Event('submit', { cancelable: true }));
+    expect(navigate).toHaveBeenCalledWith(['/oportunidades'], {
+      queryParams: { q: 'Engenharia' },
+    });
+  });
+
+  it('offers a truthful empty catalog route instead of invented cards', async () => {
+    await TestBed.configureTestingModule({
+      imports: [OpportunitiesPreview],
+      providers: [provideRouter([])],
+    }).compileComponents();
+    const fixture = TestBed.createComponent(OpportunitiesPreview);
+    fixture.detectChanges();
+    const page = fixture.nativeElement as HTMLElement;
+    expect(page.textContent).toContain('ainda não tem processos verificados');
+    expect(page.textContent).toContain('Isso não indica ausência de oportunidades');
     expect(page.querySelectorAll('a[href^="http"]').length).toBe(0);
   });
 });
