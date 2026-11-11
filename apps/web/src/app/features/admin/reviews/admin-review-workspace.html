@@ -1,0 +1,587 @@
+<main class="review-workspace" aria-labelledby="review-title">
+  <div class="review-heading">
+    <div>
+      <p class="review-heading__stamp">Revisão editorial / P0</p>
+      <h2 id="review-title">Cada fato precisa<br /><span>de uma fonte.</span></h2>
+    </div>
+    <p>Confira o documento, o trecho e os dados extraídos antes de registrar uma decisão.</p>
+  </div>
+
+  @if (actionMessage()) {
+    <p class="review-banner review-banner--success" role="status">{{ actionMessage() }}</p>
+  }
+  @if (actionError()) {
+    <p class="review-banner review-banner--error" role="alert">{{ actionError() }}</p>
+  }
+
+  <div class="review-layout">
+    <aside class="review-queue" aria-labelledby="queue-title">
+      <div class="review-queue__head">
+        <div>
+          <p class="review-section__eyebrow">Trabalho pendente</p>
+          <h3 id="queue-title">Fila de revisão</h3>
+        </div>
+        <label class="visually-hidden" for="review-state">Estado da fila</label>
+        <select
+          id="review-state"
+          [value]="selectedState()"
+          (change)="setState($any($event.target).value)"
+        >
+          <option value="NEEDS_REVIEW">Precisa de revisão</option>
+          <option value="VERIFIED">Verificados</option>
+          <option value="REJECTED">Rejeitados</option>
+          <option value="SUPERSEDED">Substituídos</option>
+        </select>
+      </div>
+
+      @if (queueLoading()) {
+        <p class="review-state" role="status">Carregando fila…</p>
+      } @else if (queueError()) {
+        <div class="review-state" role="alert">
+          <p>A fila não pôde ser carregada.</p>
+          <button class="review-text-button" type="button" (click)="loadQueue()">
+            Tentar novamente
+          </button>
+        </div>
+      } @else if (queue().length === 0) {
+        <p class="review-state">Nenhum edital nesta fila.</p>
+      } @else {
+        <ol class="review-queue__list">
+          @for (item of queue(); track item.id) {
+            <li>
+              <button
+                class="review-queue-card"
+                [class.review-queue-card--selected]="selectedId() === item.id"
+                type="button"
+                [attr.aria-current]="selectedId() === item.id ? 'true' : null"
+                (click)="open(item)"
+              >
+                <span class="review-queue-card__institution">{{ item.institution.acronym }}</span>
+                <strong>{{ queueLabel(item) }}</strong>
+                <span>{{ item.institution.name }}</span>
+                <span class="review-queue-card__meta">
+                  {{ item._count.offerings }} ofertas · {{ item._count.evidence }} evidências
+                </span>
+                <span class="review-version">Versão {{ item.reviewVersion }}</span>
+              </button>
+            </li>
+          }
+        </ol>
+        <div class="review-pagination" aria-label="Paginação da fila">
+          <button type="button" [disabled]="queuePage() <= 1" (click)="changePage(-1)">
+            Anterior
+          </button>
+          <span>Página {{ queuePage() }} de {{ queueTotalPages() }}</span>
+          <button
+            type="button"
+            [disabled]="queuePage() >= queueTotalPages()"
+            (click)="changePage(1)"
+          >
+            Próxima
+          </button>
+        </div>
+      }
+    </aside>
+
+    <section class="review-detail" aria-label="Edital e evidências">
+      @if (detailLoading()) {
+        <p class="review-state" role="status">Carregando edital e evidências…</p>
+      } @else if (detailError()) {
+        <div class="review-state" role="alert">
+          <p>Os detalhes não estão disponíveis.</p>
+          <button class="review-text-button" type="button" (click)="loadDetail()">
+            Tentar novamente
+          </button>
+        </div>
+      } @else if (!detail()) {
+        <div class="review-empty">
+          <span class="review-empty__burst" aria-hidden="true">↗</span>
+          <h3>Escolha um edital da fila</h3>
+          <p>Os campos extraídos e as evidências aparecerão aqui para conferência.</p>
+        </div>
+      } @else {
+        @let process = detail()!;
+        <header class="review-process-head">
+          <div>
+            <p class="review-section__eyebrow">
+              {{ process.institution.name }} · {{ process.institution.acronym }}
+            </p>
+            <h3>{{ queueLabel(process) }}</h3>
+          </div>
+          <div class="review-process-head__status">
+            <span class="review-version">Versão {{ process.reviewVersion }}</span>
+            <span class="review-state-tag">{{ process.ingestionState }}</span>
+            <span class="review-state-tag review-state-tag--light">{{
+              process.publicationStatus
+            }}</span>
+          </div>
+        </header>
+
+        @if (process.demoHistorical) {
+          <p class="review-banner review-banner--historical" role="note">
+            Demonstração histórica. Este registro permanece em rascunho e não representa uma
+            oportunidade vigente.
+          </p>
+        }
+        @if (process.ingestionStateReason) {
+          <p class="review-reason">
+            <strong>Motivo da revisão:</strong> {{ process.ingestionStateReason }}
+          </p>
+        }
+
+        <div class="review-facts">
+          <section class="review-panel" aria-labelledby="facts-title">
+            <div class="review-panel__heading">
+              <span class="review-panel__number">01</span>
+              <h4 id="facts-title">Fatos do edital</h4>
+            </div>
+            <dl class="review-facts__grid">
+              <div>
+                <dt>Tipo de seleção</dt>
+                <dd>{{ fact(process.selectionType) }}</dd>
+              </div>
+              <div>
+                <dt>Fluxo regular do SiSU</dt>
+                <dd>{{ fact(process.regularSisuFlow) }}</dd>
+              </div>
+              <div>
+                <dt>Exige ENEM</dt>
+                <dd>{{ fact(process.requiresEnem) }}</dd>
+              </div>
+              <div>
+                <dt>Gratuidade</dt>
+                <dd>{{ fact(process.tuitionFree) }}</dd>
+              </div>
+              <div>
+                <dt>Última verificação</dt>
+                <dd>
+                  {{ process.verifiedAt ? date(process.verifiedAt) : 'Ainda não verificado' }}
+                </dd>
+              </div>
+              <div>
+                <dt>Versão para revisão</dt>
+                <dd>{{ process.reviewVersion }}</dd>
+              </div>
+            </dl>
+            @if (safeHttpsUrl(process.referenceUrl); as officialUrl) {
+              <a
+                class="review-document-link"
+                [href]="officialUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Abrir URL de referência informada ↗
+              </a>
+            } @else {
+              <p class="review-missing">URL de referência não informada ou inválida.</p>
+            }
+          </section>
+
+          <section class="review-panel" aria-labelledby="offerings-title">
+            <div class="review-panel__heading">
+              <span class="review-panel__number review-panel__number--blue">02</span>
+              <h4 id="offerings-title">Ofertas e reservas</h4>
+            </div>
+            @if (process.offerings.length === 0) {
+              <p class="review-missing">Nenhuma oferta extraída.</p>
+            } @else {
+              <div class="review-table-wrap">
+                <table class="review-table">
+                  <thead>
+                    <tr>
+                      <th>Curso</th>
+                      <th>Grau</th>
+                      <th>Modalidade</th>
+                      <th>Turno</th>
+                      <th>Vagas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    @for (offering of process.offerings; track offering.id) {
+                      <tr>
+                        <th scope="row">{{ offering.courseName }}</th>
+                        <td>{{ fact(offering.degreeType) }}</td>
+                        <td>{{ fact(offering.modality) }}</td>
+                        <td>{{ fact(offering.shift) }}</td>
+                        <td>{{ fact(offering.seats) }}</td>
+                      </tr>
+                      @for (reservation of offering.reservations; track reservation.id) {
+                        <tr class="review-table__reservation">
+                          <th scope="row">↳ {{ reservation.category }}</th>
+                          <td colspan="3">Vagas reservadas</td>
+                          <td>{{ fact(reservation.seats) }}</td>
+                        </tr>
+                      }
+                    }
+                  </tbody>
+                </table>
+              </div>
+            }
+          </section>
+
+          <section class="review-panel" aria-labelledby="windows-title">
+            <div class="review-panel__heading">
+              <span class="review-panel__number review-panel__number--orange">03</span>
+              <h4 id="windows-title">Prazos e requisitos</h4>
+            </div>
+            @if (process.windows.length === 0) {
+              <p class="review-missing">Nenhum prazo extraído.</p>
+            } @else {
+              <ul class="review-window-list">
+                @for (window of process.windows; track window.id) {
+                  <li>
+                    <strong>{{ window.label || 'Prazo sem identificação' }}</strong>
+                    <span
+                      >{{ date(window.startDate) }}
+                      {{ window.startTime || 'hora inicial não informada' }}</span
+                    >
+                    <span
+                      >até {{ date(window.endDate) }}
+                      {{ window.endTime || 'hora final não informada' }}</span
+                    >
+                    <span>Fuso: {{ fact(window.timezone) }}</span>
+                    @if (safeHttpsUrl(window.instructionsUrl); as instructionsUrl) {
+                      <a [href]="instructionsUrl" target="_blank" rel="noopener noreferrer"
+                        >Abrir instruções ↗</a
+                      >
+                    }
+                  </li>
+                }
+              </ul>
+            }
+            @if (process.requirements.length === 0) {
+              <p class="review-missing">Nenhum requisito extraído.</p>
+            } @else {
+              <ul class="review-requirements">
+                @for (requirement of process.requirements; track requirement.id) {
+                  <li>
+                    <strong>{{ requirement.criterion }}</strong
+                    ><span>Obrigatório: {{ fact(requirement.required) }}</span>
+                    @if (requirement.valueJson !== null) {
+                      <code>{{ fact(requirement.valueJson) }}</code>
+                    }
+                  </li>
+                }
+              </ul>
+            }
+          </section>
+
+          <section class="review-panel review-panel--evidence" aria-labelledby="evidence-title">
+            <div class="review-panel__heading">
+              <span class="review-panel__number review-panel__number--lilac">04</span>
+              <div>
+                <h4 id="evidence-title">Documentos e evidências</h4>
+                <p>Abra o documento original. Selecione evidências para associá-las à decisão.</p>
+              </div>
+            </div>
+            @if (process.evidence.length === 0) {
+              <p class="review-missing">Nenhum trecho verificável está vinculado.</p>
+            } @else {
+              <ol class="review-evidence-list">
+                @for (evidence of process.evidence; track evidence.id) {
+                  <li class="review-evidence">
+                    <label class="review-evidence__select">
+                      <input
+                        type="checkbox"
+                        [checked]="selectedEvidenceIds().includes(evidence.id)"
+                        (change)="toggleEvidence(evidence.id, $any($event.target).checked)"
+                      />
+                      <span>Usar como evidência</span>
+                    </label>
+                    <div class="review-evidence__body">
+                      <div class="review-evidence__meta">
+                        <strong>{{ evidence.fieldPath }}</strong>
+                        <span>{{ evidence.pageOrSection || 'Página/seção não indicada' }}</span>
+                        <span
+                          >Documento v{{ evidence.document.version }} ·
+                          {{ evidence.document.mediaType }}</span
+                        >
+                      </div>
+                      <blockquote>{{ evidence.quote }}</blockquote>
+                      @if (safeHttpsUrl(evidence.document.url); as documentUrl) {
+                        <a
+                          class="review-document-link"
+                          [href]="documentUrl"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Abrir
+                          {{
+                            evidence.document.mediaType === 'application/pdf' ? 'PDF' : 'documento'
+                          }}
+                          original ↗
+                        </a>
+                      } @else {
+                        <p class="review-missing">O link deste documento não é HTTPS válido.</p>
+                      }
+                      <details>
+                        <summary>Hash e captura</summary>
+                        <p>
+                          SHA-256 <code>{{ evidence.document.sha256 }}</code>
+                        </p>
+                        <p>
+                          Capturado em {{ date(evidence.document.capturedAt) }} · Publicado em
+                          {{
+                            evidence.document.issuedAt
+                              ? date(evidence.document.issuedAt)
+                              : 'data não informada'
+                          }}
+                        </p>
+                      </details>
+                    </div>
+                  </li>
+                }
+              </ol>
+            }
+            @if (process.revisions.length > 0) {
+              <details class="review-revisions">
+                <summary>Histórico de retificações ({{ process.revisions.length }})</summary>
+                <ul>
+                  @for (revision of process.revisions; track revision.id) {
+                    <li>
+                      <strong>Versão {{ revision.document.version }}</strong> · capturada em
+                      {{ date(revision.document.capturedAt) }} · SHA-256
+                      <code>{{ revision.document.sha256 }}</code>
+                      @if (safeHttpsUrl(revision.document.url); as revisionUrl) {
+                        <a [href]="revisionUrl" target="_blank" rel="noopener noreferrer"
+                          >Abrir documento ↗</a
+                        >
+                      }
+                    </li>
+                  }
+                </ul>
+              </details>
+            }
+          </section>
+
+          @if (process.reviewDecisions.length > 0) {
+            <section class="review-panel" aria-labelledby="history-title">
+              <div class="review-panel__heading">
+                <span class="review-panel__number">05</span>
+                <h4 id="history-title">Decisões anteriores</h4>
+              </div>
+              <ol class="review-decision-history">
+                @for (decision of process.reviewDecisions; track decision.id) {
+                  <li>
+                    <strong>{{ decision.decision }}</strong> · {{ date(decision.reviewedAt) }}
+                    <p>{{ decision.reason }}</p>
+                  </li>
+                }
+              </ol>
+            </section>
+          }
+
+          <section class="review-panel review-panel--decision" aria-labelledby="decision-title">
+            <div class="review-panel__heading">
+              <span class="review-panel__number">06</span>
+              <div>
+                <h4 id="decision-title">Registrar decisão</h4>
+                <p>O motivo e a versão atual serão gravados na trilha de auditoria.</p>
+              </div>
+            </div>
+            @if (stale()) {
+              <div class="review-banner review-banner--error" role="alert">
+                <p>{{ actionError() }}</p>
+                <button type="button" class="review-text-button" (click)="loadDetail()">
+                  Recarregar dados e evidências
+                </button>
+              </div>
+            }
+            <label class="review-field" for="decision-reason">
+              <span>Justificativa obrigatória</span>
+              <textarea
+                id="decision-reason"
+                rows="3"
+                maxlength="4000"
+                [value]="reason()"
+                (input)="reason.set($any($event.target).value)"
+                required
+              ></textarea>
+              <small>{{ reason().length }}/4000 caracteres</small>
+            </label>
+
+            <div class="review-correction">
+              <h5>Corrigir dados extraídos</h5>
+              <p>Associe cada valor corrigido a um trecho do documento original.</p>
+              <div class="review-correction__form">
+                <label class="review-field"
+                  ><span>Grupo</span>
+                  <select
+                    [value]="correctionTarget()"
+                    (change)="changeCorrectionTarget($any($event.target).value)"
+                  >
+                    <option value="process">Edital</option>
+                    <option value="offering">Oferta</option>
+                    <option value="window">Prazo</option>
+                    <option value="requirement">Requisito</option>
+                    <option value="reservation">Reserva de vagas</option>
+                  </select>
+                </label>
+                @if (correctionTarget() !== 'process') {
+                  <label class="review-field"
+                    ><span>Item</span>
+                    <select
+                      [value]="correctionTargetId()"
+                      (change)="correctionTargetId.set($any($event.target).value)"
+                    >
+                      <option value="">Selecione…</option>
+                      @for (row of correctionTargets(); track row.id) {
+                        <option [value]="row.id">{{ row.label }}</option>
+                      }
+                    </select>
+                  </label>
+                }
+                <label class="review-field"
+                  ><span>Campo</span>
+                  <select
+                    [value]="correctionField()"
+                    (change)="correctionField.set($any($event.target).value)"
+                  >
+                    @for (field of correctionFields(); track field.value) {
+                      <option [value]="field.value">{{ field.label }}</option>
+                    }
+                  </select>
+                </label>
+                <label class="review-field" for="correction-new-value"
+                  ><span>Novo valor</span>
+                  @if (correctionInput() === 'boolean') {
+                    <select
+                      id="correction-new-value"
+                      [value]="correctionValue()"
+                      (change)="correctionValue.set($any($event.target).value)"
+                    >
+                      <option value="">Não informado</option>
+                      <option value="true">Sim</option>
+                      <option value="false">Não</option>
+                    </select>
+                  } @else if (correctionInput() === 'json') {
+                    <textarea
+                      id="correction-new-value"
+                      rows="2"
+                      [value]="correctionValue()"
+                      (input)="correctionValue.set($any($event.target).value)"
+                      aria-describedby="correction-value-help"
+                    ></textarea>
+                    <small id="correction-value-help"
+                      >JSON válido, por exemplo: {{ '{' }}"modalidade":"ampla"{{ '}' }}</small
+                    >
+                  } @else {
+                    <input
+                      id="correction-new-value"
+                      [type]="correctionInput()"
+                      [value]="correctionValue()"
+                      (input)="correctionValue.set($any($event.target).value)"
+                    />
+                  }
+                </label>
+                <label class="review-field"
+                  ><span>Evidência para este campo</span>
+                  <select
+                    [value]="correctionEvidenceId()"
+                    (change)="correctionEvidenceId.set($any($event.target).value)"
+                  >
+                    <option value="">Selecione um trecho…</option>
+                    @for (evidence of process.evidence; track evidence.id) {
+                      <option [value]="evidence.id">
+                        {{ evidence.fieldPath }} ·
+                        {{ evidence.pageOrSection || 'seção não indicada' }}
+                      </option>
+                    }
+                  </select>
+                </label>
+                <button
+                  type="button"
+                  class="review-button review-button--blue"
+                  (click)="addCorrection()"
+                >
+                  Adicionar correção
+                </button>
+              </div>
+              @if (correctionError()) {
+                <p class="review-inline-error" role="alert">{{ correctionError() }}</p>
+              }
+              @if (correctionPatches().length > 0) {
+                <ul class="review-patch-list">
+                  @for (patch of correctionPatches(); track $index) {
+                    <li>
+                      <span
+                        ><strong>{{ patch.target }}</strong> · {{ patch.field }} =
+                        {{ fact(patch.value) }} · {{ evidenceLabel(patch.evidenceId) }}</span
+                      >
+                      <button
+                        type="button"
+                        [attr.aria-label]="'Remover correção ' + patch.field"
+                        (click)="removeCorrection($index)"
+                      >
+                        Remover
+                      </button>
+                    </li>
+                  }
+                </ul>
+                <button
+                  type="button"
+                  class="review-button review-button--blue"
+                  [disabled]="!canCorrect()"
+                  (click)="correct()"
+                >
+                  {{ busy() ? 'Salvando…' : 'Salvar correções' }}
+                </button>
+              }
+            </div>
+
+            <div class="review-attestations">
+              <label
+                ><input
+                  type="checkbox"
+                  [checked]="scopeEligible()"
+                  (change)="scopeEligible.set($any($event.target).checked)"
+                />
+                <span
+                  >Confirmei que o processo é público e gratuito, não usa SiSU regular nem SiSU+, e
+                  não é uma vaga remanescente vinculada ao SiSU pendente de decisão.</span
+                ></label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  [checked]="criticalFactsClear()"
+                  (change)="criticalFactsClear.set($any($event.target).checked)"
+                />
+                <span
+                  >Verifiquei os fatos críticos e não há pendências que impeçam a publicação.</span
+                ></label
+              >
+              <p>
+                A aprovação só fica disponível com as duas confirmações e ao menos uma evidência
+                selecionada.
+              </p>
+            </div>
+            <div class="review-actions">
+              <button
+                class="review-button review-button--lime"
+                type="button"
+                [disabled]="!canApprove() || process.demoHistorical"
+                (click)="approve()"
+              >
+                {{ busy() ? 'Salvando…' : 'Aprovar e publicar' }}
+              </button>
+              <button
+                class="review-button review-button--quiet"
+                type="button"
+                [disabled]="!canReject()"
+                (click)="reject()"
+              >
+                Rejeitar com justificativa
+              </button>
+            </div>
+            @if (process.demoHistorical) {
+              <p class="review-missing">
+                Este registro histórico de demonstração não pode ser publicado.
+              </p>
+            }
+          </section>
+        </div>
+      }
+    </section>
+  </div>
+</main>

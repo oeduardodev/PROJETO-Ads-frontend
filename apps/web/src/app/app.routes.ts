@@ -23,11 +23,16 @@ export const routes: Routes = [
       {
         path: 'reviews',
         loadComponent: () =>
-          import('./features/admin/admin-section').then((module) => module.AdminSection),
-        data: {
-          title: 'Revisões',
-          description: 'A consulta da fila de editais está em preparação nesta instalação.',
-        },
+          import('./features/admin/reviews/admin-review-workspace').then(
+            (module) => module.AdminReviewWorkspace,
+          ),
+      },
+      {
+        path: 'reviews/:id',
+        loadComponent: () =>
+          import('./features/admin/reviews/admin-review-workspace').then(
+            (module) => module.AdminReviewWorkspace,
+          ),
       },
       {
         path: 'sources',
