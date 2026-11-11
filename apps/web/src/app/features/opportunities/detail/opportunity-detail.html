@@ -1,0 +1,215 @@
+<main id="conteudo" class="opportunity-detail" aria-labelledby="detail-title">
+  <button type="button" class="detail-back" (click)="back()">← Voltar aos resultados</button>
+
+  @if (loading()) {
+    <section class="detail-loading" aria-label="Carregando detalhes" aria-live="polite">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  } @else if (error()) {
+    <section class="detail-state" role="alert">
+      <p class="detail-eyebrow">Processo não disponível</p>
+      <h1 id="detail-title">Não encontramos este detalhe.</h1>
+      <p>{{ error() }}</p>
+      @if (error().includes('temporariamente') || error().includes('Não foi possível')) {
+        <button type="button" class="detail-retry" (click)="load()">Tentar novamente</button>
+      }
+    </section>
+  } @else if (detail(); as process) {
+    <header class="detail-header">
+      <p class="detail-eyebrow">{{ process.institution.acronym }} · {{ process.selectionType }}</p>
+      <h1 id="detail-title">{{ process.noticeCode || process.selectionType }}</h1>
+      <p class="detail-institution">{{ process.institution.name }}</p>
+      <span class="detail-status">{{ statusLabel(process.applicationStatus) }}</span>
+    </header>
+
+    <section class="detail-summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">O que está confirmado</h2>
+      <dl>
+        <div>
+          <dt>Nota do ENEM</dt>
+          <dd>{{ enem(process.requiresEnem) }}</dd>
+        </div>
+        <div>
+          <dt>Taxa de matrícula</dt>
+          <dd>Ensino público gratuito</dd>
+        </div>
+        <div>
+          <dt>Última verificação</dt>
+          <dd>
+            <time [attr.datetime]="process.verifiedAt">{{ timestamp(process.verifiedAt) }}</time>
+          </dd>
+        </div>
+        <div>
+          <dt>Ofertas</dt>
+          <dd>{{ process.offerings.length }}</dd>
+        </div>
+      </dl>
+      <a
+        class="detail-official"
+        [href]="process.officialNoticeUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Abrir edital oficial <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <section class="detail-section" aria-labelledby="offerings-title">
+      <h2 id="offerings-title">Cursos e vagas</h2>
+      @if (process.offerings.length === 0) {
+        <p>Ofertas não confirmadas.</p>
+      } @else {
+        <div class="detail-offerings">
+          @for (offering of process.offerings; track offering.id) {
+            <article class="detail-offering">
+              <h3>{{ offering.courseName }}</h3>
+              <dl>
+                <div>
+                  <dt>Grau</dt>
+                  <dd>{{ offering.degreeType || 'Não confirmado' }}</dd>
+                </div>
+                <div>
+                  <dt>Modalidade</dt>
+                  <dd>{{ offering.modality || 'Não confirmado' }}</dd>
+                </div>
+                <div>
+                  <dt>Turno</dt>
+                  <dd>{{ offering.shift || 'Não confirmado' }}</dd>
+                </div>
+                <div>
+                  <dt>Vagas</dt>
+                  <dd>{{ offering.seats ?? 'Não confirmado' }}</dd>
+                </div>
+                <div>
+                  <dt>Campus</dt>
+                  <dd>
+                    {{
+                      offering.campus
+                        ? offering.campus.name +
+                          ' — ' +
+                          offering.campus.city +
+                          '/' +
+                          offering.campus.state
+                        : 'Não confirmado'
+                    }}
+                  </dd>
+                </div>
+              </dl>
+              @if (offering.reservations.length) {
+                <h4>Reservas de vagas</h4>
+                <ul>
+                  @for (reservation of offering.reservations; track reservation.id) {
+                    <li>
+                      {{ reservation.category }}:
+                      {{ reservation.seats ?? 'quantidade não confirmada' }}
+                    </li>
+                  }
+                </ul>
+              }
+            </article>
+          }
+        </div>
+      }
+    </section>
+
+    <section class="detail-section" aria-labelledby="campuses-title">
+      <h2 id="campuses-title">Campi verificados</h2>
+      @if (uniqueCampuses(process).length) {
+        <ul class="detail-campus-list">
+          @for (campus of uniqueCampuses(process); track campus.id) {
+            <li>
+              <strong>{{ campus.name }}</strong
+              ><span>{{ campus.city }}/{{ campus.state }}</span
+              ><small>Verificado em {{ timestamp(campus.verifiedAt) }}</small>
+            </li>
+          }
+        </ul>
+      } @else {
+        <p>Campus não confirmado.</p>
+      }
+    </section>
+
+    <section class="detail-section" aria-labelledby="windows-title">
+      <h2 id="windows-title">Prazos e inscrição</h2>
+      @if (process.windows.length) {
+        <div class="detail-windows">
+          @for (window of process.windows; track window.id) {
+            <article class="detail-window">
+              <h3>{{ windowLabel(window) }}</h3>
+              <p>{{ statusLabel(window.applicationStatus) }}</p>
+              <p>{{ windowRange(window) }}</p>
+              <p>
+                Início: {{ window.startTime || 'Horário não confirmado' }} · Fim:
+                {{ window.endTime || 'Horário não confirmado' }}
+              </p>
+              <p>Fuso horário: {{ window.timezone || 'Não confirmado' }}</p>
+              @if (window.instructionsUrl) {
+                <a [href]="window.instructionsUrl" target="_blank" rel="noopener noreferrer"
+                  >Instruções oficiais <span aria-hidden="true">↗</span></a
+                >
+              }
+            </article>
+          }
+        </div>
+      } @else {
+        <p>Período de inscrição não confirmado. Confira as datas no edital oficial.</p>
+      }
+    </section>
+
+    <section class="detail-section" aria-labelledby="requirements-title">
+      <h2 id="requirements-title">Requisitos informados</h2>
+      @if (process.requirements.length) {
+        <ul class="detail-requirements">
+          @for (requirement of process.requirements; track requirement.id) {
+            <li>
+              <strong>{{ requirement.criterion }}</strong
+              ><span>{{ requirementValue(requirement) }}</span
+              ><small>{{
+                requirement.required === null
+                  ? 'Obrigatoriedade não confirmada'
+                  : requirement.required
+                    ? 'Obrigatório'
+                    : 'Opcional'
+              }}</small>
+            </li>
+          }
+        </ul>
+      } @else {
+        <p>Requisitos não confirmados. Consulte o edital oficial.</p>
+      }
+    </section>
+
+    <section class="detail-section" aria-labelledby="evidence-title">
+      <h2 id="evidence-title">Evidências oficiais</h2>
+      @if (process.evidence.length) {
+        <div class="detail-evidence">
+          @for (evidence of process.evidence; track evidence.fieldPath + evidence.documentUrl) {
+            <article>
+              <h3>{{ evidence.fieldPath }}</h3>
+              <blockquote>{{ evidence.quote }}</blockquote>
+              <p>{{ evidence.pageOrSection || 'Seção não informada' }}</p>
+              @if (evidence.documentIssuedAt) {
+                <p>Publicado em {{ date(evidence.documentIssuedAt) }}</p>
+              }
+              <a [href]="evidence.documentUrl" target="_blank" rel="noopener noreferrer"
+                >Abrir documento citado <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          }
+        </div>
+      } @else {
+        <p>
+          Não há evidências documentais públicas adicionais. O edital oficial permanece como
+          referência.
+        </p>
+      }
+    </section>
+
+    <p class="detail-note">
+      Este resumo não determina elegibilidade. Confira o edital e as informações atualizadas no
+      portal oficial antes de se inscrever.
+    </p>
+  }
+</main>

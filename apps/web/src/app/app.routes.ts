@@ -44,6 +44,14 @@ export const routes: Routes = [
     ],
   },
   {
+    path: 'oportunidades/:id',
+    loadComponent: () =>
+      import('./features/opportunities/detail/opportunity-detail').then(
+        (module) => module.OpportunityDetail,
+      ),
+    title: 'Detalhes do processo — Além do SiSU',
+  },
+  {
     path: 'oportunidades',
     loadComponent: () =>
       import('./features/opportunities/list/opportunity-list').then(
