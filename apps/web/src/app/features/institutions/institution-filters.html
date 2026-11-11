@@ -1,0 +1,44 @@
+<section class="institutions__filters" aria-labelledby="directory-filters-title">
+  <div class="institutions__filters-heading">
+    <h2 id="directory-filters-title">Filtrar instituições</h2>
+    <button type="button" (click)="clearFilters()">Limpar filtros</button>
+  </div>
+  <div class="institutions__filter-grid">
+    <label class="institutions__filter institutions__filter--query">
+      <span>Nome ou sigla</span>
+      <input
+        type="search"
+        [value]="qDraft()"
+        (input)="queryInput($event)"
+        placeholder="Ex.: federal, UFPB"
+      />
+    </label>
+    <label class="institutions__filter">
+      <span>UF de campus verificado</span>
+      <input
+        [value]="filters().uf"
+        (change)="textChanged('uf', $event)"
+        maxlength="2"
+        placeholder="PB"
+      />
+    </label>
+    <label class="institutions__filter">
+      <span>Cidade de campus verificado</span>
+      <input
+        [value]="filters().city"
+        (change)="textChanged('city', $event)"
+        maxlength="150"
+        placeholder="João Pessoa"
+      />
+    </label>
+    <label class="institutions__filter">
+      <span>Jurisdição</span>
+      <select [value]="filters().jurisdiction" (change)="jurisdictionChanged($event)">
+        <option value="">Federal ou estadual</option>
+        <option value="FEDERAL">Federal</option>
+        <option value="ESTADUAL">Estadual</option>
+      </select>
+    </label>
+  </div>
+  <p>Os filtros consideram todo o diretório e são aplicados antes da paginação.</p>
+</section>

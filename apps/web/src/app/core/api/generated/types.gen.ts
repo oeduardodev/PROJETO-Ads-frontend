@@ -173,6 +173,10 @@ export type ListInstitutionsData = {
   body?: never;
   path?: never;
   query?: {
+    jurisdiction?: 'FEDERAL' | 'ESTADUAL';
+    city?: string;
+    uf?: string;
+    q?: string;
     page_size?: number;
     page?: number;
   };

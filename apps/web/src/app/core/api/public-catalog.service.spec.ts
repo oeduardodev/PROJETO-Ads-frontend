@@ -4,9 +4,13 @@ import { PUBLIC_ENVIRONMENT } from '../public-environment';
 import { createPublicApiClient, resolvePublicApiBaseUrl } from './public-api-client';
 import { PublicCatalogService } from './public-catalog.service';
 import { searchProcesses } from './generated';
-import type { ProcessList } from './generated';
+import type { InstitutionList, ProcessList } from './generated';
 
 const emptyList: ProcessList = {
+  data: [],
+  meta: { page: 1, pageSize: 25, total: 0 },
+};
+const emptyInstitutions: InstitutionList = {
   data: [],
   meta: { page: 1, pageSize: 25, total: 0 },
 };
@@ -74,6 +78,29 @@ describe('generated public API client', () => {
       retryable: true,
       message: 'O serviço está temporariamente indisponível. Tente novamente.',
     });
+  });
+
+  it('sends institution filters through the generated public contract', async () => {
+    const fetchMock = vi.fn<typeof fetch>(async () => Response.json(emptyInstitutions));
+    vi.stubGlobal('fetch', fetchMock);
+
+    await configureService().institutions({
+      page: 2,
+      page_size: 25,
+      q: 'Paraíba',
+      uf: 'PB',
+      city: 'João Pessoa',
+      jurisdiction: 'FEDERAL',
+    });
+
+    const request = fetchMock.mock.calls[0]?.[0] as Request;
+    const url = new URL(request.url);
+    expect(url.pathname).toBe('/api/v1/institutions');
+    expect(url.searchParams.get('page')).toBe('2');
+    expect(url.searchParams.get('q')).toBe('Paraíba');
+    expect(url.searchParams.get('uf')).toBe('PB');
+    expect(url.searchParams.get('city')).toBe('João Pessoa');
+    expect(url.searchParams.get('jurisdiction')).toBe('FEDERAL');
   });
 
   it('turns a timed out generated request into a recoverable error', async () => {

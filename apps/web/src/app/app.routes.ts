@@ -60,6 +60,14 @@ export const routes: Routes = [
     title: 'Explorar oportunidades — Além do SiSU',
   },
   {
+    path: 'instituicoes',
+    loadComponent: () =>
+      import('./features/institutions/institution-directory').then(
+        (module) => module.InstitutionDirectory,
+      ),
+    title: 'Instituições verificadas — Além do SiSU',
+  },
+  {
     path: '',
     loadComponent: () => import('./features/home/home').then((module) => module.Home),
     title: 'Além do SiSU — outras formas de entrar na universidade pública',

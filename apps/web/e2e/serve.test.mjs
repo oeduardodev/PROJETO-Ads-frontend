@@ -45,6 +45,7 @@ test('development server serves the Portuguese shell without API', async () => {
       '/oportunidades',
       '/oportunidades?q=Engenharia',
       '/oportunidades/11111111-1111-4111-8111-111111111111',
+      '/instituicoes',
     ]) {
       const routeResponse = await fetch(`http://127.0.0.1:${port}${path}`);
       assert.equal(routeResponse.status, 200, `${path} should use the public app shell`);

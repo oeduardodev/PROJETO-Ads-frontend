@@ -7,6 +7,7 @@ import { getProcess, listFilters, listInstitutions, searchProcesses } from './ge
 import type {
   GetProcessData,
   InstitutionList,
+  ListInstitutionsData,
   ListFiltersData,
   SearchProcessesData,
   Filters,
@@ -56,10 +57,13 @@ export class PublicCatalogService {
     return result.data;
   }
 
-  async institutions(page = 1, pageSize = 25, signal?: AbortSignal): Promise<InstitutionList> {
+  async institutions(
+    query?: ListInstitutionsData['query'],
+    signal?: AbortSignal,
+  ): Promise<InstitutionList> {
     const result = await listInstitutions({
       client: this.client,
-      query: { page, page_size: pageSize },
+      query,
       signal,
       throwOnError: true,
     });

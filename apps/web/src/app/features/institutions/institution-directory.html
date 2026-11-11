@@ -1,0 +1,124 @@
+<main id="conteudo" class="institutions" aria-labelledby="institutions-title">
+  <header class="institutions__header">
+    <p class="institutions__eyebrow">Rede pública verificada</p>
+    <h1 id="institutions-title">Conheça as instituições.</h1>
+    <p>
+      Instituições públicas com cadastro verificado e ao menos uma fonte institucional ativa no
+      monitoramento.
+    </p>
+  </header>
+
+  <p class="institutions__caveat">
+    A presença no diretório e o monitoramento não garantem que todos os editais ou processos tenham
+    sido identificados. Confirme as informações nos portais oficiais.
+  </p>
+
+  <app-institution-filters
+    [filters]="filters()"
+    (changed)="changeFilters($event)"
+    (clear)="clearFilters()"
+  />
+
+  @if (loading()) {
+    <section class="institutions__loading" aria-label="Carregando instituições" aria-live="polite">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  } @else if (error()) {
+    <section class="institutions__state" role="alert">
+      <h2>Não conseguimos consultar o diretório.</h2>
+      <p>{{ error() }}</p>
+      <button type="button" class="institutions__button" (click)="load()">Tentar novamente</button>
+    </section>
+  } @else if (result(); as response) {
+    <p class="institutions__count" aria-live="polite">
+      {{ response.meta.total }} instituição{{ response.meta.total === 1 ? '' : 'ões' }} verificada{{
+        response.meta.total === 1 ? '' : 's'
+      }}
+    </p>
+    @if (response.data.length === 0) {
+      <section class="institutions__state">
+        <h2>
+          {{
+            filtersActive()
+              ? 'Nenhuma instituição verificada corresponde a estes filtros.'
+              : 'Nenhuma instituição verificada está disponível.'
+          }}
+        </h2>
+        <p>
+          Isso não significa ausência de processos. Consulte também os canais oficiais das
+          instituições públicas.
+        </p>
+      </section>
+    } @else {
+      <section class="institutions__grid" aria-label="Instituições verificadas">
+        @for (institution of response.data; track institution.id) {
+          <article class="institution-card">
+            <header class="institution-card__heading">
+              <span class="institution-card__acronym">{{ institution.acronym }}</span>
+              <span class="institution-card__jurisdiction">{{
+                jurisdiction(institution.jurisdiction)
+              }}</span>
+            </header>
+            <h2>{{ institution.name }}</h2>
+            <p class="institution-card__verified">
+              Cadastro verificado em {{ date(institution.verifiedAt) }}
+            </p>
+            <section class="institution-card__monitoring" aria-label="Cobertura de monitoramento">
+              <h3>Monitoramento de fontes</h3>
+              <p>
+                <strong>{{ institution.monitoring.activeSourceCount }}</strong> fonte{{
+                  institution.monitoring.activeSourceCount === 1 ? '' : 's'
+                }}
+                ativa{{ institution.monitoring.activeSourceCount === 1 ? '' : 's' }}
+              </p>
+              <p>Última consulta: {{ date(institution.monitoring.lastCheckedAt) }}</p>
+              <p>Último sucesso: {{ date(institution.monitoring.lastSuccessAt) }}</p>
+            </section>
+            <section class="institution-card__campuses" aria-label="Campi verificados">
+              <h3>
+                {{ institution.campuses.length }} campus verificado{{
+                  institution.campuses.length === 1 ? '' : 's'
+                }}
+              </h3>
+              @if (institution.campuses.length) {
+                <ul>
+                  @for (campus of institution.campuses; track campus.id) {
+                    <li>
+                      <strong>{{ campus.name }}</strong
+                      ><span>{{ campus.city }}/{{ campus.state }}</span>
+                    </li>
+                  }
+                </ul>
+              } @else {
+                <p>Campi ainda não verificados.</p>
+              }
+            </section>
+          </article>
+        }
+      </section>
+      @if (pageCount() > 1) {
+        <nav class="institutions__pagination" aria-label="Paginação do diretório">
+          <button
+            type="button"
+            class="institutions__button"
+            [disabled]="page() <= 1"
+            (click)="goToPage(page() - 1)"
+          >
+            Anterior
+          </button>
+          <span>Página {{ page() }} de {{ pageCount() }}</span>
+          <button
+            type="button"
+            class="institutions__button"
+            [disabled]="page() >= pageCount()"
+            (click)="goToPage(page() + 1)"
+          >
+            Próxima
+          </button>
+        </nav>
+      }
+    }
+  }
+</main>
