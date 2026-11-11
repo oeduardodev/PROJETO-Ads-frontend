@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @import './app/features/admin/admin.css';
 @import './app/features/admin/reviews/review-workspace.css';
+@import './app/features/admin/sources/source-dashboard.css';
+@import './app/shared/ui/ui.css';
 
 /* Cores amostradas de style-reference.png; componentes completos chegam no passo 068. */
 @theme {
@@ -9,7 +11,24 @@
   --color-lime: #c1fb01;
   --color-orange: #fe6402;
   --color-electric: #3845fd;
+  --color-blue: #3845fd;
   --color-lilac: #e389fc;
+  --color-muted: #5f5b57;
+  --color-line: #171717;
+  --color-surface: #fffdf9;
+  --color-danger: #a3280d;
+  --color-success: #28520a;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --radius-control: 0.2rem;
+  --radius-card: 0.35rem;
+  --shadow-hard: 5px 5px 0 var(--color-ink);
+  --content-width: 90rem;
   --font-display: 'Arial Black', Impact, system-ui, sans-serif;
   --font-body: Arial, Helvetica, system-ui, sans-serif;
 }
@@ -52,5 +71,3 @@ select {
     scroll-behavior: auto;
   }
 }
-
-@import './app/features/admin/sources/source-dashboard.css';
