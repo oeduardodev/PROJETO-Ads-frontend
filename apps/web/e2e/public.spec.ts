@@ -2,6 +2,34 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page, type Route } from '@playwright/test';
 
 const processId = '11111111-1111-4111-8111-111111111111';
+
+async function headingLineTop(page: Page, phrase: string): Promise<number> {
+  return page.locator('#hero-title').evaluate((heading, target) => {
+    const walker = document.createTreeWalker(heading, NodeFilter.SHOW_TEXT);
+    const parts: Array<{ node: Text; start: number; end: number }> = [];
+    let text = '';
+    let current = walker.nextNode();
+    while (current) {
+      const node = current as Text;
+      parts.push({ node, start: text.length, end: text.length + node.data.length });
+      text += node.data;
+      current = walker.nextNode();
+    }
+
+    const start = text.indexOf(target);
+    if (start < 0) throw new Error(`Headline is missing “${target}”`);
+    const end = start + target.length;
+    const startPart = parts.find((part) => start >= part.start && start < part.end);
+    const endPart = parts.find((part) => end > part.start && end <= part.end);
+    if (!startPart || !endPart) throw new Error(`Could not locate “${target}” in headline nodes`);
+
+    const range = document.createRange();
+    range.setStart(startPart.node, start - startPart.start);
+    range.setEnd(endPart.node, end - endPart.start);
+    return Math.round(range.getBoundingClientRect().top);
+  }, phrase);
+}
+
 const card = {
   id: processId,
   noticeCode: 'EDITAL-01/2026',
@@ -221,6 +249,21 @@ test('opens and closes the mobile menu with keyboard-accessible focus', async ({
   await expect(page).toHaveURL(/\/instituicoes$/);
   await expect(page.getByRole('button', { name: 'Abrir menu' })).toBeFocused();
   await expect(page.getByRole('link', { name: 'Instituições' })).toBeHidden();
+});
+
+test('keeps the opening words of the home headline together at desktop and mobile widths', async ({
+  page,
+}) => {
+  await page.goto('/');
+  for (const width of [1440, 390, 320]) {
+    await page.setViewportSize({ width, height: 844 });
+    expect(await headingLineTop(page, 'A')).toBe(await headingLineTop(page, 'universidade'));
+  }
+  await page.setViewportSize({ width: 1440, height: 844 });
+  const secondLineTop = await headingLineTop(page, 'pública');
+  for (const word of ['pública', 'vai', 'além']) {
+    expect(Math.abs((await headingLineTop(page, word)) - secondLineTop)).toBeLessThanOrEqual(8);
+  }
 });
 
 test('meets automated WCAG 2.2 AA checks on home, listing, empty state, detail and directory', async ({
