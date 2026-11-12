@@ -8,6 +8,8 @@ import type {
   AdminReviewQueueResponse,
   ReviewCommandResult,
   ReviewCorrectionPatch,
+  ProcessingReviewQueueResponse,
+  ProcessingReviewProcessOption,
 } from './review.types';
 
 export class AdminAuthenticationRequiredError extends Error {
@@ -37,6 +39,50 @@ export class AdminReviewApiService {
     const params = new HttpParams().set('page', page).set('state', state);
     return firstValueFrom(
       this.http.get<AdminReviewQueueResponse>(`${this.baseUrl}/review-queue`, { headers, params }),
+    );
+  }
+
+  async listProcessingArtifacts(page = 1): Promise<ProcessingReviewQueueResponse> {
+    const headers = await this.headers();
+    const params = new HttpParams().set('page', page);
+    return firstValueFrom(
+      this.http.get<ProcessingReviewQueueResponse>(`${this.baseUrl}/processing-review-queue`, {
+        headers,
+        params,
+      }),
+    );
+  }
+
+  async processingProcessOptions(
+    id: string,
+    institutionId: string,
+  ): Promise<ProcessingReviewProcessOption[]> {
+    const headers = await this.headers();
+    const params = new HttpParams().set('institution_id', institutionId);
+    return firstValueFrom(
+      this.http.get<ProcessingReviewProcessOption[]>(
+        `${this.baseUrl}/processing-review-queue/${encodeURIComponent(id)}/process-options`,
+        { headers, params },
+      ),
+    );
+  }
+
+  async resolveProcessingArtifact(
+    id: string,
+    body: {
+      expectedReviewVersion: number;
+      reason: string;
+      processId?: string;
+      institutionId?: string;
+    },
+  ): Promise<{ id: string; status: string; processId: string; reviewVersion: number }> {
+    const headers = await this.headers();
+    return firstValueFrom(
+      this.http.post<{ id: string; status: string; processId: string; reviewVersion: number }>(
+        `${this.baseUrl}/processing-review-queue/${encodeURIComponent(id)}/resolve`,
+        body,
+        { headers },
+      ),
     );
   }
 

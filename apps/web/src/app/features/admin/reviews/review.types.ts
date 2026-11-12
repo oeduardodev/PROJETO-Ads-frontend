@@ -103,3 +103,46 @@ export interface ReviewCommandResult {
   publicationStatus: string;
   reviewVersion: number;
 }
+
+export interface ProcessingReviewInstitution {
+  id: string;
+  name: string;
+  acronym: string;
+}
+
+export interface ProcessingReviewItem {
+  id: string;
+  sha256: string;
+  status: 'OPEN' | 'RESOLVED';
+  reviewVersion: number;
+  createdAt: string;
+  document: {
+    id: string;
+    url: string;
+    mediaType: string;
+    version: number;
+    capturedAt: string;
+    processingResults: Array<{
+      processorKind: string;
+      schemaVersion: number;
+      status: string;
+      resultJson: unknown;
+      createdAt: string;
+    }>;
+  };
+  discoveredUrl: { id: string; canonicalUrl: string } | null;
+  eligibleInstitutions: ProcessingReviewInstitution[];
+}
+
+export interface ProcessingReviewQueueResponse {
+  data: ProcessingReviewItem[];
+  meta: { page: number; pageSize: number; total: number; totalPages: number };
+}
+
+export interface ProcessingReviewProcessOption {
+  id: string;
+  institutionId: string;
+  noticeCode: string | null;
+  noticeYear: number | null;
+  institution: { acronym: string; name: string };
+}

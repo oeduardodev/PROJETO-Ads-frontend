@@ -1,0 +1,190 @@
+<section class="processing-review" aria-labelledby="processing-title">
+  <header class="processing-review__heading">
+    <div>
+      <p class="processing-review__stamp">Fila humana · {{ items().length }} abertos</p>
+      <h2 id="processing-title">Artefatos.<br /><span>Revisão primeiro.</span></h2>
+    </div>
+    <p>Resultados de classificação e extração ficam privados até uma decisão de curadoria.</p>
+  </header>
+
+  @if (message()) {
+    <p class="processing-review__notice" role="status">{{ message() }}</p>
+  }
+  @if (error()) {
+    <p class="processing-review__error" role="alert">{{ error() }}</p>
+  }
+
+  <div class="processing-review__layout">
+    <section class="processing-review__queue" aria-label="Artefatos pendentes">
+      <div class="processing-review__queue-head">
+        <h3>Para revisar</h3>
+        <button type="button" (click)="load()" [disabled]="loading()">Atualizar</button>
+      </div>
+      @if (loading()) {
+        <p class="processing-review__empty" role="status">Carregando artefatos…</p>
+      } @else if (items().length === 0) {
+        <p class="processing-review__empty">Nenhum resultado pendente.</p>
+      } @else {
+        <ul>
+          @for (item of items(); track item.id) {
+            <li>
+              <button
+                type="button"
+                class="processing-review__item"
+                [class.is-selected]="selected()?.id === item.id"
+                (click)="open(item)"
+              >
+                <span class="processing-review__item-top"
+                  ><strong>{{ item.document.mediaType }}</strong
+                  ><span>v{{ item.document.version }}</span></span
+                >
+                <span class="processing-review__url">{{ label(item) }}</span>
+                <span class="processing-review__item-bottom"
+                  >{{ item.document.processingResults.length }} resultados · SHA-256
+                  <code>{{ item.sha256.slice(0, 12) }}</code
+                  >…</span
+                >
+              </button>
+            </li>
+          }
+        </ul>
+      }
+    </section>
+
+    <section class="processing-review__detail" aria-label="Detalhe do artefato">
+      @if (!selected()) {
+        <div class="processing-review__empty processing-review__empty--detail">
+          <span aria-hidden="true">↖</span>
+          <p>Escolha um artefato para consultar a proveniência e os resultados versionados.</p>
+        </div>
+      } @else {
+        <div class="processing-review__detail-head">
+          <p class="processing-review__eyebrow">Documento · {{ selected()!.document.mediaType }}</p>
+          <h3>{{ selected()!.discoveredUrl ? 'URL candidata' : 'URL do documento' }}</h3>
+          @if (safeUrl(label(selected()!)); as sourceUrl) {
+            <a [href]="sourceUrl" target="_blank" rel="noopener noreferrer"
+              >{{ label(selected()!) }} ↗</a
+            >
+          } @else {
+            <code>{{ label(selected()!) }}</code>
+          }
+          <p>
+            Versão {{ selected()!.document.version }} · capturado
+            {{ selected()!.document.capturedAt | date: 'medium' }}
+          </p>
+          <p>
+            SHA-256 <code>{{ selected()!.sha256 }}</code>
+          </p>
+        </div>
+
+        <section class="processing-review__results" aria-labelledby="results-title">
+          <h4 id="results-title">Resultados imutáveis</h4>
+          @for (
+            result of selected()!.document.processingResults;
+            track result.processorKind + '-' + result.schemaVersion
+          ) {
+            <details>
+              <summary>
+                {{ result.processorKind }} · schema {{ result.schemaVersion }} · {{ result.status }}
+              </summary>
+              <pre>{{ result.resultJson | json }}</pre>
+            </details>
+          }
+        </section>
+
+        <section class="processing-review__action" aria-labelledby="action-title">
+          <h4 id="action-title">Ação do curador</h4>
+          @if (selected()!.eligibleInstitutions.length === 0) {
+            <p>
+              Sem instituição associada a fonte oficial ativa, revisada e autorizada para este host.
+              O item permanece pendente.
+            </p>
+          } @else {
+            <label
+              >Instituição vinculada à fonte
+              <select
+                [value]="selectedInstitutionId()"
+                (change)="chooseInstitution($any($event.target).value)"
+              >
+                @for (institution of selected()!.eligibleInstitutions; track institution.id) {
+                  <option [value]="institution.id">
+                    {{ institution.acronym }} · {{ institution.name }}
+                  </option>
+                }
+              </select>
+            </label>
+            <fieldset>
+              <legend>Destino da revisão</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="processing-mode"
+                  [checked]="mode() === 'draft'"
+                  (change)="chooseMode('draft')"
+                />
+                Criar rascunho</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="processing-mode"
+                  [checked]="mode() === 'associate'"
+                  (change)="chooseMode('associate')"
+                />
+                Associar processo existente</label
+              >
+            </fieldset>
+            @if (mode() === 'associate') {
+              <label
+                >Processo não publicado
+                <select
+                  [value]="selectedProcessId()"
+                  (change)="selectedProcessId.set($any($event.target).value)"
+                >
+                  <option value="">Selecione um processo</option>
+                  @for (process of processes(); track process.id) {
+                    <option [value]="process.id">
+                      {{ process.institution.acronym }} · {{ process.noticeCode || 'sem código' }}
+                      {{ process.noticeYear || '' }} · {{ process.id }}
+                    </option>
+                  }
+                </select>
+              </label>
+              @if (processes().length === 0) {
+                <p>Nenhum processo não publicado compatível com esta fonte.</p>
+              }
+            }
+            <label
+              >Justificativa obrigatória
+              <textarea
+                rows="3"
+                maxlength="4000"
+                [value]="reason()"
+                (input)="reason.set($any($event.target).value)"
+              ></textarea>
+            </label>
+            <p class="processing-review__privacy">
+              A ação não publica o processo. Dados extraídos continuam exigindo evidência e
+              aprovação humana.
+            </p>
+            <button
+              type="button"
+              [disabled]="
+                busy() || !reason().trim() || (mode() === 'associate' && !selectedProcessId())
+              "
+              (click)="resolve()"
+            >
+              {{
+                busy()
+                  ? 'Salvando…'
+                  : mode() === 'draft'
+                    ? 'Criar rascunho para revisão'
+                    : 'Associar ao processo'
+              }}
+            </button>
+          }
+        </section>
+      }
+    </section>
+  </div>
+</section>

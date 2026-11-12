@@ -45,6 +45,13 @@ export const routes: Routes = [
             (module) => module.AdminSourceDashboard,
           ),
       },
+      {
+        path: 'processing',
+        loadComponent: () =>
+          import('./features/admin/reviews/processing-review-workspace').then(
+            (module) => module.ProcessingReviewWorkspace,
+          ),
+      },
     ],
   },
   {
