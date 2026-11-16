@@ -36,6 +36,8 @@ jobs:
         run: pnpm typecheck
       - name: Unit tests
         run: pnpm test
+      - name: Feed validation tests
+        run: pnpm test:feed
       - name: Build
         run: pnpm build
       - name: Regenerate typed API client
