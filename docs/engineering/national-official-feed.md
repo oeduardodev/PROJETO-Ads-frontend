@@ -20,6 +20,6 @@ As estratégias são API WordPress, RSS, sitemap e doze páginas de seleção ve
 
 Cada item tem código Inep, sigla, UF, título, categoria, URL, URL da fonte, data da checagem e tipo de página (`edital` ou `selection_page`). A interface sempre indica que o prazo não foi confirmado. A presença de um título não demonstra inscrições abertas, vagas ou elegibilidade. O modelo não cria URLs; a validação local só aceita links que pertencem ao host oficial consultado.
 
-Em 16/11/2026, a execução local gerou 256 links de 53 instituições nas 27 UFs. O diretório contém 317 instituições; os registros sem site confirmado continuam com estado pendente. A cobertura por UF não significa que haja um edital identificado em todas as instituições.
+Em 16/11/2026, a execução local gerou 248 links de 52 instituições nas 27 UFs. O diretório contém 317 instituições; os registros sem site confirmado continuam com estado pendente. A cobertura por UF não significa que haja um edital identificado em todas as instituições.
 
 O workflow `.github/workflows/official-feed.yml` atualiza e publica o snapshot no ramo `main` a cada seis horas depois que este código chegar ao GitHub. A variável secreta opcional `LLM_PROVIDER_KEY` habilita a classificação pelo Gemini nesse ambiente; sem ela, as regras locais continuam a operar. A execução local usa a chave de `backend/.env`. O GitHub Actions precisa de permissão de escrita no repositório e de um ramo que aceite os commits automáticos. Consulte `sources[]` no snapshot para diagnóstico por fonte.
