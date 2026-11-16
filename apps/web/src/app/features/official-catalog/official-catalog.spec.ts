@@ -24,6 +24,29 @@ describe('first-version official catalog', () => {
     const fixture = TestBed.createComponent(OfficialCatalog);
     fixture.detectChanges();
     const http = TestBed.inject(HttpTestingController);
+    const uece = OFFICIAL_INSTITUTIONS.find((item) => item.acronym === 'UECE')!;
+    http.expectOne('/official-feed.json').flush({
+      checkedAt: '2026-11-16T00:00:00.000Z',
+      items: [
+        {
+          institutionId: uece.id,
+          institution: 'UECE',
+          state: 'CE',
+          title: 'Ingresso de graduados 2026',
+          url: 'https://www.uece.br/ingresso-de-graduados/',
+          category: 'Ingresso de graduados',
+          pageKind: 'selection_page',
+        },
+        {
+          institutionId: uece.id,
+          institution: 'UECE',
+          state: 'CE',
+          title: 'Link externo indevido',
+          url: 'https://example.test/edital/',
+          category: 'Ingresso de graduados',
+        },
+      ],
+    });
     http.expectOne('https://api.example.test/api/v1/official-feed').flush({
       checkedAt: '2026-11-15T00:00:00.000Z',
       items: [
@@ -42,9 +65,45 @@ describe('first-version official catalog', () => {
       ],
     });
     fixture.detectChanges();
-    expect(fixture.componentInstance.listings()).toHaveLength(7);
+    expect(fixture.componentInstance.listings()).toHaveLength(8);
+    expect(fixture.nativeElement.textContent).toContain('Ingresso de graduados 2026');
     expect(fixture.nativeElement.textContent).toContain('Novo processo de transferência');
     expect(fixture.nativeElement.textContent).not.toContain('Link externo indevido');
+    http.verify();
+  });
+  it('keeps the static feed when the API is unavailable', () => {
+    TestBed.configureTestingModule({
+      providers: [
+        provideRouter([]),
+        provideHttpClient(),
+        provideHttpClientTesting(),
+        { provide: PUBLIC_ENVIRONMENT, useValue: { apiBaseUrl: 'https://api.example.test' } },
+      ],
+    });
+    const fixture = TestBed.createComponent(OfficialCatalog);
+    fixture.detectChanges();
+    const http = TestBed.inject(HttpTestingController);
+    const uece = OFFICIAL_INSTITUTIONS.find((item) => item.acronym === 'UECE')!;
+    http.expectOne('/official-feed.json').flush({
+      checkedAt: '2026-11-16T00:00:00.000Z',
+      items: [
+        {
+          institutionId: uece.id,
+          institution: 'UECE',
+          state: 'CE',
+          title: 'Ingresso de graduados 2026',
+          url: 'https://www.uece.br/ingresso-de-graduados/',
+          category: 'Ingresso de graduados',
+        },
+      ],
+    });
+    http.expectOne('https://api.example.test/api/v1/official-feed').flush('Unavailable', {
+      status: 503,
+      statusText: 'Service Unavailable',
+    });
+    fixture.detectChanges();
+    expect(fixture.componentInstance.listings()).toHaveLength(7);
+    expect(fixture.nativeElement.textContent).toContain('Ingresso de graduados 2026');
     http.verify();
   });
   it('includes every public institution in the national census, without duplicate IDs', () => {
@@ -97,6 +156,14 @@ describe('first-version official catalog', () => {
 
   it('links only to the exact official domains of the listed institutions', () => {
     const domains: Record<string, string> = {
+      UNB: 'unb.br',
+      UFS: 'prograd.ufs.br',
+      UFAC: 'www3.ufac.br',
+      UFPA: 'www.ceps.ufpa.br',
+      UFRN: 'comperve.ufrn.br',
+      UFAL: 'servicos.ufal.br',
+      UFSM: 'www.ufsm.br',
+      IFRO: 'selecao.ifro.edu.br',
       UFPB: 'prg.ufpb.br',
       UFCG: 'comprov.ufcg.edu.br',
       UEPB: 'uepb.edu.br',
@@ -130,7 +197,7 @@ describe('first-version official catalog', () => {
     fixture.detectChanges();
     const page = fixture.nativeElement as HTMLElement;
     expect(page.textContent).toContain('A presença aqui não confirma inscrições abertas');
-    expect(page.querySelectorAll('a[href^="https://"]').length).toBe(10);
+    expect(page.querySelectorAll('a[href^="https://"]').length).toBeGreaterThan(10);
 
     fixture.componentInstance.query.set('transferencia');
     fixture.detectChanges();
@@ -140,7 +207,7 @@ describe('first-version official catalog', () => {
     fixture.componentInstance.query.set('engenharia');
     fixture.detectChanges();
     expect(fixture.componentInstance.listings().length).toBe(0);
-    expect(fixture.componentInstance.portals().length).toBe(4);
-    expect(page.textContent).toContain('Ainda não indexamos cursos');
+    expect(fixture.componentInstance.portals().map((item) => item.acronym)).toEqual(['IME']);
+    expect(page.textContent).toContain('Ainda não identificamos processos');
   });
 });

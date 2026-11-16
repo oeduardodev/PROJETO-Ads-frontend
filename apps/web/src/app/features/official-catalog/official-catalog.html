@@ -52,6 +52,23 @@
   </label>
 
   @if (!institutionsView) {
+    <label class="official-catalog__jurisdiction" for="official-category">
+      Tipo de ingresso
+      <select
+        id="official-category"
+        [value]="category()"
+        (change)="changeCategory($any($event.target).value)"
+      >
+        <option value="">Todos os tipos</option>
+        <option value="Reopção">Reopção</option>
+        <option value="Transferência">Transferência</option>
+        <option value="Ingresso de graduados">Ingresso de graduados</option>
+        <option value="Processo Seletivo Especial">Processo Seletivo Especial</option>
+      </select>
+    </label>
+  }
+
+  @if (!institutionsView) {
     <section class="official-catalog__section" aria-labelledby="listings-title">
       <h2 id="listings-title">Processos nos sites oficiais</h2>
       <p>Links para páginas institucionais. A presença aqui não confirma inscrições abertas.</p>
@@ -63,12 +80,20 @@
           Nenhum processo corresponde à busca. Explore os portais oficiais abaixo.
         </p>
       } @else {
+        <p role="status">{{ listings().length }} páginas oficiais encontradas.</p>
         <div class="official-catalog__grid">
           @for (listing of listings(); track listing.url) {
             <article class="official-card">
-              <p class="official-card__badge">{{ listing.institution }} · {{ listing.category }}</p>
+              <p class="official-card__badge">
+                {{ listing.institution }} · {{ listing.category }} ·
+                {{ listing.pageKind === 'edital' ? 'Edital' : 'Página de seleção' }}
+              </p>
               <h3>{{ listing.title }}</h3>
-              <p>{{ institutionName(listing.institution) }}</p>
+              <p>{{ institutionName(listing.institution, listing.institutionId) }}</p>
+              <p>Prazo de inscrição não confirmado.</p>
+              @if (listing.checkedAt) {
+                <p>Fonte consultada em {{ listing.checkedAt | date: 'dd/MM/yyyy' }}.</p>
+              }
               <a [href]="listing.url" target="_blank" rel="noopener noreferrer">
                 Abrir página oficial <span aria-hidden="true">↗</span>
               </a>
@@ -81,7 +106,7 @@
 
   <section class="official-catalog__section" aria-labelledby="institutions-title">
     <h2 id="institutions-title">
-      {{ institutionsView ? 'Instituições públicas do Brasil' : 'Portais de seleção disponíveis' }}
+      {{ institutionsView ? 'Instituições públicas do Brasil' : 'Sites oficiais disponíveis' }}
     </h2>
     @if (institutionsView) {
       <p>
@@ -103,22 +128,25 @@
       </p>
     } @else {
       <p>
-        Os links de seleção disponíveis ainda cobrem o piloto da Paraíba. O diretório de
-        instituições contém o cadastro nacional.
+        Os resultados de processos são atualizados a partir das fontes oficiais acessíveis. Também é
+        possível continuar a pesquisa no site de cada instituição abaixo.
       </p>
     }
     <p role="status">
       {{ portals().length }}
-      {{ institutionsView ? 'instituições encontradas' : 'portais disponíveis' }}
+      {{ institutionsView ? 'instituições encontradas' : 'sites oficiais disponíveis' }}
     </p>
     @if (!institutionsView && query().trim() && listings().length === 0) {
       <p class="official-catalog__empty">
-        Ainda não indexamos cursos ou todos os editais. Estes portais permitem continuar a busca
-        diretamente nas instituições.
+        Ainda não identificamos processos para esta busca. Consulte o site oficial da instituição
+        quando ele aparecer abaixo.
       </p>
     }
     @if (portals().length === 0) {
-      <p class="official-catalog__empty">Nenhuma instituição corresponde à busca.</p>
+      <p class="official-catalog__empty">
+        Nenhuma instituição corresponde à busca. Consulte o
+        <a href="/instituicoes">diretório nacional</a>.
+      </p>
     } @else {
       <div class="official-catalog__grid">
         @for (institution of visiblePortals(); track institution.id) {

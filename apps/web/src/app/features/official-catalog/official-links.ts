@@ -16,15 +16,28 @@ export interface OfficialInstitution {
 }
 
 export interface OfficialListing {
+  institutionId?: number;
   institution: string;
+  state?: string;
   title: string;
   url: string;
   category: 'Reopção' | 'Transferência' | 'Ingresso de graduados' | 'Processo Seletivo Especial';
+  pageKind?: 'edital' | 'selection_page';
+  sourceUrl?: string;
+  checkedAt?: string;
 }
 
 // URLs point to pages on the institutions' own domains. Dates, vacancies and
 // eligibility must be checked on those pages; they are deliberately not copied here.
 const SELECTION_PORTALS: Record<number, string> = {
+  2: 'https://unb.br/docente-vida-academica/graduacao/formas-de-ingresso/2-publicacoes/570-transferencia-facultativa',
+  3: 'https://prograd.ufs.br/pagina/33013-editais-prograd-2026',
+  549: 'https://www3.ufac.br/prograd/processo-seletivo-para-preenchimento-de-vagas-residuais',
+  569: 'https://www.ceps.ufpa.br/index.php/moba2027',
+  570: 'https://comperve.ufrn.br/conteudo/extravestibular.php',
+  577: 'https://servicos.ufal.br/orgaos/departamento-de-registro-e-controle-academico-drca/ingressar-na-ufal-por-meio-de-transferencia',
+  582: 'https://www.ufsm.br/pro-reitorias/prograd/ingresse-na-ufsm/edital-de-ingresso-reingresso',
+  4785: 'https://selecao.ifro.edu.br/especial',
   579: 'https://www.prg.ufpb.br/editais/',
   2564: 'https://comprov.ufcg.edu.br/graduacao.html',
   550: 'https://uepb.edu.br/prograd/processos-seletivos/',

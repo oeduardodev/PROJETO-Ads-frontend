@@ -12,12 +12,21 @@ import {
   type OfficialListing,
 } from './official-links';
 
-const OFFICIAL_HOSTS: Record<string, string> = {
-  UFPB: 'www.prg.ufpb.br',
-  UFCG: 'comprov.ufcg.edu.br',
-  UEPB: 'uepb.edu.br',
-  IFPB: 'estudante.ifpb.edu.br',
-};
+const OFFICIAL_CATEGORIES = [
+  'Reopção',
+  'Transferência',
+  'Ingresso de graduados',
+  'Processo Seletivo Especial',
+] as const;
+
+function listingInstitution(item: Partial<OfficialListing>): OfficialInstitution | undefined {
+  if (Number.isSafeInteger(item.institutionId)) {
+    return OFFICIAL_INSTITUTIONS.find((institution) => institution.id === item.institutionId);
+  }
+  return OFFICIAL_INSTITUTIONS.find(
+    (institution) => institution.acronym === item.institution && institution.selectionsUrl,
+  );
+}
 
 function isOfficialListing(value: unknown): value is OfficialListing {
   if (!value || typeof value !== 'object') return false;
@@ -27,13 +36,22 @@ function isOfficialListing(value: unknown): value is OfficialListing {
   }
   try {
     const url = new URL(item.url);
+    const institution = listingInstitution(item);
+    if (!institution || item.institution !== institution.acronym) return false;
+    const allowedHosts = [institution.websiteUrl, institution.selectionsUrl]
+      .filter((value): value is string => !!value)
+      .map((value) => new URL(value).hostname);
     return (
       url.protocol === 'https:' &&
-      url.hostname === OFFICIAL_HOSTS[item.institution] &&
+      allowedHosts.includes(url.hostname) &&
       !url.username &&
       !url.password &&
-      typeof item.category === 'string' &&
-      item.title.length >= 8
+      !url.port &&
+      OFFICIAL_CATEGORIES.includes(item.category as OfficialListing['category']) &&
+      item.title.length >= 8 &&
+      (!item.state || item.state === institution.state) &&
+      (!item.pageKind || ['edital', 'selection_page'].includes(item.pageKind)) &&
+      (!item.checkedAt || Number.isFinite(Date.parse(item.checkedAt)))
     );
   } catch {
     return false;
@@ -52,23 +70,45 @@ export class OfficialCatalog implements OnInit, OnDestroy {
   readonly typedQuery = signal('');
   readonly jurisdiction = signal('');
   readonly state = signal('');
+  readonly category = signal('');
   readonly page = signal(1);
   readonly pageSize = 24;
   readonly states = [...new Set(OFFICIAL_INSTITUTIONS.map((item) => item.state))].sort();
   readonly totalInstitutions = OFFICIAL_INSTITUTIONS.length;
   readonly auditedWebsiteCount = OFFICIAL_INSTITUTIONS.filter((item) => item.websiteUrl).length;
   readonly refreshedAt = signal<string | null>(null);
+  readonly staticListings = signal<OfficialListing[]>([]);
   readonly refreshedListings = signal<OfficialListing[]>([]);
   readonly allListings = computed(() => {
     const merged = new Map<string, OfficialListing>();
-    for (const listing of [...this.refreshedListings(), ...OFFICIAL_LISTINGS]) {
-      if (!merged.has(listing.url)) merged.set(listing.url, listing);
+    for (const listing of [
+      ...OFFICIAL_LISTINGS,
+      ...this.staticListings(),
+      ...this.refreshedListings(),
+    ]) {
+      const previous = merged.get(listing.url);
+      if (
+        !previous ||
+        (Date.parse(listing.checkedAt ?? '') || 0) > (Date.parse(previous.checkedAt ?? '') || 0)
+      ) {
+        merged.set(listing.url, listing);
+      }
     }
     return [...merged.values()];
   });
   readonly institutions = computed(() =>
     OFFICIAL_INSTITUTIONS.filter((institution) => {
       if (!this.matchesLocation(institution)) return false;
+      if (
+        !this.institutionsView &&
+        this.category() &&
+        !this.allListings().some(
+          (listing) =>
+            listingInstitution(listing)?.id === institution.id &&
+            listing.category === this.category(),
+        )
+      )
+        return false;
       const text = `${institution.id} ${institution.acronym} ${institution.name} ${institution.state} ${institution.stateName} ${institution.city}`;
       return (
         this.matchesText(text) ||
@@ -83,9 +123,7 @@ export class OfficialCatalog implements OnInit, OnDestroy {
   );
   readonly portals = computed(() => {
     if (this.institutionsView) return this.institutions();
-    const matches = this.institutions().filter((item) => item.selectionsUrl);
-    if (matches.length || !this.query().trim()) return matches;
-    return OFFICIAL_INSTITUTIONS.filter((item) => item.selectionsUrl && this.matchesLocation(item));
+    return this.institutions().filter((item) => item.selectionsUrl || item.websiteUrl);
   });
   readonly pageCount = computed(() => Math.ceil(this.portals().length / this.pageSize));
   readonly currentPage = computed(() => Math.max(1, Math.min(this.page(), this.pageCount() || 1)));
@@ -97,12 +135,11 @@ export class OfficialCatalog implements OnInit, OnDestroy {
   );
   readonly listings = computed(() =>
     this.allListings().filter((listing) => {
-      const institution = OFFICIAL_INSTITUTIONS.find(
-        (item) => item.acronym === listing.institution,
-      );
+      const institution = listingInstitution(listing);
       return (
         institution &&
         this.matchesLocation(institution) &&
+        (!this.category() || listing.category === this.category()) &&
         this.matchesText(
           `${listing.title} ${listing.category} ${institution.name} ${institution.acronym} ${institution.city}`,
         )
@@ -159,6 +196,7 @@ export class OfficialCatalog implements OnInit, OnDestroy {
   private readonly environment = inject(PUBLIC_ENVIRONMENT, { optional: true });
   private subscription: Subscription | null = null;
   private feedSubscription: Subscription | null = null;
+  private staticFeedSubscription: Subscription | null = null;
 
   constructor() {
     this.institutionsView = this.route.snapshot.data['officialView'] === 'institutions';
@@ -166,6 +204,16 @@ export class OfficialCatalog implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     if (this.http && this.environment && !this.institutionsView) {
+      this.staticFeedSubscription = this.http
+        .get<{ items: unknown[]; checkedAt: string | null }>('/official-feed.json')
+        .subscribe({
+          next: (feed) => {
+            if (!Array.isArray(feed.items)) return;
+            this.staticListings.set(feed.items.filter(isOfficialListing));
+            if (feed.checkedAt) this.refreshedAt.set(feed.checkedAt);
+          },
+          error: () => undefined,
+        });
       const baseUrl = this.environment.apiBaseUrl.replace(/\/$/u, '');
       this.feedSubscription = this.http
         .get<{ items: unknown[]; checkedAt: string | null }>(`${baseUrl}/api/v1/official-feed`)
@@ -173,7 +221,11 @@ export class OfficialCatalog implements OnInit, OnDestroy {
           next: (feed) => {
             if (!Array.isArray(feed.items)) return;
             this.refreshedListings.set(feed.items.filter(isOfficialListing));
-            this.refreshedAt.set(feed.checkedAt);
+            if (
+              feed.checkedAt &&
+              (!this.refreshedAt() || Date.parse(feed.checkedAt) > Date.parse(this.refreshedAt()!))
+            )
+              this.refreshedAt.set(feed.checkedAt);
           },
           error: () => undefined,
         });
@@ -184,6 +236,10 @@ export class OfficialCatalog implements OnInit, OnDestroy {
       this.typedQuery.set(query);
       const uf = params.get('uf') ?? '';
       this.state.set(this.states.includes(uf) ? uf : '');
+      const category = params.get('category') ?? '';
+      this.category.set(
+        OFFICIAL_CATEGORIES.includes(category as OfficialListing['category']) ? category : '',
+      );
       const page = Number(params.get('page'));
       this.page.set(Number.isSafeInteger(page) && page > 0 ? page : 1);
       const jurisdiction = params.get('jurisdiction');
@@ -196,6 +252,7 @@ export class OfficialCatalog implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.subscription?.unsubscribe();
     this.feedSubscription?.unsubscribe();
+    this.staticFeedSubscription?.unsubscribe();
   }
 
   submit(event: Event): void {
@@ -215,7 +272,19 @@ export class OfficialCatalog implements OnInit, OnDestroy {
     });
   }
 
-  institutionName(acronym: string): string {
-    return OFFICIAL_INSTITUTIONS.find((item) => item.acronym === acronym)?.name ?? acronym;
+  changeCategory(value: string): void {
+    void this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { category: value || null, page: null },
+      queryParamsHandling: 'merge',
+    });
+  }
+
+  institutionName(acronym: string, institutionId?: number): string {
+    return (
+      OFFICIAL_INSTITUTIONS.find((item) =>
+        institutionId ? item.id === institutionId : item.acronym === acronym,
+      )?.name ?? acronym
+    );
   }
 }

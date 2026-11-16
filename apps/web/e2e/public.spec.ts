@@ -166,31 +166,38 @@ async function expectNoA11yViolations(page: Page): Promise<void> {
 
 test.beforeEach(async ({ page }) => mockPublicApi(page));
 
-test('keeps filters in the URL, supports browser history and displays a truthful empty state', async ({
+test('finds official pages across states without the API and keeps filters in the URL', async ({
   page,
 }) => {
-  await page.goto('/oportunidades?type=VESTIBULAR_PROPRIO&page=2');
-  await expect(page.getByRole('heading', { name: 'EDITAL-01/2026' })).toBeVisible();
-  await expect(page.getByLabel('Curso, edital ou instituição')).toHaveValue('');
+  const cards = page.locator('section[aria-labelledby="listings-title"] .official-card');
+  for (const [state, host] of [
+    ['AC', 'www3.ufac.br'],
+    ['DF', 'unb.br'],
+    ['PA', 'www.ceps.ufpa.br'],
+    ['RN', 'comperve.ufrn.br'],
+    ['RO', 'selecao.ifro.edu.br'],
+    ['SE', 'prograd.ufs.br'],
+  ]) {
+    await page.goto(`/oportunidades?uf=${state}`);
+    await expect(cards.first()).toBeVisible();
+    await expect(
+      cards.filter({ has: page.locator(`a[href^="https://${host}/"]`) }).first(),
+    ).toBeVisible();
+  }
 
-  await page.getByLabel('Curso, edital ou instituição').fill('Engenharia');
-  await expect(page).toHaveURL(/q=Engenharia/);
-  await expect(page).not.toHaveURL(/page=2/);
-  await expect(page.getByRole('heading', { name: 'EDITAL-01/2026' })).toBeVisible();
-  await page.goBack();
-  await expect(page).toHaveURL(/type=VESTIBULAR_PROPRIO/);
-  await expect(page).toHaveURL(/page=2/);
-
-  await page.getByLabel('Curso, edital ou instituição').fill('inexistente');
+  await page.getByLabel('Tipo de ingresso').selectOption('Transferência');
+  await expect(page).toHaveURL(/category=Transfer/);
+  await page.getByLabel('Buscar instituição, município ou processo').fill('termo-inexistente');
+  await page.getByRole('button', { name: 'Buscar' }).click();
   await expect(
-    page.getByRole('heading', { name: 'Nenhum processo verificado nesta busca.' }),
+    page.getByText('Nenhum processo corresponde à busca. Explore os portais oficiais abaixo.'),
   ).toBeVisible();
-  await expect(page.getByText(/Isso não significa que não existam oportunidades/)).toBeVisible();
+  await page.goBack();
+  await expect(page).toHaveURL(/uf=SE/);
 });
 
 test('shows public detail, safe official exit and a non-indexable 404', async ({ page }) => {
-  await page.goto('/oportunidades');
-  await page.getByRole('link', { name: /Ver detalhes e requisitos/ }).click();
+  await page.goto(`/oportunidades/${processId}`);
   await expect(page).toHaveURL(new RegExp(`/oportunidades/${processId}$`));
   await expect(page.getByRole('heading', { name: /EDITAL-01\/2026/ })).toBeVisible();
   await expect(page.getByText('Campus Central', { exact: true })).toBeVisible();

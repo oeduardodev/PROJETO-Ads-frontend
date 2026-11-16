@@ -15,6 +15,8 @@ Abra `http://127.0.0.1:4200/`. A lista de links oficiais funciona sem API. Para 
 
 As páginas `/oportunidades` e `/instituicoes` da primeira versão mostram [cadastro nacional e links oficiais](docs/engineering/official-links-mvp.md) sem depender de aprovação administrativa ou da API.
 
+Para atualizar os resultados nacionais por fontes oficiais e Gemini, execute `corepack pnpm feed:update` com a chave no `backend/.env`. O snapshot gerado funciona sem Docker. Veja [como funciona o feed nacional](docs/engineering/national-official-feed.md).
+
 A telemetria opcional do Angular CLI está desativada na configuração do projeto para evitar uma pergunta interativa no primeiro `ng serve`.
 
 ## Verificar
