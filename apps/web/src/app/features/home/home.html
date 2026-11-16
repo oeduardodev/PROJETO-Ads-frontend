@@ -5,8 +5,8 @@
       <h1 id="hero-title">A universidade pública vai <span>além</span> do SiSU.</h1>
     </div>
     <p class="hero__lead">
-      Encontre processos seletivos de instituições públicas e gratuitas que não usam o fluxo regular
-      do SiSU.
+      Encontre seleções e portais de instituições públicas de ensino superior nos próprios sites
+      oficiais.
     </p>
     <div class="hero-art" aria-hidden="true">
       <span class="hero-art__burst"></span>
@@ -22,16 +22,14 @@
     </div>
 
     <form class="quick-search" role="search" (submit)="submitSearch($event)">
-      <label class="visually-hidden" for="quick-search-input"
-        >Buscar curso, instituição ou cidade</label
-      >
+      <label class="visually-hidden" for="quick-search-input">Buscar instituição ou processo</label>
       <span class="quick-search__icon" aria-hidden="true">⌕</span>
       <input
         id="quick-search-input"
         type="search"
         [value]="searchTerm()"
         (input)="searchTerm.set($any($event.target).value)"
-        placeholder="Busque por curso, instituição ou cidade…"
+        placeholder="Busque por instituição, transferência ou ingresso…"
       />
       <button type="submit">Buscar <span aria-hidden="true">→</span></button>
     </form>
@@ -42,23 +40,23 @@
         <a
           class="type-tile type-tile--lime"
           routerLink="/oportunidades"
-          [queryParams]="{ type: 'SEM_ENEM' }"
+          [queryParams]="{ q: 'ingresso de graduados' }"
         >
-          <span aria-hidden="true">▤</span> Sem ENEM <span aria-hidden="true">↗</span>
+          <span aria-hidden="true">▤</span> Ingresso de graduados <span aria-hidden="true">↗</span>
         </a>
         <a
           class="type-tile type-tile--orange"
           routerLink="/oportunidades"
-          [queryParams]="{ type: 'VAGAS_REMANESCENTES' }"
+          [queryParams]="{ q: 'transferência' }"
         >
-          <span aria-hidden="true">◎</span> Vagas remanescentes <span aria-hidden="true">↗</span>
+          <span aria-hidden="true">◎</span> Transferência <span aria-hidden="true">↗</span>
         </a>
         <a
           class="type-tile type-tile--blue"
           routerLink="/oportunidades"
-          [queryParams]="{ type: 'VESTIBULAR_PROPRIO' }"
+          [queryParams]="{ q: 'reopção' }"
         >
-          <span aria-hidden="true">◇</span> Vestibular próprio <span aria-hidden="true">↗</span>
+          <span aria-hidden="true">◇</span> Reopção <span aria-hidden="true">↗</span>
         </a>
       </div>
     </div>
@@ -68,8 +66,8 @@
     <div class="explore__heading">
       <h2 id="explore-title">Outras formas de entrar</h2>
       <p>
-        Explore processos publicados após revisão humana. Cada oportunidade traz sua fonte
-        institucional e a data da última verificação.
+        Explore páginas de seleção e editais publicados nos sites oficiais das instituições.
+        Confirme sempre prazos, requisitos e retificações na origem.
       </p>
     </div>
     <a class="explore__cta" routerLink="/oportunidades">
@@ -85,16 +83,16 @@
   <section class="about" id="como-funciona" aria-labelledby="about-title">
     <h2 id="about-title">Como funciona</h2>
     <p>
-      Reunimos informações de fontes institucionais, conferimos os editais e mostramos de onde cada
-      dado veio. A confirmação final acontece sempre no portal oficial.
+      Reunimos links para páginas de seleção das próprias instituições públicas. Você consulta o
+      edital e confirma as informações diretamente no portal oficial.
     </p>
   </section>
 
   <section class="about about--last" id="sobre" aria-labelledby="about-project-title">
     <h2 id="about-project-title">Sobre o projeto</h2>
     <p>
-      Além do SiSU destaca caminhos de acesso à graduação pública gratuita. Dados ausentes ou
-      conflitantes permanecem em revisão.
+      Além do SiSU destaca caminhos de acesso à graduação pública. Esta primeira versão reúne links
+      oficiais e ainda não confirma vagas, requisitos ou inscrições abertas.
     </p>
   </section>
 </main>

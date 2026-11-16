@@ -1,0 +1,72 @@
+{
+  "95": {
+    "url": "https://www.uva.ce.gov.br/",
+    "evidence": "https://www.uva.ce.gov.br/",
+    "reason": "O endereço do ROR redireciona para o domínio oficial do Ceará."
+  },
+  "574": {
+    "url": "https://portal.ufrrj.br/",
+    "evidence": "https://portal.ufrrj.br/",
+    "reason": "O caminho antigo do ROR não é o portal atual."
+  },
+  "609": {
+    "url": "https://www.unioeste.br/portal/",
+    "evidence": "https://www.unioeste.br/portal/",
+    "reason": "O portal atual abre no caminho /portal/."
+  },
+  "633": {
+    "url": "https://www.ime.eb.mil.br/",
+    "evidence": "https://www.ime.eb.mil.br/",
+    "reason": "O endereço .eb.br do ROR apresenta certificado expirado; este domínio oficial do Exército responde por HTTPS."
+  },
+  "719": {
+    "url": "https://unemat.br/",
+    "evidence": "https://www.unemat.br/",
+    "reason": "O host portal.unemat.br recusa conexão; o domínio institucional responde."
+  },
+  "1126": {
+    "url": "https://www3.unicentro.br/",
+    "evidence": "https://www3.unicentro.br/",
+    "reason": "O endereço do ROR redireciona para o portal atual."
+  },
+  "1812": {
+    "url": "https://portal.ifam.edu.br/",
+    "evidence": "https://www2.ifam.edu.br/noticias/ifam-inaugura-novo-site-oficial-e-convida-comunidade-a-conhecer-a-plataforma",
+    "reason": "O IFAM anunciou a migração do site antigo; o certificado antigo expirou."
+  },
+  "2564": {
+    "url": "https://www.gov.br/ufcg/pt-br",
+    "evidence": "https://www.gov.br/ufcg/pt-br",
+    "reason": "O portal institucional passou a redirecionar para gov.br."
+  },
+  "3163": {
+    "url": "https://portal.ifrj.edu.br/",
+    "evidence": "https://portal.ifrj.edu.br/",
+    "reason": "O host portal.ifrj.edu.br responde por HTTPS; o host do ROR reinicia a conexão."
+  },
+  "3984": {
+    "url": "https://portais.univasf.edu.br/",
+    "evidence": "https://portais.univasf.edu.br/",
+    "reason": "O caminho em inglês do ROR retorna 404; o portal institucional atual responde."
+  },
+  "4016": {
+    "url": "https://www.gov.br/ines/pt-br",
+    "evidence": "https://www.gov.br/ines/pt-br",
+    "reason": "O portal antigo redireciona para uma busca vazia; o INES está em gov.br."
+  },
+  "5077": {
+    "url": "https://uerr.edu.br/",
+    "evidence": "https://uerr.edu.br/",
+    "reason": "O portal redireciona do host www para o domínio principal."
+  },
+  "15745": {
+    "url": "https://fatecsaocaetano.cps.sp.gov.br/",
+    "evidence": "https://fatecsaocaetano.cps.sp.gov.br/",
+    "reason": "O endereço do ROR redireciona para o domínio oficial do Centro Paula Souza."
+  },
+  "23410": {
+    "url": "https://www.uemasul.edu.br/",
+    "evidence": "https://www.uemasul.edu.br/",
+    "reason": "A página /avaliacao.php do ROR retorna 404; a página inicial responde."
+  }
+}

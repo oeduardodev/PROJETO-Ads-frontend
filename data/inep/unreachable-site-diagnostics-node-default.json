@@ -1,0 +1,1378 @@
+{
+  "checkedOn": "2026-11-15T23:27:20.724Z",
+  "institutions": [
+    {
+      "id": 5,
+      "acronym": "UFPI",
+      "name": "UNIVERSIDADE FEDERAL DO PIAUÍ",
+      "state": "PI",
+      "rorId": "https://ror.org/00kwnx126",
+      "website": "https://ufpi.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "acronym": "FDF",
+      "name": "FACULDADE DE DIREITO DE FRANCA",
+      "state": "SP",
+      "rorId": "https://ror.org/02nsq4g28",
+      "website": "https://direitofranca.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 403,
+          "finalUrl": "https://direitofranca.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        },
+        "origin": {
+          "status": 403,
+          "finalUrl": "https://direitofranca.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        },
+        "alternateHost": {
+          "status": 403,
+          "finalUrl": "https://www.direitofranca.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        },
+        "browserUserAgent": {
+          "status": 403,
+          "finalUrl": "https://direitofranca.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "acronym": "UVA",
+      "name": "UNIVERSIDADE ESTADUAL VALE DO ACARAÚ",
+      "state": "CE",
+      "rorId": "https://ror.org/038ddjp72",
+      "website": "https://www.uvanet.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://www.uva.ce.gov.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://www.uva.ce.gov.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ECONNRESET",
+          "causeMessage": "Client network socket disconnected before secure TLS connection was established"
+        }
+      }
+    },
+    {
+      "id": 367,
+      "acronym": "UNIMONTES",
+      "name": "UNIVERSIDADE ESTADUAL DE MONTES CLAROS",
+      "state": "MG",
+      "rorId": "https://ror.org/01hewbk46",
+      "website": "https://unimontes.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      }
+    },
+    {
+      "id": 409,
+      "acronym": "UPE",
+      "name": "UNIVERSIDADE DE PERNAMBUCO",
+      "state": "PE",
+      "rorId": "https://ror.org/00gtcbp88",
+      "website": "https://upe.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      }
+    },
+    {
+      "id": 547,
+      "acronym": "UERJ",
+      "name": "UNIVERSIDADE DO ESTADO DO RIO DE JANEIRO",
+      "state": "RJ",
+      "rorId": "https://ror.org/0198v2949",
+      "website": "https://www.uerj.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.uerj.br:443, timeout: 10000ms)"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.uerj.br:443, timeout: 10000ms)"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ENOTFOUND",
+          "causeMessage": "getaddrinfo ENOTFOUND uerj.br"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.uerj.br:443, timeout: 10000ms)"
+        }
+      }
+    },
+    {
+      "id": 574,
+      "acronym": "UFRRJ",
+      "name": "UNIVERSIDADE FEDERAL RURAL DO RIO DE JANEIRO",
+      "state": "RJ",
+      "rorId": "https://ror.org/00xwgyp12",
+      "website": "https://www.ufrrj.br/portal/modulo/home/index.php",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.ufrrj.br:443, timeout: 10000ms)"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.ufrrj.br:443, timeout: 10000ms)"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: ufrrj.br:443, timeout: 10000ms)"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.ufrrj.br:443, timeout: 10000ms)"
+        }
+      }
+    },
+    {
+      "id": 578,
+      "acronym": "UFBA",
+      "name": "UNIVERSIDADE FEDERAL DA BAHIA",
+      "state": "BA",
+      "rorId": "https://ror.org/03k3p7647",
+      "website": "https://ufba.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://ufba.br/",
+          "contentType": "text/html; charset=utf-8",
+          "server": "Apache"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://ufba.br/",
+          "contentType": "text/html; charset=utf-8",
+          "server": "Apache"
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://ufba.br/",
+          "contentType": "text/html; charset=utf-8",
+          "server": "Apache"
+        }
+      }
+    },
+    {
+      "id": 590,
+      "acronym": "UFRA",
+      "name": "UNIVERSIDADE FEDERAL RURAL DA AMAZÔNIA",
+      "state": "PA",
+      "rorId": "https://ror.org/02j71c790",
+      "website": "https://novo.ufra.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      }
+    },
+    {
+      "id": 594,
+      "acronym": "CEFET/MG",
+      "name": "CENTRO FEDERAL DE EDUCAÇÃO TECNOLÓGICA DE MINAS GERAIS",
+      "state": "MG",
+      "rorId": "https://ror.org/04ch49185",
+      "website": "https://www.cefetmg.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      }
+    },
+    {
+      "id": 596,
+      "acronym": "UFVJM",
+      "name": "UNIVERSIDADE FEDERAL DOS VALES DO JEQUITINHONHA E MUCURI",
+      "state": "MG",
+      "rorId": "https://ror.org/02gen2282",
+      "website": "https://portal.ufvjm.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "EAI_AGAIN",
+          "causeMessage": "getaddrinfo EAI_AGAIN portal.ufvjm.edu.br"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "EAI_AGAIN",
+          "causeMessage": "getaddrinfo EAI_AGAIN portal.ufvjm.edu.br"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "EAI_AGAIN",
+          "causeMessage": "getaddrinfo EAI_AGAIN www.portal.ufvjm.edu.br"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "EAI_AGAIN",
+          "causeMessage": "getaddrinfo EAI_AGAIN portal.ufvjm.edu.br"
+        }
+      }
+    },
+    {
+      "id": 598,
+      "acronym": "UNIFEI",
+      "name": "UNIVERSIDADE FEDERAL DE ITAJUBÁ - UNIFEI",
+      "state": "MG",
+      "rorId": "https://ror.org/00235nr42",
+      "website": "https://unifei.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ECONNRESET",
+          "causeMessage": "read ECONNRESET"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://unifei.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "alternateHost": {
+          "status": 409,
+          "finalUrl": "https://www.unifei.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        },
+        "browserUserAgent": {
+          "status": 200,
+          "finalUrl": "https://unifei.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        }
+      }
+    },
+    {
+      "id": 601,
+      "acronym": "IFRS",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO SUL",
+      "state": "RS",
+      "rorId": "https://ror.org/008p1v134",
+      "website": "https://ifrs.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        }
+      }
+    },
+    {
+      "id": 602,
+      "acronym": "ITA",
+      "name": "INSTITUTO TECNOLÓGICO DE AERONÁUTICA",
+      "state": "SP",
+      "rorId": "https://ror.org/05vh67662",
+      "website": "https://www.ita.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 403,
+          "finalUrl": "https://www.ita.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        },
+        "origin": {
+          "status": 403,
+          "finalUrl": "https://www.ita.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ENOTFOUND",
+          "causeMessage": "getaddrinfo ENOTFOUND ita.br"
+        },
+        "browserUserAgent": {
+          "status": 403,
+          "finalUrl": "https://www.ita.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "id": 609,
+      "acronym": "UNIOESTE",
+      "name": "UNIVERSIDADE ESTADUAL DO OESTE DO PARANÁ",
+      "state": "PR",
+      "rorId": "https://ror.org/05ne20t07",
+      "website": "https://www.unioeste.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TimeoutError",
+          "message": "The operation was aborted due to timeout",
+          "causeCode": null,
+          "causeMessage": null
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.unioeste.br:443, timeout: 10000ms)"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.unioeste.br:443, timeout: 10000ms)"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.unioeste.br:443, timeout: 10000ms)"
+        }
+      }
+    },
+    {
+      "id": 633,
+      "acronym": "IME",
+      "name": "INSTITUTO MILITAR DE ENGENHARIA",
+      "state": "RJ",
+      "rorId": "https://ror.org/03veakt65",
+      "website": "https://www.ime.eb.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "CERT_HAS_EXPIRED",
+          "causeMessage": "certificate has expired"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "CERT_HAS_EXPIRED",
+          "causeMessage": "certificate has expired"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "CERT_HAS_EXPIRED",
+          "causeMessage": "certificate has expired"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "CERT_HAS_EXPIRED",
+          "causeMessage": "certificate has expired"
+        }
+      }
+    },
+    {
+      "id": 649,
+      "acronym": "UNIUV",
+      "name": "CENTRO UNIVERSITÁRIO DE UNIÃO DA VITÓRIA",
+      "state": "PR",
+      "rorId": "https://ror.org/046aa8x19",
+      "website": "https://uniuv.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://uniuv.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://uniuv.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://uniuv.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        }
+      }
+    },
+    {
+      "id": 719,
+      "acronym": "UNEMAT",
+      "name": "Universidade do Estado de Mato Grosso Carlos Alberto Reyes Maldonado - UNEMAT",
+      "state": "MT",
+      "rorId": "https://ror.org/02cbymn47",
+      "website": "https://portal.unemat.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ECONNREFUSED",
+          "causeMessage": "connect ECONNREFUSED 45.233.138.34:443"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ECONNREFUSED",
+          "causeMessage": "connect ECONNREFUSED 45.233.138.34:443"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ENOTFOUND",
+          "causeMessage": "getaddrinfo ENOTFOUND www.portal.unemat.br"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ETIMEDOUT",
+          "causeMessage": "connect ETIMEDOUT 45.233.138.34:443"
+        }
+      }
+    },
+    {
+      "id": 756,
+      "acronym": "UESPI",
+      "name": "UNIVERSIDADE ESTADUAL DO PIAUÍ",
+      "state": "PI",
+      "rorId": "https://ror.org/02na6tz09",
+      "website": "https://uespi.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      }
+    },
+    {
+      "id": 789,
+      "acronym": "UFRR",
+      "name": "UNIVERSIDADE FEDERAL DE RORAIMA",
+      "state": "RR",
+      "rorId": "https://ror.org/03ehp1h78",
+      "website": "https://ufrr.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: ufrr.br:443, timeout: 10000ms)"
+        }
+      }
+    },
+    {
+      "id": 1126,
+      "acronym": "UNICENTRO",
+      "name": "UNIVERSIDADE ESTADUAL DO CENTRO OESTE",
+      "state": "PR",
+      "rorId": "https://ror.org/03cxsty68",
+      "website": "https://www2.unicentro.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://www3.unicentro.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache/2.4.71 (Debian)"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://www3.unicentro.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache/2.4.71 (Debian)"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ENOTFOUND",
+          "causeMessage": "getaddrinfo ENOTFOUND www.www2.unicentro.br"
+        }
+      }
+    },
+    {
+      "id": 1811,
+      "acronym": "IFG",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE GOIÁS",
+      "state": "GO",
+      "rorId": "https://ror.org/03gq9pd80",
+      "website": "https://www.ifg.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.ifg.edu.br:443, timeout: 10000ms)"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.ifg.edu.br:443, timeout: 10000ms)"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: ifg.edu.br:443, timeout: 10000ms)"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "EAI_AGAIN",
+          "causeMessage": "getaddrinfo EAI_AGAIN www.ifg.edu.br"
+        }
+      }
+    },
+    {
+      "id": 1812,
+      "acronym": "IFAM",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA  DO AMAZONAS",
+      "state": "AM",
+      "rorId": "https://ror.org/045nsn047",
+      "website": "https://www2.ifam.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "CERT_HAS_EXPIRED",
+          "causeMessage": "certificate has expired"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "CERT_HAS_EXPIRED",
+          "causeMessage": "certificate has expired"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ENOTFOUND",
+          "causeMessage": "getaddrinfo ENOTFOUND www.www2.ifam.edu.br"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "CERT_HAS_EXPIRED",
+          "causeMessage": "certificate has expired"
+        }
+      }
+    },
+    {
+      "id": 2564,
+      "acronym": "UFCG",
+      "name": "UNIVERSIDADE FEDERAL DE CAMPINA GRANDE",
+      "state": "PB",
+      "rorId": "https://ror.org/00eftnx64",
+      "website": "https://portal.ufcg.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TimeoutError",
+          "message": "The operation was aborted due to timeout",
+          "causeCode": null,
+          "causeMessage": null
+        },
+        "origin": {
+          "error": "TimeoutError",
+          "message": "The operation was aborted due to timeout",
+          "causeCode": null,
+          "causeMessage": null
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ERR_TLS_CERT_ALTNAME_INVALID",
+          "causeMessage": "Hostname/IP does not match certificate's altnames: Host: www.portal.ufcg.edu.br. is not in the cert's altnames: DNS:*.ufcg.edu.br, DNS:ufcg.edu.br"
+        },
+        "browserUserAgent": {
+          "status": 200,
+          "finalUrl": "https://www.gov.br/ufcg/pt-br",
+          "contentType": "text/html; charset=utf-8",
+          "server": null
+        }
+      }
+    },
+    {
+      "id": 3163,
+      "acronym": "IFRJ",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO DE JANEIRO",
+      "state": "RJ",
+      "rorId": "https://ror.org/007qd1t98",
+      "website": "https://www.ifrj.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ECONNRESET",
+          "causeMessage": "read ECONNRESET"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ECONNRESET",
+          "causeMessage": "read ECONNRESET"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: ifrj.edu.br:443, timeout: 10000ms)"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ECONNRESET",
+          "causeMessage": "read ECONNRESET"
+        }
+      }
+    },
+    {
+      "id": 3165,
+      "acronym": "IFTM",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA  DO TRIÂNGULO MINEIRO",
+      "state": "MG",
+      "rorId": "https://ror.org/00ge23k91",
+      "website": "https://iftm.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.iftm.edu.br:443, timeout: 10000ms)"
+        }
+      }
+    },
+    {
+      "id": 3189,
+      "acronym": "IFMG",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE MINAS GERAIS",
+      "state": "MG",
+      "rorId": "https://ror.org/0553w5c95",
+      "website": "https://www.ifmg.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        }
+      }
+    },
+    {
+      "id": 3279,
+      "acronym": "IFSEMG",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO SUDESTE DE MINAS GERAIS",
+      "state": "MG",
+      "rorId": "https://ror.org/02kvg7a66",
+      "website": "https://www.ifsudestemg.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        }
+      }
+    },
+    {
+      "id": 3336,
+      "acronym": "UERGS",
+      "name": "UNIVERSIDADE ESTADUAL DO RIO GRANDE DO SUL",
+      "state": "RS",
+      "rorId": "https://ror.org/01vxwy461",
+      "website": "https://www.uergs.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://www.uergs.edu.br/inicial",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://www.uergs.edu.br/inicial",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://uergs.edu.br/inicial",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        }
+      }
+    },
+    {
+      "id": 3984,
+      "acronym": "UNIVASF",
+      "name": "FUNDAÇÃO UNIVERSIDADE FEDERAL DO VALE DO SÃO FRANCISCO",
+      "state": "PE",
+      "rorId": "https://ror.org/00devjr72",
+      "website": "https://www.univasf.edu.br/english/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      }
+    },
+    {
+      "id": 4016,
+      "acronym": "INES",
+      "name": "INSTITUTO NACIONAL DE EDUCAÇÃO DE SURDOS",
+      "state": "RJ",
+      "rorId": "https://ror.org/04n0d8e29",
+      "website": "https://www.ines.gov.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://www.gov.br/ines/pt-br/search?SearchableText=",
+          "contentType": "text/html; charset=utf-8",
+          "server": null
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://www.gov.br/ines/pt-br/search?SearchableText=",
+          "contentType": "text/html; charset=utf-8",
+          "server": null
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://www.gov.br/ines/pt-br/search?SearchableText=",
+          "contentType": "text/html; charset=utf-8",
+          "server": null
+        }
+      }
+    },
+    {
+      "id": 4786,
+      "acronym": "IFTO",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO TOCANTINS",
+      "state": "TO",
+      "rorId": "https://ror.org/03p5hcj07",
+      "website": "https://www.ifto.edu.br/portal/layout.php",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.ifto.edu.br:443, timeout: 10000ms)"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.ifto.edu.br:443, timeout: 10000ms)"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: ifto.edu.br:443, timeout: 10000ms)"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: www.ifto.edu.br:443, timeout: 10000ms)"
+        }
+      }
+    },
+    {
+      "id": 5036,
+      "acronym": "IF Catarinense",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA CATARINENSE",
+      "state": "SC",
+      "rorId": "https://ror.org/02f8h1m78",
+      "website": "https://ifc.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        }
+      }
+    },
+    {
+      "id": 5077,
+      "acronym": "UERR",
+      "name": "UNIVERSIDADE ESTADUAL DE RORAIMA",
+      "state": "RR",
+      "rorId": "https://ror.org/03s7bv520",
+      "website": "https://www.uerr.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://uerr.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": null
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://uerr.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": null
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://uerr.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": null
+        }
+      }
+    },
+    {
+      "id": 14408,
+      "acronym": "IFB",
+      "name": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIENCIA E TECNOLOGIA DE BRASILIA",
+      "state": "DF",
+      "rorId": "https://ror.org/03bk74w21",
+      "website": "https://www.ifb.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://validate.perfdrive.com/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache"
+        }
+      }
+    },
+    {
+      "id": 15745,
+      "acronym": "FATEC SCS",
+      "name": "Faculdade de Tecnologia de São Caetano do Sul",
+      "state": "SP",
+      "rorId": "https://ror.org/04byrpf58",
+      "website": "https://fatecsaocaetano.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://fatecsaocaetano.cps.sp.gov.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": null
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://fatecsaocaetano.cps.sp.gov.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": null
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://fatecsaocaetano.cps.sp.gov.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": null
+        }
+      }
+    },
+    {
+      "id": 16037,
+      "acronym": "ISCP",
+      "name": "Instituto Superior de Ciencias Policiais",
+      "state": "DF",
+      "rorId": "https://ror.org/041skvj95",
+      "website": "https://dec.pm.df.gov.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: dec.pm.df.gov.br:443, timeout: 10000ms)"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: dec.pm.df.gov.br:443, timeout: 10000ms)"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ENOTFOUND",
+          "causeMessage": "getaddrinfo ENOTFOUND www.dec.pm.df.gov.br"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UND_ERR_CONNECT_TIMEOUT",
+          "causeMessage": "Connect Timeout Error (attempted address: dec.pm.df.gov.br:443, timeout: 10000ms)"
+        }
+      }
+    },
+    {
+      "id": 18812,
+      "acronym": "UFSB",
+      "name": "UNIVERSIDADE FEDERAL DO SUL DA BAHIA",
+      "state": "BA",
+      "rorId": "https://ror.org/00ajzsc28",
+      "website": "https://ufsb.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 500,
+          "finalUrl": "https://ufsb.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache/2.4.59 (Debian)"
+        },
+        "origin": {
+          "status": 500,
+          "finalUrl": "https://ufsb.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache/2.4.59 (Debian)"
+        },
+        "alternateHost": {
+          "status": 500,
+          "finalUrl": "https://www.ufsb.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache/2.4.59 (Debian)"
+        },
+        "browserUserAgent": {
+          "status": 500,
+          "finalUrl": "https://ufsb.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "Apache/2.4.59 (Debian)"
+        }
+      }
+    },
+    {
+      "id": 21503,
+      "acronym": "CP II",
+      "name": "COLÉGIO PEDRO II",
+      "state": "RJ",
+      "rorId": "https://ror.org/01ktxpf34",
+      "website": "https://www.cp2.g12.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      }
+    },
+    {
+      "id": 23410,
+      "acronym": "UEMASUL",
+      "name": "UNIVERSIDADE ESTADUAL DA REGIÃO TOCANTINA DO MARANHÃO",
+      "state": "MA",
+      "rorId": "https://ror.org/01sz1js42",
+      "website": "https://www.uemasul.edu.br/avaliacao.php",
+      "probes": {
+        "rorUrl": {
+          "status": 404,
+          "finalUrl": "https://www.uemasul.edu.br/avaliacao.php",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://www.uemasul.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "alternateHost": {
+          "status": 200,
+          "finalUrl": "https://uemasul.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        },
+        "browserUserAgent": {
+          "status": 404,
+          "finalUrl": "https://www.uemasul.edu.br/avaliacao.php",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "nginx"
+        }
+      }
+    },
+    {
+      "id": 25282,
+      "acronym": "UFJ",
+      "name": "UNIVERSIDADE FEDERAL DE JATAÍ",
+      "state": "GO",
+      "rorId": "https://ror.org/00cs91c30",
+      "website": "https://ufj.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 200,
+          "finalUrl": "https://ufj.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "openresty"
+        },
+        "origin": {
+          "status": 200,
+          "finalUrl": "https://ufj.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "openresty"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "ERR_SSL_TLSV1_UNRECOGNIZED_NAME",
+          "causeMessage": "E81D0000:error:0A000458:SSL routines:ssl3_read_bytes:tlsv1 unrecognized name:openssl\\ssl\\record\\rec_layer_s3.c:918:SSL alert number 112\n"
+        }
+      }
+    },
+    {
+      "id": 25352,
+      "acronym": "UFR",
+      "name": "Universidade Federal de Rondonópolis",
+      "state": "MT",
+      "rorId": "https://ror.org/044wn2t24",
+      "website": "https://ufr.edu.br/",
+      "probes": {
+        "rorUrl": {
+          "status": 403,
+          "finalUrl": "https://ufr.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        },
+        "origin": {
+          "status": 403,
+          "finalUrl": "https://ufr.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        },
+        "alternateHost": {
+          "status": 403,
+          "finalUrl": "https://www.ufr.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        },
+        "browserUserAgent": {
+          "status": 403,
+          "finalUrl": "https://ufr.edu.br/",
+          "contentType": "text/html; charset=UTF-8",
+          "server": "cloudflare"
+        }
+      }
+    },
+    {
+      "id": 27103,
+      "acronym": "UnDF",
+      "name": "UNIVERSIDADE DO DISTRITO FEDERAL",
+      "state": "DF",
+      "rorId": "https://ror.org/04x96dx10",
+      "website": "https://universidade.df.gov.br/",
+      "probes": {
+        "rorUrl": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "origin": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "alternateHost": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        },
+        "browserUserAgent": {
+          "error": "TypeError",
+          "message": "fetch failed",
+          "causeCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+          "causeMessage": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+        }
+      }
+    }
+  ],
+  "nodeSystemCa": false
+}

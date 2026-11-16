@@ -5,7 +5,7 @@ import { Home } from './home';
 import { OpportunitiesPreview } from './opportunities-preview';
 
 describe('public home', () => {
-  it('clearly distinguishes catalog preparation from verified opportunities', async () => {
+  it('explains the official-link first version without claiming open admissions', async () => {
     await TestBed.configureTestingModule({
       imports: [Home],
       providers: [provideRouter([])],
@@ -13,11 +13,15 @@ describe('public home', () => {
     const fixture = TestBed.createComponent(Home);
     fixture.detectChanges();
     const page = fixture.nativeElement as HTMLElement;
-    expect(page.textContent).toContain('revisão humana');
-    expect(page.textContent).toContain('data da última verificação');
+    expect(page.textContent).toContain('sites oficiais');
+    expect(page.textContent).toContain(
+      'ainda não confirma vagas, requisitos ou inscrições abertas',
+    );
     expect(page.textContent).toContain('Os documentos oficiais prevalecem');
     expect(page.querySelector('a[href="/oportunidades"]')).not.toBeNull();
-    expect(page.querySelector('a[href="/oportunidades?type=SEM_ENEM"]')).not.toBeNull();
+    expect(
+      page.querySelector('a[href="/oportunidades?q=ingresso%20de%20graduados"]'),
+    ).not.toBeNull();
     expect(page.querySelectorAll('a[href^="http"]').length).toBe(0);
   });
 

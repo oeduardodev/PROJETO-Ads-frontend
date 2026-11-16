@@ -70,26 +70,26 @@ export const routes: Routes = [
   {
     path: 'oportunidades',
     loadComponent: () =>
-      import('./features/opportunities/list/opportunity-list').then(
-        (module) => module.OpportunityList,
+      import('./features/official-catalog/official-catalog').then(
+        (module) => module.OfficialCatalog,
       ),
-    title: 'Explorar oportunidades — Além do SiSU',
+    title: 'Seleções em sites oficiais — Além do SiSU',
     data: {
-      description:
-        'Explore processos seletivos públicos para graduação e consulte as fontes oficiais.',
+      description: 'Explore seleções de graduação nos sites oficiais de instituições públicas.',
       indexable: true,
     },
   },
   {
     path: 'instituicoes',
     loadComponent: () =>
-      import('./features/institutions/institution-directory').then(
-        (module) => module.InstitutionDirectory,
+      import('./features/official-catalog/official-catalog').then(
+        (module) => module.OfficialCatalog,
       ),
-    title: 'Instituições verificadas — Além do SiSU',
+    title: 'Instituições públicas — Além do SiSU',
     data: {
+      officialView: 'institutions',
       description:
-        'Consulte instituições públicas verificadas e a cobertura conhecida de suas fontes oficiais.',
+        'Consulte os portais oficiais de seleção de instituições públicas de ensino superior.',
       indexable: true,
     },
   },

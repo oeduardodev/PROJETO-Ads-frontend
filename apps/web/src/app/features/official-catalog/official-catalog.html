@@ -1,0 +1,173 @@
+<main id="conteudo" class="official-catalog" aria-labelledby="official-title">
+  <header class="official-catalog__header">
+    <p class="official-catalog__eyebrow">Fontes institucionais</p>
+    <h1 id="official-title">
+      {{
+        institutionsView
+          ? 'Instituições públicas e seus portais.'
+          : 'Explore seleções nos sites oficiais.'
+      }}
+    </h1>
+    <p>
+      O diretório nacional reúne as instituições públicas do Censo da Educação Superior 2024.
+      Consulte o edital na origem para confirmar requisitos, vagas e prazos.
+    </p>
+  </header>
+
+  <form class="official-catalog__search" role="search" (submit)="submit($event)">
+    <label for="official-query">Buscar instituição, município ou processo</label>
+    <div>
+      <input
+        id="official-query"
+        type="search"
+        [value]="typedQuery()"
+        (input)="typedQuery.set($any($event.target).value)"
+        placeholder="Ex.: UFPB, transferência, graduados"
+      />
+      <button type="submit">Buscar</button>
+    </div>
+  </form>
+  <label class="official-catalog__jurisdiction" for="official-jurisdiction">
+    Rede pública
+    <select
+      id="official-jurisdiction"
+      [value]="jurisdiction()"
+      (change)="changeJurisdiction($any($event.target).value)"
+    >
+      <option value="">Todas</option>
+      <option value="FEDERAL">Federal</option>
+      <option value="ESTADUAL">Estadual</option>
+      <option value="MUNICIPAL">Municipal</option>
+    </select>
+  </label>
+
+  <label class="official-catalog__jurisdiction" for="official-state">
+    Estado da sede
+    <select id="official-state" [value]="state()" (change)="changeState($any($event.target).value)">
+      <option value="">Todos os estados</option>
+      @for (uf of states; track uf) {
+        <option [value]="uf">{{ uf }}</option>
+      }
+    </select>
+  </label>
+
+  @if (!institutionsView) {
+    <section class="official-catalog__section" aria-labelledby="listings-title">
+      <h2 id="listings-title">Processos nos sites oficiais</h2>
+      <p>Links para páginas institucionais. A presença aqui não confirma inscrições abertas.</p>
+      @if (refreshedAt()) {
+        <p>Links consultados automaticamente em {{ refreshedAt() | date: 'dd/MM/yyyy' }}.</p>
+      }
+      @if (listings().length === 0) {
+        <p class="official-catalog__empty">
+          Nenhum processo corresponde à busca. Explore os portais oficiais abaixo.
+        </p>
+      } @else {
+        <div class="official-catalog__grid">
+          @for (listing of listings(); track listing.url) {
+            <article class="official-card">
+              <p class="official-card__badge">{{ listing.institution }} · {{ listing.category }}</p>
+              <h3>{{ listing.title }}</h3>
+              <p>{{ institutionName(listing.institution) }}</p>
+              <a [href]="listing.url" target="_blank" rel="noopener noreferrer">
+                Abrir página oficial <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          }
+        </div>
+      }
+    </section>
+  }
+
+  <section class="official-catalog__section" aria-labelledby="institutions-title">
+    <h2 id="institutions-title">
+      {{ institutionsView ? 'Instituições públicas do Brasil' : 'Portais de seleção disponíveis' }}
+    </h2>
+    @if (institutionsView) {
+      <p>
+        {{ totalInstitutions }} instituições cadastradas nas 27 UFs. Referência: Censo 2024 do Inep.
+        O cadastro não implica que os portais de seleção ou editais já estejam indexados.
+      </p>
+      <p>
+        {{ auditedWebsiteCount }} sites institucionais responderam à checagem de acesso. Os demais
+        registros ainda precisam de uma fonte confirmada; acesso ao site não confirma um edital
+        vigente.
+      </p>
+      <p>
+        <a
+          href="https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Consultar a base oficial do Inep ↗</a
+        >
+      </p>
+    } @else {
+      <p>
+        Os links de seleção disponíveis ainda cobrem o piloto da Paraíba. O diretório de
+        instituições contém o cadastro nacional.
+      </p>
+    }
+    <p role="status">
+      {{ portals().length }}
+      {{ institutionsView ? 'instituições encontradas' : 'portais disponíveis' }}
+    </p>
+    @if (!institutionsView && query().trim() && listings().length === 0) {
+      <p class="official-catalog__empty">
+        Ainda não indexamos cursos ou todos os editais. Estes portais permitem continuar a busca
+        diretamente nas instituições.
+      </p>
+    }
+    @if (portals().length === 0) {
+      <p class="official-catalog__empty">Nenhuma instituição corresponde à busca.</p>
+    } @else {
+      <div class="official-catalog__grid">
+        @for (institution of visiblePortals(); track institution.id) {
+          <article class="official-card">
+            <p class="official-card__badge">
+              {{ institution.acronym }} ·
+              {{ jurisdictionLabel(institution.jurisdiction) }}
+            </p>
+            <h3>{{ institution.name }}</h3>
+            <p>
+              {{ institution.city }} / {{ institution.state }} · Código Inep {{ institution.id }}
+            </p>
+            @if (institution.administrativeCategory === 7) {
+              <p>Categoria especial no Inep. Consulte a instituição sobre gratuidade.</p>
+            }
+            @if (institution.selectionsUrl) {
+              <a [href]="institution.selectionsUrl" target="_blank" rel="noopener noreferrer">
+                Acessar portal oficial <span aria-hidden="true">↗</span>
+              </a>
+            } @else if (institution.websiteUrl) {
+              <a [href]="institution.websiteUrl" target="_blank" rel="noopener noreferrer">
+                Acessar site institucional <span aria-hidden="true">↗</span>
+              </a>
+              <p class="official-card__pending">Portal de seleção ainda não identificado.</p>
+            } @else {
+              <p class="official-card__pending">Portal de seleção ainda não informado.</p>
+            }
+          </article>
+        }
+      </div>
+    }
+    @if (pageCount() > 1) {
+      <nav class="official-pagination" aria-label="Paginação das instituições">
+        <button
+          type="button"
+          [disabled]="currentPage() === 1"
+          (click)="goToPage(currentPage() - 1)"
+        >
+          Anterior
+        </button>
+        <span>Página {{ currentPage() }} de {{ pageCount() }}</span>
+        <button
+          type="button"
+          [disabled]="currentPage() === pageCount()"
+          (click)="goToPage(currentPage() + 1)"
+        >
+          Próxima
+        </button>
+      </nav>
+    }
+  </section>
+</main>

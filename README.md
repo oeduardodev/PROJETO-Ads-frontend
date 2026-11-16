@@ -11,7 +11,9 @@ corepack pnpm install --frozen-lockfile
 corepack pnpm --filter @alem-do-sisu/web exec ng serve --host 127.0.0.1 --port 4200
 ```
 
-Abra `http://127.0.0.1:4200/`. O shell funciona sem API e informa que o catálogo está em preparação. Para iniciar PostgreSQL, Redis, API e worker, siga [o README do backend](../backend/README.md) no checkout local. O desenvolvimento usa `http://127.0.0.1:3000` como URL pública da API; nenhuma credencial privada entra em `src/environments/`.
+Abra `http://127.0.0.1:4200/`. A lista de links oficiais funciona sem API. Para iniciar PostgreSQL, Redis, API e worker, siga [o README do backend](../backend/README.md) no checkout local. O desenvolvimento usa `http://127.0.0.1:3000` como URL pública da API; nenhuma credencial privada entra em `src/environments/`.
+
+As páginas `/oportunidades` e `/instituicoes` da primeira versão mostram [cadastro nacional e links oficiais](docs/engineering/official-links-mvp.md) sem depender de aprovação administrativa ou da API.
 
 A telemetria opcional do Angular CLI está desativada na configuração do projeto para evitar uma pergunta interativa no primeiro `ng serve`.
 

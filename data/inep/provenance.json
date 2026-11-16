@@ -1,0 +1,16 @@
+{
+  "source": "https://download.inep.gov.br/microdados/microdados_censo_da_educacao_superior_2024.zip",
+  "sourcePage": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior",
+  "member": "dados/MICRODADOS_ED_SUP_IES_2024.CSV",
+  "sourceCsvSha256": "aaa37fb9433d005686616bb9e48c5d7083526fdcc171973e787eed35a2ee349d",
+  "retrievedOn": "2026-11-13",
+  "referenceYear": 2024,
+  "filter": "TP_REDE = 1",
+  "count": 317,
+  "categories": {
+    "1": 122,
+    "2": 139,
+    "7": 28,
+    "3": 28
+  }
+}
