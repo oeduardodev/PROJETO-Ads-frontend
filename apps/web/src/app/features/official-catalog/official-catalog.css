@@ -158,3 +158,27 @@
   margin-top: auto;
   color: var(--color-muted);
 }
+.official-source-status {
+  padding: 1rem;
+  border: 2px solid var(--color-ink);
+  background: var(--color-surface);
+}
+.official-source-status summary {
+  width: fit-content;
+  cursor: pointer;
+  font-weight: 800;
+}
+.official-source-status summary:focus-visible {
+  outline: 3px solid var(--color-electric);
+  outline-offset: 3px;
+}
+.official-source-status ul {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+  padding-left: 1.4rem;
+}
+.official-source-status li span {
+  display: block;
+  overflow-wrap: anywhere;
+}

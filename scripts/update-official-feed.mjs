@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import {
   CATEGORIES,
+  fetchWithBackoff,
   officialUrl,
   parseHtmlCandidates,
   parseRssCandidates,
@@ -20,18 +21,90 @@ const outputPath = resolve(
 const audit = JSON.parse(await readFile(auditPath, 'utf8'));
 const byId = new Map(audit.institutions.map((item) => [item.id, item]));
 const selectionPortals = [
-  [579, 'https://www.prg.ufpb.br/editais/', 'Editais de transferência, reopção e ingresso de graduados'],
+  [
+    579,
+    'https://www.prg.ufpb.br/editais/',
+    'Editais de transferência, reopção e ingresso de graduados',
+  ],
   [2564, 'https://comprov.ufcg.edu.br/graduacao.html', 'Processo Seletivo Especial de graduação'],
-  [550, 'https://uepb.edu.br/prograd/processos-seletivos/', 'Processos seletivos especiais de graduação'],
+  [
+    550,
+    'https://uepb.edu.br/prograd/processos-seletivos/',
+    'Processos seletivos especiais de graduação',
+  ],
   [1166, 'https://estudante.ifpb.edu.br/editais/', 'Processos seletivos especiais de graduação'],
-  [549, 'https://www3.ufac.br/prograd/processo-seletivo-para-preenchimento-de-vagas-residuais', 'Processo seletivo de vagas residuais de graduação'],
-  [577, 'https://servicos.ufal.br/orgaos/departamento-de-registro-e-controle-academico-drca/ingressar-na-ufal-por-meio-de-transferencia', 'Transferência externa para cursos de graduação'],
-  [2, 'https://unb.br/docente-vida-academica/graduacao/formas-de-ingresso/2-publicacoes/570-transferencia-facultativa', 'Transferência facultativa para graduação'],
-  [569, 'https://www.ceps.ufpa.br/index.php/moba2027', 'Mobilidade acadêmica para vagas ociosas de graduação 2027'],
-  [570, 'https://comperve.ufrn.br/conteudo/extravestibular.php', 'Reocupação de vagas residuais de graduação'],
+  [
+    549,
+    'https://www3.ufac.br/prograd/processo-seletivo-para-preenchimento-de-vagas-residuais',
+    'Processo seletivo de vagas residuais de graduação',
+  ],
+  [
+    577,
+    'https://servicos.ufal.br/orgaos/departamento-de-registro-e-controle-academico-drca/ingressar-na-ufal-por-meio-de-transferencia',
+    'Transferência externa para cursos de graduação',
+  ],
+  [
+    2,
+    'https://unb.br/docente-vida-academica/graduacao/formas-de-ingresso/2-publicacoes/570-transferencia-facultativa',
+    'Transferência facultativa para graduação',
+  ],
+  [
+    569,
+    'https://www.ceps.ufpa.br/index.php/moba2027',
+    'Mobilidade acadêmica para vagas ociosas de graduação 2027',
+  ],
+  [
+    570,
+    'https://comperve.ufrn.br/conteudo/extravestibular.php',
+    'Reocupação de vagas residuais de graduação',
+  ],
   [4785, 'https://selecao.ifro.edu.br/especial', 'Processo seletivo especial de graduação'],
-  [582, 'https://www.ufsm.br/pro-reitorias/prograd/ingresse-na-ufsm/edital-de-ingresso-reingresso', 'Ingresso e reingresso por transferência externa e portador de diploma'],
-  [3, 'https://prograd.ufs.br/pagina/33013-editais-prograd-2026', 'Editais de transferência externa e portador de diploma 2026'],
+  [
+    582,
+    'https://www.ufsm.br/pro-reitorias/prograd/ingresse-na-ufsm/edital-de-ingresso-reingresso',
+    'Ingresso e reingresso por transferência externa e portador de diploma',
+  ],
+  [
+    3,
+    'https://prograd.ufs.br/pagina/33013-editais-prograd-2026',
+    'Editais de transferência externa e portador de diploma 2026',
+  ],
+  [
+    6,
+    'https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais',
+    'Processo seletivo de vagas residuais para transferência e portador de diploma',
+  ],
+  [
+    8,
+    'https://www2.pse.ufv.br/?page_id=38',
+    'Vagas ociosas de graduação por transferência e portador de diploma',
+  ],
+  [
+    568,
+    'https://transferencia.uema.br/',
+    'Transferência externa e portador de diploma de graduação 2027',
+  ],
+  [573, 'https://ps.ufes.br/psvo2026', 'Processo seletivo de vagas ociosas de graduação 2026'],
+  [
+    584,
+    'https://prograd.ufg.br/n/204436-edital-de-preenchimento-de-vagas-remanescentes-para-portador-de-diploma',
+    'Edital de vagas remanescentes para portador de diploma 2027',
+  ],
+  [
+    585,
+    'https://dae.ufsc.br/transferencias-e-retornos/',
+    'Transferência externa e retorno de graduados para graduação',
+  ],
+  [
+    586,
+    'https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2',
+    'Editais de vagas ociosas para graduação 2026/2',
+  ],
+  [
+    9,
+    'https://sites.uel.br/prograd/graduacao/transferencia-externa/',
+    'Transferência externa para cursos de graduação',
+  ],
 ];
 const sources = [
   ...audit.institutions
@@ -108,11 +181,13 @@ async function robotsAllows(url, source) {
 
 async function responseText(url, source, accept, maxBytes = 500_000) {
   if (!(await robotsAllows(url, source))) throw new Error('ROBOTS_DISALLOW');
-  const response = await fetch(url, {
-    signal: AbortSignal.timeout(12_000),
-    redirect: 'follow',
-    headers: { accept, 'user-agent': 'AlemDoSiSU-OfficialFeed/1.0' },
-  });
+  const response = await fetchWithBackoff(() =>
+    fetch(url, {
+      signal: AbortSignal.timeout(12_000),
+      redirect: 'follow',
+      headers: { accept, 'user-agent': 'AlemDoSiSU-OfficialFeed/1.0' },
+    }),
+  );
   if (!response.ok) throw new Error(`HTTP_${response.status}`);
   if (new URL(response.url).hostname !== new URL(source.url).hostname) {
     throw new Error('OFF_DOMAIN_REDIRECT');
@@ -134,20 +209,24 @@ async function wordpressCandidates(source) {
     'reopção',
     'portador de diploma',
   ];
-  const results = await Promise.allSettled(
-    terms.map(async (term) => {
-      const url = new URL('/wp-json/wp/v2/search', source.url);
-      url.searchParams.set('search', term);
-      url.searchParams.set('per_page', '10');
-      const response = await responseText(url, source, 'application/json', 200_000);
-      if (!response.contentType.includes('application/json')) throw new Error('NOT_JSON');
-      const items = JSON.parse(response.text);
-      if (!Array.isArray(items)) throw new Error('INVALID_JSON');
-      return items
-        .filter((item) => typeof item?.title === 'string' && typeof item?.url === 'string')
-        .map((item) => ({ title: item.title, url: item.url }));
-    }),
-  );
+  const results = [];
+  for (let offset = 0; offset < terms.length; offset += 2) {
+    const batch = await Promise.allSettled(
+      terms.slice(offset, offset + 2).map(async (term) => {
+        const url = new URL('/wp-json/wp/v2/search', source.url);
+        url.searchParams.set('search', term);
+        url.searchParams.set('per_page', '10');
+        const response = await responseText(url, source, 'application/json', 200_000);
+        if (!response.contentType.includes('application/json')) throw new Error('NOT_JSON');
+        const items = JSON.parse(response.text);
+        if (!Array.isArray(items)) throw new Error('INVALID_JSON');
+        return items
+          .filter((item) => typeof item?.title === 'string' && typeof item?.url === 'string')
+          .map((item) => ({ title: item.title, url: item.url }));
+      }),
+    );
+    results.push(...batch);
+  }
   const fulfilled = results.filter((result) => result.status === 'fulfilled');
   if (!fulfilled.length) throw new Error('WORDPRESS_SEARCH_UNAVAILABLE');
   return fulfilled.flatMap((result) => result.value);
@@ -345,9 +424,19 @@ async function update() {
           statuses.get(source.key) ?? {},
           now,
         );
+        const previousByUrl = new Map(
+          (itemsBySource.get(source.key) ?? []).map((item) => [item.url, item]),
+        );
         itemsBySource.set(
           source.key,
-          result.items.map((item) => ({ ...item, sourceKey: source.key })),
+          result.items.map((item) => ({
+            ...item,
+            sourceKey: source.key,
+            discoveredAt:
+              previousByUrl.get(item.url)?.discoveredAt ??
+              previousByUrl.get(item.url)?.checkedAt ??
+              now,
+          })),
         );
         statuses.set(source.key, result.status);
         completed += 1;

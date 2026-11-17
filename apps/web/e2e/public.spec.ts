@@ -185,6 +185,10 @@ test('finds official pages across states without the API and keeps filters in th
     ).toBeVisible();
   }
 
+  await expect(page.getByRole('heading', { name: 'Estado das fontes' })).toBeVisible();
+  await page.getByText('Ver diagnóstico por instituição').click();
+  await expect(page.locator('.official-source-status li').first()).toBeVisible();
+
   await page.getByLabel('Tipo de ingresso').selectOption('Transferência');
   await expect(page).toHaveURL(/category=Transfer/);
   await page.getByLabel('Buscar instituição, município ou processo').fill('termo-inexistente');

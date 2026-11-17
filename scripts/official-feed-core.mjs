@@ -5,6 +5,24 @@ export const CATEGORIES = [
   'Processo Seletivo Especial',
 ];
 
+export async function fetchWithBackoff(
+  fetcher,
+  wait = (ms) => new Promise((done) => setTimeout(done, ms)),
+) {
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const response = await fetcher();
+      if (![429, 502, 503, 504].includes(response.status) || attempt === 2) return response;
+    } catch (error) {
+      if (attempt === 2 || !['AbortError', 'TimeoutError', 'TypeError'].includes(error?.name)) {
+        throw error;
+      }
+    }
+    await wait(400 * 2 ** attempt);
+  }
+  throw new Error('UNREACHABLE_RETRY_STATE');
+}
+
 export function robotsAllowsPath(content, path, userAgent = 'AlemDoSiSU-OfficialFeed/1.0') {
   const groups = [];
   let agents = [];
@@ -146,7 +164,9 @@ export function classifyCandidate(title, url, currentYear = new Date().getFullYe
   ) {
     category = 'Ingresso de graduados';
   } else if (
-    /vagas (remanescentes|residuais|ociosas)|reocupacao de vagas|processo seletivo especial|selecao especial|entradas derivadas|mobilidade academica/u.test(text)
+    /vagas (remanescentes|residuais|ociosas)|reocupacao de vagas|processo seletivo especial|selecao especial|entradas derivadas|mobilidade academica/u.test(
+      text,
+    )
   ) {
     category = 'Processo Seletivo Especial';
   } else {

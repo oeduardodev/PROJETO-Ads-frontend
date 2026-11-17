@@ -19,6 +19,27 @@ const OFFICIAL_CATEGORIES = [
   'Processo Seletivo Especial',
 ] as const;
 
+interface FeedSourceStatus {
+  key: string;
+  acronym: string;
+  state: string;
+  method?: string;
+  error?: string | null;
+  lastAttempt?: string;
+  lastSuccess?: string;
+}
+
+function isFeedSourceStatus(value: unknown): value is FeedSourceStatus {
+  if (!value || typeof value !== 'object') return false;
+  const item = value as Partial<FeedSourceStatus>;
+  return (
+    typeof item.key === 'string' &&
+    typeof item.acronym === 'string' &&
+    typeof item.state === 'string' &&
+    (!item.error || typeof item.error === 'string')
+  );
+}
+
 function listingInstitution(item: Partial<OfficialListing>): OfficialInstitution | undefined {
   if (Number.isSafeInteger(item.institutionId)) {
     return OFFICIAL_INSTITUTIONS.find((institution) => institution.id === item.institutionId);
@@ -77,6 +98,10 @@ export class OfficialCatalog implements OnInit, OnDestroy {
   readonly totalInstitutions = OFFICIAL_INSTITUTIONS.length;
   readonly auditedWebsiteCount = OFFICIAL_INSTITUTIONS.filter((item) => item.websiteUrl).length;
   readonly refreshedAt = signal<string | null>(null);
+  readonly sourceStatuses = signal<FeedSourceStatus[]>([]);
+  readonly sourceErrorCount = computed(
+    () => this.sourceStatuses().filter((source) => source.error).length,
+  );
   readonly staticListings = signal<OfficialListing[]>([]);
   readonly refreshedListings = signal<OfficialListing[]>([]);
   readonly allListings = computed(() => {
@@ -205,11 +230,16 @@ export class OfficialCatalog implements OnInit, OnDestroy {
   ngOnInit(): void {
     if (this.http && this.environment && !this.institutionsView) {
       this.staticFeedSubscription = this.http
-        .get<{ items: unknown[]; checkedAt: string | null }>('/official-feed.json')
+        .get<{ items: unknown[]; checkedAt: string | null; sources?: unknown[] }>(
+          '/official-feed.json',
+        )
         .subscribe({
           next: (feed) => {
             if (!Array.isArray(feed.items)) return;
             this.staticListings.set(feed.items.filter(isOfficialListing));
+            if (Array.isArray(feed.sources)) {
+              this.sourceStatuses.set(feed.sources.filter(isFeedSourceStatus));
+            }
             if (feed.checkedAt) this.refreshedAt.set(feed.checkedAt);
           },
           error: () => undefined,

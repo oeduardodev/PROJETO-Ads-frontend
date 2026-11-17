@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {
   classifyCandidate,
+  fetchWithBackoff,
   officialUrl,
   parseHtmlCandidates,
   parseRssCandidates,
@@ -106,4 +107,22 @@ test('respects robots agent groups, wildcard paths and explicit allows', () => {
   assert.equal(robotsAllowsPath(robots, '/blocked/open'), true);
   assert.equal(robotsAllowsPath(robots, '/blocked/open/more'), false);
   assert.equal(robotsAllowsPath('User-agent: *\nDisallow: /private*', '/private/data'), false);
+});
+
+test('backs off transient HTTP failures and leaves permanent failures alone', async () => {
+  const delays = [];
+  let calls = 0;
+  const response = await fetchWithBackoff(
+    async () => ({ status: ++calls < 3 ? 503 : 200 }),
+    async (ms) => delays.push(ms),
+  );
+  assert.equal(response.status, 200);
+  assert.equal(calls, 3);
+  assert.deepEqual(delays, [400, 800]);
+  calls = 0;
+  await fetchWithBackoff(
+    async () => ({ status: ++calls && 403 }),
+    async () => {},
+  );
+  assert.equal(calls, 1);
 });

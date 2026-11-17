@@ -27,6 +27,15 @@ describe('first-version official catalog', () => {
     const uece = OFFICIAL_INSTITUTIONS.find((item) => item.acronym === 'UECE')!;
     http.expectOne('/official-feed.json').flush({
       checkedAt: '2026-11-16T00:00:00.000Z',
+      sources: [
+        {
+          key: '123:site',
+          acronym: 'UECE',
+          state: 'CE',
+          error: 'HTTP_503',
+          lastSuccess: '2026-11-15T00:00:00.000Z',
+        },
+      ],
       items: [
         {
           institutionId: uece.id,
@@ -69,6 +78,8 @@ describe('first-version official catalog', () => {
     expect(fixture.nativeElement.textContent).toContain('Ingresso de graduados 2026');
     expect(fixture.nativeElement.textContent).toContain('Novo processo de transferência');
     expect(fixture.nativeElement.textContent).not.toContain('Link externo indevido');
+    expect(fixture.componentInstance.sourceErrorCount()).toBe(1);
+    expect(fixture.nativeElement.textContent).toContain('1 com falha');
     http.verify();
   });
   it('keeps the static feed when the API is unavailable', () => {
@@ -158,6 +169,14 @@ describe('first-version official catalog', () => {
     const domains: Record<string, string> = {
       UNB: 'unb.br',
       UFS: 'prograd.ufs.br',
+      UFOP: 'prograd.ufop.br',
+      UFV: 'www2.pse.ufv.br',
+      UEL: 'sites.uel.br',
+      UEMA: 'transferencia.uema.br',
+      UFES: 'ps.ufes.br',
+      UFG: 'prograd.ufg.br',
+      UFSC: 'dae.ufsc.br',
+      UFRJ: 'acessograduacao.ufrj.br',
       UFAC: 'www3.ufac.br',
       UFPA: 'www.ceps.ufpa.br',
       UFRN: 'comperve.ufrn.br',

@@ -29,6 +29,8 @@ jobs:
         run: node scripts/update-official-feed.mjs
       - name: Validate feed rules
         run: node --test scripts/official-feed-core.test.mjs
+      - name: Validate generated snapshot
+        run: node scripts/validate-official-feed.mjs
       - name: Commit changed snapshot
         run: |
           if git diff --quiet -- apps/web/public/official-feed.json; then

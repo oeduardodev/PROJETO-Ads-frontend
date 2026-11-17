@@ -198,4 +198,32 @@
       </nav>
     }
   </section>
+
+  @if (!institutionsView && sourceStatuses().length) {
+    <section class="official-catalog__section" aria-labelledby="source-health-title">
+      <h2 id="source-health-title">Estado das fontes</h2>
+      <p>
+        {{ sourceStatuses().length }} fontes consultadas; {{ sourceErrorCount() }} com falha na
+        última tentativa. Os links já encontrados continuam disponíveis durante falhas temporárias.
+      </p>
+      <details class="official-source-status">
+        <summary>Ver diagnóstico por instituição</summary>
+        <ul>
+          @for (source of sourceStatuses(); track source.key) {
+            <li>
+              <strong>{{ source.acronym }} / {{ source.state }}</strong>
+              @if (source.error) {
+                <span>Falha: {{ source.error }}</span>
+              } @else {
+                <span>Consulta concluída via {{ source.method || 'fonte oficial' }}</span>
+              }
+              @if (source.lastSuccess) {
+                <span>Último sucesso: {{ source.lastSuccess | date: 'dd/MM/yyyy HH:mm' }}</span>
+              }
+            </li>
+          }
+        </ul>
+      </details>
+    </section>
+  }
 </main>

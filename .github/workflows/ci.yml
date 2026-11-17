@@ -38,6 +38,8 @@ jobs:
         run: pnpm test
       - name: Feed validation tests
         run: pnpm test:feed
+      - name: Validate committed feed
+        run: pnpm feed:validate
       - name: Build
         run: pnpm build
       - name: Regenerate typed API client
