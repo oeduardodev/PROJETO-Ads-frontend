@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-24T22:26:39.243Z",
+  "checkedAt": "2026-11-25T08:33:26.557Z",
   "sourceCount": 99,
   "items": [
     {
@@ -12,7 +12,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://www3.ufac.br/prograd/processo-seletivo-para-preenchimento-de-vagas-residuais",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "549:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -25,7 +25,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://www3.ufac.br/prograd/processo-seletivo-para-preenchimento-de-vagas-residuais",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "549:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -38,7 +38,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www3.ufac.br/prograd/processo-seletivo-para-preenchimento-de-vagas-residuais",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "549:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -51,7 +51,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://servicos.ufal.br/orgaos/departamento-de-registro-e-controle-academico-drca/ingressar-na-ufal-por-meio-de-transferencia",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "577:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -64,7 +64,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uea.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3172:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -77,7 +77,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://uea.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3172:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -90,7 +90,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://uea.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3172:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -103,7 +103,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://uea.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3172:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -116,7 +116,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.unifap.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "830:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -129,7 +129,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uesb.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "688:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -142,7 +142,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://portal.uneb.br/",
-      "checkedAt": "2026-11-24T09:54:29.844Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "40:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -155,7 +155,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://portal.uneb.br/",
-      "checkedAt": "2026-11-24T09:54:29.844Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "40:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -168,7 +168,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uece.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "29:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -181,7 +181,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uece.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "29:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -194,7 +194,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uece.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "29:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -207,7 +207,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uece.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "29:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -220,7 +220,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uece.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "29:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -233,7 +233,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uece.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "29:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -246,7 +246,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uece.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "29:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -259,7 +259,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufca.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "18759:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -272,7 +272,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufca.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "18759:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -285,7 +285,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufca.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "18759:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -298,7 +298,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufca.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "18759:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -311,7 +311,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufca.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "18759:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -324,7 +324,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://unilab.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "15497:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -337,7 +337,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://unilab.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "15497:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -350,22 +350,9 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://unilab.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "15497:site",
       "discoveredAt": "2026-11-20T07:16:04.209Z"
-    },
-    {
-      "institutionId": 746,
-      "institution": "URCA",
-      "state": "CE",
-      "title": "PARFOR Equidade abre seleção para alunos – vagas remanescentes",
-      "url": "https://www.urca.br/blog/parfor-equidade-abre-selecao-para-alunos-vagas-remanescentes/",
-      "category": "Processo Seletivo Especial",
-      "pageKind": "selection_page",
-      "sourceUrl": "https://www.urca.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
-      "sourceKey": "746:site",
-      "discoveredAt": "2026-11-24T22:26:39.243Z"
     },
     {
       "institutionId": 746,
@@ -376,7 +363,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.urca.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "746:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -389,7 +376,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uva.ce.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "95:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -402,7 +389,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://unb.br/docente-vida-academica/graduacao/formas-de-ingresso/2-publicacoes/570-transferencia-facultativa",
-      "checkedAt": "2026-11-23T23:53:45.555Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "2:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -415,7 +402,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://faceli.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "16010:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -428,7 +415,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://faceli.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "16010:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -441,7 +428,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://faceli.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "16010:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -454,7 +441,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://faceli.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "16010:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -467,7 +454,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://ps.ufes.br/psvo2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "573:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -480,7 +467,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufg.br/n/204436-edital-de-preenchimento-de-vagas-remanescentes-para-portador-de-diploma",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "584:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -493,7 +480,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufg.br/n/204436-edital-de-preenchimento-de-vagas-remanescentes-para-portador-de-diploma",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "584:selection",
       "discoveredAt": "2026-11-24T22:26:39.243Z"
     },
@@ -506,7 +493,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufg.br/n/204436-edital-de-preenchimento-de-vagas-remanescentes-para-portador-de-diploma",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "584:selection",
       "discoveredAt": "2026-11-24T22:26:39.243Z"
     },
@@ -519,7 +506,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufj.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "25282:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -532,7 +519,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufj.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "25282:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -545,7 +532,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufj.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "25282:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -558,7 +545,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufj.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "25282:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -571,7 +558,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://unicerrado.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "824:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -584,7 +571,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://unicerrado.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "824:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -597,7 +584,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://unicerrado.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "824:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -610,7 +597,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://unifimes.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4396:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -623,7 +610,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://unifimes.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4396:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -636,7 +623,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://unifimes.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4396:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -649,7 +636,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://unifimes.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4396:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -662,7 +649,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://unifimes.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4396:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -675,7 +662,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://unifimes.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4396:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -688,7 +675,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://transferencia.uema.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "568:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -701,7 +688,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uemasul.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "23410:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -714,7 +701,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uemasul.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "23410:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -727,7 +714,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uemasul.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "23410:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -740,7 +727,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uemasul.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "23410:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -753,7 +740,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uemasul.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "23410:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -766,7 +753,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uemasul.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "23410:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -779,7 +766,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uemasul.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "23410:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -792,7 +779,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufmg.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "575:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -805,9 +792,22 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "6:selection",
       "discoveredAt": "2026-11-24T22:26:39.243Z"
+    },
+    {
+      "institutionId": 6,
+      "institution": "UFOP",
+      "state": "MG",
+      "title": "Cronograma - Processo Seletivo - Vagas Residuais 2027/1",
+      "url": "https://prograd.ufop.br/sites/default/files/cronograma_proc_seletivo_-_vagas_residuais_2027_1_public_10-07_0.pdf",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "edital",
+      "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "6:selection",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 6,
@@ -818,9 +818,48 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "6:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
+    },
+    {
+      "institutionId": 6,
+      "institution": "UFOP",
+      "state": "MG",
+      "title": "https://prograd.ufop.br/mapas-dos-campi",
+      "url": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/node/151",
+      "category": "Reopção",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "6:selection",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
+    },
+    {
+      "institutionId": 6,
+      "institution": "UFOP",
+      "state": "MG",
+      "title": "https://prograd.ufop.br/node/106",
+      "url": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/node/106",
+      "category": "Reopção",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "6:selection",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
+    },
+    {
+      "institutionId": 6,
+      "institution": "UFOP",
+      "state": "MG",
+      "title": "Inscrições encerradas. Acompanhe o cronograma do processo seletivo.",
+      "url": "https://prograd.ufop.br/sites/default/files/cronograma_proc_seletivo_-_vagas_residuais_2027_1_public_10-07.pdf",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "edital",
+      "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "6:selection",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 6,
@@ -831,7 +870,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "6:selection",
       "discoveredAt": "2026-11-24T22:26:39.243Z"
     },
@@ -844,7 +883,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "6:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -857,9 +896,22 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "6:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
+    },
+    {
+      "institutionId": 6,
+      "institution": "UFOP",
+      "state": "MG",
+      "title": "Resolução CONGRAD n. 276/2026 - Fixa calendário para publicação de editais - Vagas Residuais",
+      "url": "https://prograd.ufop.br/sites/default/files/resolucao_congrad_276-2026_fixa_calendario_-_editais_vagas_residuais.pdf",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "edital",
+      "sourceUrl": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "6:selection",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 8,
@@ -870,7 +922,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www2.pse.ufv.br/?page_id=38",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "8:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -883,7 +935,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://www2.pse.ufv.br/?page_id=38",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "8:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -896,9 +948,22 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://www2.pse.ufv.br/?page_id=38",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "8:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
+    },
+    {
+      "institutionId": 8,
+      "institution": "UFV",
+      "state": "MG",
+      "title": "Vagas ociosas anteriores:",
+      "url": "https://www2.pse.ufv.br/?resultados_psa_sisu=2025",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://www2.pse.ufv.br/?page_id=38",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "8:selection",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 367,
@@ -1026,7 +1091,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1039,7 +1104,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1052,7 +1117,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1065,7 +1130,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1078,7 +1143,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1091,7 +1156,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1104,7 +1169,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1117,7 +1182,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1130,7 +1195,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1143,7 +1208,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1156,7 +1221,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1169,7 +1234,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1182,7 +1247,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufms.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "694:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1195,7 +1260,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1208,7 +1273,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1221,7 +1286,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1234,7 +1299,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1247,7 +1312,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1260,7 +1325,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1273,7 +1338,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1286,7 +1351,7 @@
       "category": "Reopção",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1299,7 +1364,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1312,7 +1377,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1325,7 +1390,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1338,7 +1403,7 @@
       "category": "Reopção",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1351,7 +1416,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-18T20:31:28.418Z"
     },
@@ -1364,7 +1429,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "edital",
       "sourceUrl": "https://ifmt.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3164:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1377,7 +1442,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ceps.ufpa.br/index.php/moba2027",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "569:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1390,7 +1455,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/prograd/processos-seletivos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1403,7 +1468,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/prograd/processos-seletivos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1416,7 +1481,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/prograd/processos-seletivos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1429,7 +1494,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/prograd/processos-seletivos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1442,7 +1507,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:site",
       "discoveredAt": "2026-11-24T09:54:29.844Z"
     },
@@ -1455,7 +1520,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:site",
       "discoveredAt": "2026-11-24T09:54:29.844Z"
     },
@@ -1468,7 +1533,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/prograd/processos-seletivos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1481,7 +1546,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1494,7 +1559,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:site",
       "discoveredAt": "2026-11-24T09:54:29.844Z"
     },
@@ -1507,7 +1572,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1520,7 +1585,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/prograd/processos-seletivos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1533,7 +1598,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/prograd/processos-seletivos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1546,7 +1611,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uepb.edu.br/prograd/processos-seletivos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "550:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1559,7 +1624,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://comprov.ufcg.edu.br/graduacao.html",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "2564:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1572,7 +1637,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://comprov.ufcg.edu.br/graduacao.html",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "2564:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1585,7 +1650,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://comprov.ufcg.edu.br/graduacao.html",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "2564:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1598,7 +1663,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://comprov.ufcg.edu.br/graduacao.html",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "2564:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1611,7 +1676,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufpb.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "579:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1624,7 +1689,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.prg.ufpb.br/editais/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "579:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1637,7 +1702,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.prg.ufpb.br/editais/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "579:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1650,7 +1715,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.prg.ufpb.br/editais/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "579:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1663,7 +1728,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.prg.ufpb.br/editais/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "579:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1676,7 +1741,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.prg.ufpb.br/editais/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "579:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1689,7 +1754,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.prg.ufpb.br/editais/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "579:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1702,7 +1767,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://ifsertaope.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3161:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1715,7 +1780,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://ifsertaope.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3161:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1728,7 +1793,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://ifsertaope.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3161:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1741,7 +1806,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://ifsertaope.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3161:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1754,7 +1819,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://portal.ifpe.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "1809:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1780,7 +1845,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://uespi.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "756:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1793,7 +1858,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "edital",
       "sourceUrl": "https://uespi.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "756:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1806,7 +1871,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://uespi.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "756:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1819,7 +1884,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uespi.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "756:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1832,7 +1897,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://uespi.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "756:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1845,7 +1910,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://uespi.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "756:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1858,7 +1923,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uespi.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "756:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1871,7 +1936,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uespi.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "756:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -1975,9 +2040,35 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://sites.uel.br/prograd/graduacao/transferencia-externa/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "9:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
+    },
+    {
+      "institutionId": 730,
+      "institution": "UEPG",
+      "state": "PR",
+      "title": "Coro infantojuvenil Tons e Cores da UEPG está com vagas remanescentes abertas",
+      "url": "https://www.uepg.br/vagas-remanescentes-tons-e-cores/",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://www.uepg.br/",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "730:site",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
+    },
+    {
+      "institutionId": 730,
+      "institution": "UEPG",
+      "state": "PR",
+      "title": "Inscrições para vagas remanescentes em Educação Especial estão abertas",
+      "url": "https://www.uepg.br/par-for-eq-vagas/",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://www.uepg.br/",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "730:site",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 730,
@@ -1988,7 +2079,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uepg.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "730:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2001,7 +2092,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uepg.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "730:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2014,7 +2105,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uepg.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "730:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2027,7 +2118,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uepg.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "730:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2040,9 +2131,22 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uepg.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "730:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
+    },
+    {
+      "institutionId": 730,
+      "institution": "UEPG",
+      "state": "PR",
+      "title": "UEPG publica edital de vagas remanescentes para supervisor de residentes médicos nos HUs",
+      "url": "https://www.uepg.br/edital-supervisao-residentes/",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://www.uepg.br/",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "730:site",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 571,
@@ -2053,7 +2157,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2066,7 +2170,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2079,7 +2183,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2092,7 +2196,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2105,7 +2209,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2118,7 +2222,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2131,7 +2235,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2144,7 +2248,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2157,7 +2261,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2170,9 +2274,35 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufpr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "571:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
+    },
+    {
+      "institutionId": 1126,
+      "institution": "UNICENTRO",
+      "state": "PR",
+      "title": "Central de Notícias “Vagas para portador de diploma medicina”",
+      "url": "https://www3.unicentro.br/noticias/sbss_email_log/central-de-noticias-vagas-para-portador-de-diploma-medicina-2/",
+      "category": "Ingresso de graduados",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://www3.unicentro.br/",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "1126:site",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
+    },
+    {
+      "institutionId": 1126,
+      "institution": "UNICENTRO",
+      "state": "PR",
+      "title": "Central de Notícias “Vagas para portador de diploma medicina”",
+      "url": "https://www3.unicentro.br/noticias/sbss_email_log/central-de-noticias-vagas-para-portador-de-diploma-medicina/",
+      "category": "Ingresso de graduados",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://www3.unicentro.br/",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "1126:site",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 1126,
@@ -2183,7 +2313,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://www3.unicentro.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "1126:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2196,7 +2326,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://www3.unicentro.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "1126:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2209,7 +2339,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://www3.unicentro.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "1126:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2222,7 +2352,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://www3.unicentro.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "1126:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2235,7 +2365,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://www3.unicentro.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "1126:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2248,7 +2378,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www3.unicentro.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "1126:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2274,7 +2404,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uff.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "572:site",
       "discoveredAt": "2026-11-22T19:39:49.539Z"
     },
@@ -2287,7 +2417,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uff.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "572:site",
       "discoveredAt": "2026-11-22T19:39:49.539Z"
     },
@@ -2300,7 +2430,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.uff.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "572:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2313,7 +2443,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2326,7 +2456,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2339,7 +2469,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2352,7 +2482,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2365,7 +2495,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2378,7 +2508,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2391,7 +2521,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2404,7 +2534,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2417,7 +2547,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2430,7 +2560,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "586:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2443,7 +2573,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://portal.ufrrj.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "574:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2456,7 +2586,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://portal.ufrrj.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "574:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2469,7 +2599,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://portal.ufrrj.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "574:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2482,7 +2612,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://portal.ufrrj.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "574:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2495,7 +2625,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://portal.ufrrj.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "574:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2599,7 +2729,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://selecao.ifro.edu.br/especial",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4785:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2612,7 +2742,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://selecao.ifro.edu.br/especial",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4785:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2625,7 +2755,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://selecao.ifro.edu.br/especial",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4785:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2638,7 +2768,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://selecao.ifro.edu.br/especial",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4785:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2651,7 +2781,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://selecao.ifro.edu.br/especial",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4785:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2664,7 +2794,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://selecao.ifro.edu.br/especial",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4785:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2677,7 +2807,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://selecao.ifro.edu.br/especial",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4785:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2690,7 +2820,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://selecao.ifro.edu.br/especial",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4785:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2703,7 +2833,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://uerr.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "5077:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2716,7 +2846,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://uerr.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "5077:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2729,7 +2859,7 @@
       "category": "Reopção",
       "pageKind": "selection_page",
       "sourceUrl": "https://uerr.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "5077:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2742,7 +2872,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufrr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "789:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2755,7 +2885,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufrr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "789:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2768,9 +2898,48 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufrr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "789:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
+    },
+    {
+      "institutionId": 789,
+      "institution": "UFRR",
+      "state": "RR",
+      "title": "Relação preliminar das inscrições do processo seletivo de Portadores de Diploma/Graduados 2026",
+      "url": "https://ufrr.br/noticias/relacao-preliminar-das-inscricoes-do-processo-seletivo-de-portadores-de-diploma-graduados-2026/",
+      "category": "Ingresso de graduados",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://ufrr.br/",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "789:site",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
+    },
+    {
+      "institutionId": 789,
+      "institution": "UFRR",
+      "state": "RR",
+      "title": "Segunda etapa do processo seletivo para vagas remanescentes do CAP/UFRR inicia hoje (08/08)",
+      "url": "https://ufrr.br/noticias/segunda-etapa-do-processo-seletivo-para-vagas-remanescentes-do-cap-ufrr-inicia-hoje-08-08/",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://ufrr.br/",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "789:site",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
+    },
+    {
+      "institutionId": 789,
+      "institution": "UFRR",
+      "state": "RR",
+      "title": "Sorteio eletrônico e virtual do processo seletivo para preenchimento de vagas remanescentes no CAp/UFRR ocorre nesta sexta-feira (16/08)",
+      "url": "https://ufrr.br/noticias/sorteio-eletronico-e-virtual-do-processo-seletivo-para-preenchimento-de-vagas-remanescentes-no-cap-ufrr-ocorre-nesta-sexta-feira-16-08/",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://ufrr.br/",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "789:site",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 789,
@@ -2781,7 +2950,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufrr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "789:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2794,7 +2963,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://ufrr.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "789:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2807,7 +2976,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufsm.br/pro-reitorias/prograd/ingresse-na-ufsm/edital-de-ingresso-reingresso",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "582:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2820,7 +2989,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufsm.br/pro-reitorias/prograd/ingresse-na-ufsm/edital-de-ingresso-reingresso",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "582:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2833,9 +3002,22 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.ufsm.br/pro-reitorias/prograd/ingresse-na-ufsm/edital-de-ingresso-reingresso",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "582:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
+    },
+    {
+      "institutionId": 582,
+      "institution": "UFSM",
+      "state": "RS",
+      "title": "Mobilidade Acadêmica Virtual – PROMOVER Andifes",
+      "url": "https://www.ufsm.br/pro-reitorias/prograd/promover",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://www.ufsm.br/pro-reitorias/prograd/ingresse-na-ufsm/edital-de-ingresso-reingresso",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "582:selection",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 5706,
@@ -2846,7 +3028,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fmpsc.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "5706:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2859,7 +3041,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fmpsc.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "5706:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2872,7 +3054,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fmpsc.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "5706:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2885,7 +3067,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://dae.ufsc.br/transferencias-e-retornos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "585:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2898,7 +3080,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://dae.ufsc.br/transferencias-e-retornos/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "585:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2911,7 +3093,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2924,7 +3106,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2937,7 +3119,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2950,7 +3132,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2963,7 +3145,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2976,7 +3158,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -2989,7 +3171,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3002,7 +3184,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3015,7 +3197,7 @@
       "category": "Transferência",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3028,7 +3210,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3041,7 +3223,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "edital",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-18T20:31:28.418Z"
     },
@@ -3054,7 +3236,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3067,7 +3249,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3080,7 +3262,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-18T20:31:28.418Z"
     },
@@ -3093,7 +3275,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "3:selection",
       "discoveredAt": "2026-11-18T20:31:28.418Z"
     },
@@ -3106,7 +3288,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://fatecsaocaetano.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "15745:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3119,7 +3301,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fatecsaocaetano.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "15745:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3132,7 +3314,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fatecjahu.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "37:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3145,7 +3327,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://fatecjahu.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "37:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3158,7 +3340,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fatecjahu.edu.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "37:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3171,7 +3353,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://fatecgarca.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4021:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3184,7 +3366,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fatecgarca.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4021:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3197,7 +3379,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fatecgarca.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4021:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3210,7 +3392,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fatecgarca.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4021:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3223,7 +3405,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fatecpg.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4926:site",
       "discoveredAt": "2026-11-23T23:53:45.555Z"
     },
@@ -3236,7 +3418,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://fatecpg.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4926:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3249,7 +3431,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://fatecpg.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4926:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3262,7 +3444,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fatecpg.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4926:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3275,9 +3457,22 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://fatecpg.cps.sp.gov.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "4926:site",
       "discoveredAt": "2026-11-23T23:53:45.555Z"
+    },
+    {
+      "institutionId": 4926,
+      "institution": "FATECPG",
+      "state": "SP",
+      "title": "Processo Seletivo de Vagas Remanescentes para o Programa de Monitoria de Iniciação de Pesquisa",
+      "url": "https://fatecpg.cps.sp.gov.br/processo-seletivo-de-vagas-remanescentes-para-o-programa-de-monitoria-de-iniciacao-de-pesquisa/",
+      "category": "Processo Seletivo Especial",
+      "pageKind": "selection_page",
+      "sourceUrl": "https://fatecpg.cps.sp.gov.br/",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
+      "sourceKey": "4926:site",
+      "discoveredAt": "2026-11-25T08:33:26.557Z"
     },
     {
       "institutionId": 58,
@@ -3288,7 +3483,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.direitosbc.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "58:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3301,7 +3496,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.direitosbc.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "58:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3314,7 +3509,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.direitosbc.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "58:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3340,7 +3535,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://www.unicamp.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "54:site",
       "discoveredAt": "2026-11-17T07:54:42.197Z"
     },
@@ -3353,7 +3548,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://portal.unifesp.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "591:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3366,7 +3561,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "edital",
       "sourceUrl": "https://portal.unifesp.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "591:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3379,7 +3574,7 @@
       "category": "Processo Seletivo Especial",
       "pageKind": "selection_page",
       "sourceUrl": "https://portal.unifesp.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "591:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3392,7 +3587,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www5.usp.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "55:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3405,7 +3600,7 @@
       "category": "Transferência",
       "pageKind": "selection_page",
       "sourceUrl": "https://www5.usp.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "55:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3418,7 +3613,7 @@
       "category": "Ingresso de graduados",
       "pageKind": "selection_page",
       "sourceUrl": "https://www5.usp.br/",
-      "checkedAt": "2026-11-24T22:26:39.243Z",
+      "checkedAt": "2026-11-25T08:33:26.557Z",
       "sourceKey": "55:site",
       "discoveredAt": "2026-11-17T15:31:38.055Z"
     },
@@ -3469,16 +3664,16 @@
       "acronym": "UNICENTRO",
       "state": "PR",
       "url": "https://www3.unicentro.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
         "wordpress"
       ],
       "candidateCount": 30,
-      "resultCount": 6,
-      "aiStatus": "confirmed"
+      "resultCount": 8,
+      "aiStatus": "GEMINI_HTTP_503"
     },
     {
       "key": "1166:selection",
@@ -3486,8 +3681,8 @@
       "acronym": "IFPB",
       "state": "PB",
       "url": "https://estudante.ifpb.edu.br/editais/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -3503,7 +3698,7 @@
       "acronym": "IFPR",
       "state": "PR",
       "url": "https://ifpr.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "NOT_XML",
       "method": "wordpress",
@@ -3522,8 +3717,8 @@
       "acronym": "UFOPA",
       "state": "PA",
       "url": "https://www.ufopa.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3541,8 +3736,8 @@
       "acronym": "UNILAB",
       "state": "CE",
       "url": "https://unilab.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3558,7 +3753,7 @@
       "acronym": "IFAC",
       "state": "AC",
       "url": "https://portal.ifac.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "error": "fetch failed",
       "attempted": [
         "rss"
@@ -3570,8 +3765,8 @@
       "acronym": "FATEC SCS",
       "state": "SP",
       "url": "https://fatecsaocaetano.cps.sp.gov.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3587,8 +3782,8 @@
       "acronym": "FACELI",
       "state": "ES",
       "url": "https://faceli.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3604,8 +3799,8 @@
       "acronym": "UFU",
       "state": "MG",
       "url": "https://ufu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -3621,8 +3816,8 @@
       "acronym": "IFPE",
       "state": "PE",
       "url": "https://portal.ifpe.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3638,7 +3833,7 @@
       "acronym": "IFAM",
       "state": "AM",
       "url": "https://portal.ifam.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-21T19:15:26.257Z",
       "error": "HTTP_403",
       "method": "sitemap",
@@ -3655,7 +3850,7 @@
       "acronym": "UNIVESP",
       "state": "SP",
       "url": "https://univesp.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "HTTP_403",
       "method": "sitemap",
@@ -3674,8 +3869,8 @@
       "acronym": "UFCA",
       "state": "CE",
       "url": "https://www.ufca.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3691,15 +3886,15 @@
       "acronym": "UNB",
       "state": "DF",
       "url": "https://unb.br/docente-vida-academica/graduacao/formas-de-ingresso/2-publicacoes/570-transferencia-facultativa",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
         "html"
       ],
       "candidateCount": 72,
-      "resultCount": 0,
+      "resultCount": 1,
       "aiStatus": "confirmed"
     },
     {
@@ -3708,8 +3903,8 @@
       "acronym": "UEMASUL",
       "state": "MA",
       "url": "https://www.uemasul.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3725,8 +3920,8 @@
       "acronym": "UFJ",
       "state": "GO",
       "url": "https://ufj.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3742,8 +3937,8 @@
       "acronym": "UFCG",
       "state": "PB",
       "url": "https://comprov.ufcg.edu.br/graduacao.html",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -3759,7 +3954,7 @@
       "acronym": "UnDF",
       "state": "DF",
       "url": "https://universidade.df.gov.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "fetch failed",
       "method": "sitemap",
@@ -3776,8 +3971,8 @@
       "acronym": "UECE",
       "state": "CE",
       "url": "https://www.uece.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3793,7 +3988,7 @@
       "acronym": "UFNT",
       "state": "TO",
       "url": "https://ufnt.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "fetch failed",
       "method": "wordpress",
@@ -3812,8 +4007,8 @@
       "acronym": "UFS",
       "state": "SE",
       "url": "https://prograd.ufs.br/pagina/33013-editais-prograd-2026",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -3821,7 +4016,7 @@
       ],
       "candidateCount": 234,
       "resultCount": 15,
-      "aiStatus": "confirmed"
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "3161:site",
@@ -3829,8 +4024,8 @@
       "acronym": "IF SERTÃO-PE",
       "state": "PE",
       "url": "https://ifsertaope.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3846,8 +4041,8 @@
       "acronym": "IFSC",
       "state": "SC",
       "url": "https://www.ifsc.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -3863,8 +4058,8 @@
       "acronym": "IFMT",
       "state": "MT",
       "url": "https://ifmt.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3880,8 +4075,8 @@
       "acronym": "UEA",
       "state": "AM",
       "url": "https://uea.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3897,8 +4092,8 @@
       "acronym": "IFRR",
       "state": "RR",
       "url": "https://www.ifrr.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -3914,7 +4109,7 @@
       "acronym": "UNIMONTES",
       "state": "MG",
       "url": "https://unimontes.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "fetch failed",
       "method": "wordpress",
@@ -3932,8 +4127,8 @@
       "acronym": "FATEC-JAHU",
       "state": "SP",
       "url": "https://fatecjahu.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3949,14 +4144,12 @@
       "acronym": "UNEB",
       "state": "BA",
       "url": "https://portal.uneb.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T09:54:29.844Z",
-      "error": "The operation was aborted due to timeout",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
+      "error": null,
       "method": "wordpress",
       "attempted": [
-        "wordpress",
-        "rss",
-        "sitemap"
+        "wordpress"
       ],
       "candidateCount": 9,
       "resultCount": 2,
@@ -3968,8 +4161,8 @@
       "acronym": "FATECGA",
       "state": "SP",
       "url": "https://fatecgarca.cps.sp.gov.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -3985,7 +4178,7 @@
       "acronym": "UPE",
       "state": "PE",
       "url": "https://upe.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "fetch failed",
       "method": "wordpress",
@@ -4003,8 +4196,8 @@
       "acronym": "FAMEMA",
       "state": "SP",
       "url": "https://www.famema.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4022,8 +4215,8 @@
       "acronym": "UNIFIMES",
       "state": "GO",
       "url": "https://unifimes.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4039,7 +4232,7 @@
       "acronym": "UNC",
       "state": "SC",
       "url": "https://www.unc.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "error": "OFF_DOMAIN_REDIRECT",
       "attempted": [
         "sitemap"
@@ -4051,8 +4244,8 @@
       "acronym": "IFRO",
       "state": "RO",
       "url": "https://selecao.ifro.edu.br/especial",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4060,7 +4253,7 @@
       ],
       "candidateCount": 68,
       "resultCount": 8,
-      "aiStatus": "confirmed"
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "4925:site",
@@ -4068,8 +4261,8 @@
       "acronym": "UFABC",
       "state": "SP",
       "url": "https://www.ufabc.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4085,16 +4278,16 @@
       "acronym": "FATECPG",
       "state": "SP",
       "url": "https://fatecpg.cps.sp.gov.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
         "wordpress"
       ],
       "candidateCount": 20,
-      "resultCount": 5,
-      "aiStatus": "confirmed"
+      "resultCount": 6,
+      "aiStatus": "GEMINI_HTTP_503"
     },
     {
       "key": "5077:site",
@@ -4102,8 +4295,8 @@
       "acronym": "UERR",
       "state": "RR",
       "url": "https://uerr.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4119,8 +4312,8 @@
       "acronym": "UNICAMP",
       "state": "SP",
       "url": "https://www.unicamp.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4136,8 +4329,8 @@
       "acronym": "UFAC",
       "state": "AC",
       "url": "https://www3.ufac.br/prograd/processo-seletivo-para-preenchimento-de-vagas-residuais",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4153,8 +4346,8 @@
       "acronym": "USP",
       "state": "SP",
       "url": "https://www5.usp.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4170,8 +4363,8 @@
       "acronym": "UEPB",
       "state": "PB",
       "url": "https://uepb.edu.br/prograd/processos-seletivos/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4187,8 +4380,8 @@
       "acronym": "UEPB",
       "state": "PB",
       "url": "https://uepb.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4204,8 +4397,8 @@
       "acronym": "UEMA",
       "state": "MA",
       "url": "https://transferencia.uema.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4213,7 +4406,7 @@
       ],
       "candidateCount": 5,
       "resultCount": 1,
-      "aiStatus": "confirmed"
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "568:site",
@@ -4221,8 +4414,8 @@
       "acronym": "UEMA",
       "state": "MA",
       "url": "https://www.uema.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4238,8 +4431,8 @@
       "acronym": "UFPA",
       "state": "PA",
       "url": "https://www.ceps.ufpa.br/index.php/moba2027",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4247,7 +4440,7 @@
       ],
       "candidateCount": 120,
       "resultCount": 1,
-      "aiStatus": "GEMINI_HTTP_503"
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "570:selection",
@@ -4255,7 +4448,7 @@
       "acronym": "UFRN",
       "state": "RN",
       "url": "https://comperve.ufrn.br/conteudo/extravestibular.php",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "fetch failed",
       "method": "html",
@@ -4272,8 +4465,8 @@
       "acronym": "FMP",
       "state": "SC",
       "url": "https://fmpsc.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4289,8 +4482,8 @@
       "acronym": "UFPR",
       "state": "PR",
       "url": "https://ufpr.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4306,8 +4499,8 @@
       "acronym": "UFF",
       "state": "RJ",
       "url": "https://www.uff.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4323,8 +4516,8 @@
       "acronym": "UFES",
       "state": "ES",
       "url": "https://ps.ufes.br/psvo2026",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4332,7 +4525,7 @@
       ],
       "candidateCount": 88,
       "resultCount": 1,
-      "aiStatus": "confirmed"
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "573:site",
@@ -4340,8 +4533,8 @@
       "acronym": "UFES",
       "state": "ES",
       "url": "https://www.ufes.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4357,8 +4550,8 @@
       "acronym": "UFRRJ",
       "state": "RJ",
       "url": "https://portal.ufrrj.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4374,8 +4567,8 @@
       "acronym": "UFMG",
       "state": "MG",
       "url": "https://www.ufmg.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4391,8 +4584,8 @@
       "acronym": "UFJF",
       "state": "MG",
       "url": "https://www2.ufjf.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4409,8 +4602,8 @@
       "acronym": "UFAL",
       "state": "AL",
       "url": "https://servicos.ufal.br/orgaos/departamento-de-registro-e-controle-academico-drca/ingressar-na-ufal-por-meio-de-transferencia",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4418,7 +4611,7 @@
       ],
       "candidateCount": 23,
       "resultCount": 1,
-      "aiStatus": "confirmed"
+      "aiStatus": "GEMINI_HTTP_429"
     },
     {
       "key": "579:selection",
@@ -4426,8 +4619,8 @@
       "acronym": "UFPB",
       "state": "PB",
       "url": "https://www.prg.ufpb.br/editais/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4443,8 +4636,8 @@
       "acronym": "UFPB",
       "state": "PB",
       "url": "https://www.ufpb.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4460,8 +4653,8 @@
       "acronym": "FDSBC",
       "state": "SP",
       "url": "https://www.direitosbc.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4477,16 +4670,16 @@
       "acronym": "UFSM",
       "state": "RS",
       "url": "https://www.ufsm.br/pro-reitorias/prograd/ingresse-na-ufsm/edital-de-ingresso-reingresso",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
         "html"
       ],
       "candidateCount": 87,
-      "resultCount": 3,
-      "aiStatus": "confirmed"
+      "resultCount": 4,
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "582:site",
@@ -4494,8 +4687,8 @@
       "acronym": "UFSM",
       "state": "RS",
       "url": "https://www.ufsm.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4513,8 +4706,8 @@
       "acronym": "UFC",
       "state": "CE",
       "url": "https://www.ufc.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "rss",
       "attempted": [
@@ -4530,8 +4723,8 @@
       "acronym": "UFG",
       "state": "GO",
       "url": "https://prograd.ufg.br/n/204436-edital-de-preenchimento-de-vagas-remanescentes-para-portador-de-diploma",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4539,7 +4732,7 @@
       ],
       "candidateCount": 59,
       "resultCount": 3,
-      "aiStatus": "GEMINI_HTTP_503"
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "584:site",
@@ -4547,8 +4740,8 @@
       "acronym": "UFG",
       "state": "GO",
       "url": "https://ufg.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "rss",
       "attempted": [
@@ -4564,8 +4757,8 @@
       "acronym": "UFSC",
       "state": "SC",
       "url": "https://dae.ufsc.br/transferencias-e-retornos/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4573,7 +4766,7 @@
       ],
       "candidateCount": 63,
       "resultCount": 2,
-      "aiStatus": "GEMINI_HTTP_503"
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "585:site",
@@ -4581,8 +4774,8 @@
       "acronym": "UFSC",
       "state": "SC",
       "url": "https://en.ufsc.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "rss",
       "attempted": [
@@ -4598,8 +4791,8 @@
       "acronym": "UFRJ",
       "state": "RJ",
       "url": "https://acessograduacao.ufrj.br/periodo-2026-1/editais-acesso-2026/editais-de-vagas-ociosas-2026-2",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -4607,7 +4800,7 @@
       ],
       "candidateCount": 25,
       "resultCount": 10,
-      "aiStatus": "confirmed"
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "586:site",
@@ -4615,8 +4808,8 @@
       "acronym": "UFRJ",
       "state": "RJ",
       "url": "https://ufrj.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4634,8 +4827,8 @@
       "acronym": "UFERSA",
       "state": "RN",
       "url": "https://ufersa.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4653,7 +4846,7 @@
       "acronym": "UFRA",
       "state": "PA",
       "url": "https://novo.ufra.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "fetch failed",
       "method": "sitemap",
@@ -4670,8 +4863,8 @@
       "acronym": "UNIFESP",
       "state": "SP",
       "url": "https://portal.unifesp.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4687,7 +4880,7 @@
       "acronym": "CEFET/MG",
       "state": "MG",
       "url": "https://www.cefetmg.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "fetch failed",
       "method": "rss",
@@ -4705,8 +4898,8 @@
       "acronym": "UNIFAL-MG",
       "state": "MG",
       "url": "https://www.unifal-mg.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4723,16 +4916,16 @@
       "acronym": "UFOP",
       "state": "MG",
       "url": "https://prograd.ufop.br/processos-seletivos/reingresso-transferencia-reopcao/processo-seletivo-ocupacao-de-vagas-residuais",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
         "html"
       ],
       "candidateCount": 148,
-      "resultCount": 5,
-      "aiStatus": "confirmed"
+      "resultCount": 10,
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "6:site",
@@ -4740,8 +4933,8 @@
       "acronym": "UFOP",
       "state": "MG",
       "url": "https://www.ufop.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4757,7 +4950,7 @@
       "acronym": "UNI-FACEF",
       "state": "SP",
       "url": "https://www.unifacef.com.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "error": "HTTP_403",
       "attempted": [
         "sitemap"
@@ -4769,7 +4962,7 @@
       "acronym": "IFMA",
       "state": "MA",
       "url": "https://portal.ifma.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "HTTP_403",
       "method": "wordpress",
@@ -4788,8 +4981,8 @@
       "acronym": "USCS",
       "state": "SP",
       "url": "https://www.uscs.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4806,8 +4999,8 @@
       "acronym": "UFPEL",
       "state": "RS",
       "url": "https://portal.ufpel.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4825,8 +5018,8 @@
       "acronym": "UNIUV",
       "state": "PR",
       "url": "https://uniuv.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4842,7 +5035,7 @@
       "acronym": "UEFS",
       "state": "BA",
       "url": "https://www.uefs.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "fetch failed",
       "method": "sitemap",
@@ -4859,8 +5052,8 @@
       "acronym": "UESB",
       "state": "BA",
       "url": "https://www.uesb.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4876,8 +5069,8 @@
       "acronym": "UFMS",
       "state": "MS",
       "url": "https://www.ufms.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4893,7 +5086,7 @@
       "acronym": "UNIR",
       "state": "RO",
       "url": "https://www.unir.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
       "lastSuccess": "2026-11-17T15:31:38.055Z",
       "error": "fetch failed",
       "method": "rss",
@@ -4910,8 +5103,8 @@
       "acronym": "UERN",
       "state": "RN",
       "url": "https://portal.uern.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4927,16 +5120,16 @@
       "acronym": "UEPG",
       "state": "PR",
       "url": "https://www.uepg.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
         "wordpress"
       ],
       "candidateCount": 40,
-      "resultCount": 5,
-      "aiStatus": "confirmed"
+      "resultCount": 8,
+      "aiStatus": "GEMINI_HTTP_503"
     },
     {
       "key": "746:site",
@@ -4944,15 +5137,15 @@
       "acronym": "URCA",
       "state": "CE",
       "url": "https://www.urca.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
         "wordpress"
       ],
       "candidateCount": 40,
-      "resultCount": 2,
+      "resultCount": 1,
       "aiStatus": "confirmed"
     },
     {
@@ -4961,8 +5154,8 @@
       "acronym": "UESPI",
       "state": "PI",
       "url": "https://uespi.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -4978,8 +5171,8 @@
       "acronym": "FURB",
       "state": "SC",
       "url": "https://www.furb.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -4995,16 +5188,16 @@
       "acronym": "UFRR",
       "state": "RR",
       "url": "https://ufrr.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
         "wordpress"
       ],
       "candidateCount": 40,
-      "resultCount": 5,
-      "aiStatus": "confirmed"
+      "resultCount": 8,
+      "aiStatus": "GEMINI_HTTP_503"
     },
     {
       "key": "8:selection",
@@ -5012,16 +5205,16 @@
       "acronym": "UFV",
       "state": "MG",
       "url": "https://www2.pse.ufv.br/?page_id=38",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
         "html"
       ],
       "candidateCount": 132,
-      "resultCount": 3,
-      "aiStatus": "confirmed"
+      "resultCount": 4,
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "8:site",
@@ -5029,8 +5222,8 @@
       "acronym": "UFV",
       "state": "MG",
       "url": "https://www.ufv.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "rss",
       "attempted": [
@@ -5047,8 +5240,8 @@
       "acronym": "UNICERRADO",
       "state": "GO",
       "url": "https://unicerrado.edu.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -5064,8 +5257,8 @@
       "acronym": "UNIFAP",
       "state": "AP",
       "url": "https://www.unifap.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
@@ -5081,8 +5274,8 @@
       "acronym": "UEL",
       "state": "PR",
       "url": "https://sites.uel.br/prograd/graduacao/transferencia-externa/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "html",
       "attempted": [
@@ -5090,7 +5283,7 @@
       ],
       "candidateCount": 82,
       "resultCount": 1,
-      "aiStatus": "confirmed"
+      "aiStatus": "quota_fallback"
     },
     {
       "key": "9:site",
@@ -5098,8 +5291,8 @@
       "acronym": "UEL",
       "state": "PR",
       "url": "https://portal.uel.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -5117,16 +5310,18 @@
       "acronym": "FMJ",
       "state": "SP",
       "url": "https://fmj.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
-        "wordpress"
+        "wordpress",
+        "rss",
+        "sitemap"
       ],
-      "candidateCount": 22,
-      "resultCount": 1,
-      "aiStatus": "confirmed"
+      "candidateCount": 12,
+      "resultCount": 0,
+      "aiStatus": "no_candidates"
     },
     {
       "key": "94:site",
@@ -5134,8 +5329,8 @@
       "acronym": "ESEFJ",
       "state": "SP",
       "url": "https://esef.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "sitemap",
       "attempted": [
@@ -5153,8 +5348,8 @@
       "acronym": "UVA",
       "state": "CE",
       "url": "https://www.uva.ce.gov.br/",
-      "lastAttempt": "2026-11-24T22:26:39.243Z",
-      "lastSuccess": "2026-11-24T22:26:39.243Z",
+      "lastAttempt": "2026-11-25T08:33:26.557Z",
+      "lastSuccess": "2026-11-25T08:33:26.557Z",
       "error": null,
       "method": "wordpress",
       "attempted": [
